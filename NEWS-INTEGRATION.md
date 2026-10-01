@@ -40,7 +40,7 @@ which optional fields happen to have data.
    (728 old paths → entry ID, including 110 old French routes that repeated an English release
    and now point to the English entry). It's merged with each post's `sourceUrl`, the old
    `/en/news/YYYY/` and `/news/archive/YYYY/` indexes, and the old company pages and PDF URLs
-   (`src/data/legacy-redirects.json`). That's 1,139 redirects in total. They are registered as
+   (`src/data/legacy-redirects.json`). That's 1,145 redirects in total. They are registered as
    server redirects for whichever hosting adapter is chosen. They're also written to
    `/legacy-redirects.json`, which the 404 page uses to redirect on hosts without redirect support.
 3. **Inline images.** `EMBEDDED_ASSET` renders image assets as figures (Contentful Images API,
@@ -51,9 +51,12 @@ which optional fields happen to have data.
    through the redirects.
 4. **Tables.** `TABLE` → `<table><tbody>`; `TABLE_CELL`/`TABLE_HEADER_CELL` carry
    `data.rowspan`/`data.colspan`.
-5. **Archive years.** The News menu lists only the years that have releases in the visitor's
-   language (EN 2009–2026, FR 2014–2026). The homepage "View All" link goes to the newest
-   release's year.
+5. **Archive years.** Year archives (`src/templates/news-year.js`) are generated only for years
+   with releases in each language: EN 2009–2026, FR 2014–2026, so there are no empty pages. Each
+   archive has a year selector. Its language switch and hreflang appear only when the other
+   language has that year. The News menu lists the same years; `/news/` and `/fr/news/` and the
+   homepage "View All" go to the latest year. Old French archive URLs for English-only years
+   (`/fr/news/2010/`, `/fr/news/archive/2012/`) redirect to the English archive.
 6. **Language metadata.** Every page has the correct `<html lang>`, a localized title and
    description, a canonical URL, hreflang and `og:locale`. Dates are formatted from
    `sourceDate` ("September 28, 2026" / "28 septembre 2026"). Posts carry
@@ -69,7 +72,7 @@ Local `.env` (configured by Codex, git-ignored): space `ui2quga5z7ja`, environme
 `pageLimit: 250` is set because the table-heavy releases exceed Contentful's response size at
 the default page size.
 
-Production build passed: 670 pages.
+Production build passed: 665 pages.
 
 | Check | Result |
 | --- | --- |
@@ -78,7 +81,7 @@ Production build passed: 670 pages.
 | Inline figures | **81**, all served from `images.ctfassets.net` |
 | PDF links, `application/pdf`, download boxes | **0** on every news page |
 | Placeholder or Coniagas template content | None. Two 2025 releases legitimately mention Coniagas Battery Metals in a director bio. |
-| Year pages | 2009–2026 in both languages (French 2009–2013 show the empty state but aren't in the French menu) |
+| Year pages | EN 2009–2026 (18), FR 2014–2026 (13), each with a year selector; no empty archives |
 | Language pairs | 498 of 618 pages link a counterpart; the rest show only their own language |
 | JW EN ↔ FR | Correct `lang`, title and date; the switcher goes to the counterpart and back |
 | January 2021 resource release | 3 tables, 92 cells, both `rowspan=4` cells, 3 footnote superscripts, 2 figures |
@@ -90,9 +93,8 @@ Production build passed: 670 pages.
 
 - **Goguen 2016:** the held-out English release has no page. Its French version's switcher
   shows only FR until the English entry exists with the same `translationKey`.
-- **Year entries:** the Year content type also drives `/news/<year>/` pages in both languages.
-  The French menu only lists years with French releases, so French 2009–2013 pages exist but
-  aren't linked.
+- **Year entries:** archive pages and menus come from the releases themselves, so a Year entry
+  without releases produces no page.
 - **Link types:** entry hyperlinks and embedded entries are still not rendered. URI and
   image-asset hyperlinks are.
 - **Production:** publish the reviewed entries and assets, then build with a separate

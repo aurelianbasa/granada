@@ -213,6 +213,18 @@ const postOriginalPath = (post) => `/news/${post.year.year}/${post.slug}/`;
 const withLanguage = (language, originalPath) =>
   language === DEFAULT_LANGUAGE ? originalPath : `/${language}${originalPath}`;
 
+// Pre-set i18n context so gatsby-plugin-react-i18next neither duplicates a page into other
+// languages nor redirects visitors to a translated path that doesn't exist.
+const i18nContext = (language, originalPath) => ({
+  language,
+  languages: [language],
+  defaultLanguage: DEFAULT_LANGUAGE,
+  generateDefaultLanguagePage: false,
+  routed: language !== DEFAULT_LANGUAGE,
+  originalPath,
+  path: withLanguage(language, originalPath),
+});
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
   // Server redirects for the hosting adapter. The same map is written to /legacy-redirects.json,
@@ -239,11 +251,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           language {
             language
           }
-        }
-      }
-      allContentfulYear(sort: { year: DESC }) {
-        nodes {
-          year
         }
       }
     }
@@ -299,17 +306,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           previous: neighbour(languagePosts[index + 1]),
           next: neighbour(languagePosts[index - 1]),
           alternates,
-          // Pre-set i18n context so gatsby-plugin-react-i18next neither duplicates this page into
-          // other languages nor redirects visitors to a non-existent translated path.
-          i18n: {
-            language,
-            languages: [language],
-            defaultLanguage: DEFAULT_LANGUAGE,
-            generateDefaultLanguagePage: false,
-            routed: language !== DEFAULT_LANGUAGE,
-            originalPath,
-            path: pagePath,
-          },
+          i18n: i18nContext(language, originalPath),
         },
       });
 
@@ -337,16 +334,57 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     reporter.warn(`News: ${unmatchedLegacy} legacy release URLs have no matching entry in this build`);
   }
 
-  // Old granadagoldmine.com news indexes, including /news/archive/YYYY/.
-  const latestYear = result.data.allContentfulYear.nodes[0]?.year;
-  result.data.allContentfulYear.nodes.forEach(({ year }) => {
-    createRedirect({ fromPath: `/en/news/${year}/`, toPath: `/news/${year}/` });
-    createRedirect({ fromPath: `/en/news/archive/${year}/`, toPath: `/news/${year}/` });
-    createRedirect({ fromPath: `/fr/news/archive/${year}/`, toPath: `/fr/news/${year}/` });
+  // Year archives, only for the years that have releases in each language (French starts later).
+  const yearsByLanguage = Object.fromEntries(
+    LANGUAGES.map((language) => [
+      language,
+      [...new Set(posts.filter((post) => post.language.language === language).map((post) => post.year.year))].sort(
+        (a, b) => b - a
+      ),
+    ])
+  );
+
+  LANGUAGES.forEach((language) => {
+    const years = yearsByLanguage[language];
+
+    years.forEach((year) => {
+      const originalPath = `/news/${year}/`;
+      createPage({
+        path: withLanguage(language, originalPath),
+        component: path.resolve('./src/templates/news-year.js'),
+        context: {
+          year,
+          language,
+          years,
+          alternates: Object.fromEntries(
+            LANGUAGES.filter((lng) => yearsByLanguage[lng].includes(year)).map((lng) => [lng, originalPath])
+          ),
+          i18n: i18nContext(language, originalPath),
+        },
+      });
+    });
+
+    // /news/ and /fr/news/ go to the latest year with releases in that language.
+    if (years.length) {
+      createRedirect({ fromPath: withLanguage(language, '/news/'), toPath: withLanguage(language, `/news/${years[0]}/`) });
+    }
   });
-  if (latestYear) {
-    createRedirect({ fromPath: '/en/news/', toPath: `/news/${latestYear}/` });
-    createRedirect({ fromPath: '/fr/news/', toPath: `/fr/news/${latestYear}/` });
+
+  // Old granadagoldmine.com news indexes (/en/news/YYYY/, /<lang>/news/archive/YYYY/). Years
+  // without French releases send French visitors to the English archive.
+  const yearPath = (language, year) =>
+    yearsByLanguage[language].includes(year) ? withLanguage(language, `/news/${year}/`) : `/news/${year}/`;
+  const allYears = [...new Set([...yearsByLanguage.en, ...yearsByLanguage.fr])];
+  allYears.forEach((year) => {
+    createRedirect({ fromPath: `/en/news/${year}/`, toPath: yearPath('en', year) });
+    createRedirect({ fromPath: `/en/news/archive/${year}/`, toPath: yearPath('en', year) });
+    createRedirect({ fromPath: `/fr/news/archive/${year}/`, toPath: yearPath('fr', year) });
+    if (!yearsByLanguage.fr.includes(year)) {
+      createRedirect({ fromPath: `/fr/news/${year}/`, toPath: yearPath('fr', year) });
+    }
+  });
+  if (yearsByLanguage.en.length) {
+    createRedirect({ fromPath: '/en/news/', toPath: `/news/${yearsByLanguage.en[0]}/` });
   }
 
   // Old granadagoldmine.com pages and documents (see src/data/legacy-redirects.json).
