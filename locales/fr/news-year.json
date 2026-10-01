@@ -1,7 +1,9 @@
 {
   "title": "Communiqués de presse",
-  "subtitle": "Published in",
+  "subtitle": "Publiés en",
   "cardNewsMinRead": "min de lecture",
   "cardNewsButton": "Lire plus",
-  "noContent": "Aucun nouveau contenu pour le moment"
+  "noContent": "Aucun nouveau contenu pour le moment",
+  "metaTitle": "Nouvelles",
+  "metaDescription": "Communiqués de presse de Granada Gold Mine Inc. publiés en"
 }

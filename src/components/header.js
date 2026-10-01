@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import { AnimatePresence, motion } from 'framer-motion';
 import { RiArrowDownSLine, RiMenuFill, RiCloseFill } from 'react-icons/ri';
 import { Link, useI18next, useTranslation } from 'gatsby-plugin-react-i18next';
@@ -6,8 +7,11 @@ import { Popover, PopoverButton, PopoverPanel, Dialog, DialogPanel } from '@head
 
 import Button from '@components/button';
 import AlgoliaSearch from '@components/algolia-search';
+import { usePageContext } from '@components/page-context';
 
 import logo from '@media/common/logo.png';
+
+const SITE_LANGUAGES = ['en', 'fr'];
 
 const NAV = [
   {
@@ -88,7 +92,19 @@ function NavDropdown({ label, items }) {
 
 export default function Header() {
   const { t, i18n } = useTranslation();
-  const { languages, originalPath } = useI18next();
+  const { originalPath } = useI18next();
+  const { alternates } = usePageContext();
+
+  // Archive years come from Contentful's Year entries, newest first.
+  const newsYears = useStaticQuery(graphql`
+    query HeaderNewsYears {
+      allContentfulYear(sort: { year: DESC }) {
+        nodes {
+          year
+        }
+      }
+    }
+  `).allContentfulYear.nodes.map(({ year }) => year);
 
   const [isOpen, setIsOpen] = React.useState(false);
   const [scrollYPosition, setScrollYPosition] = React.useState(0);
@@ -150,20 +166,15 @@ export default function Header() {
                           initial={{ opacity: 0, scale: 0.95 }}
                           animate={{ opacity: 1, scale: 1 }}
                           exit={{ opacity: 0, scale: 0.95 }}
-                          className='absolute left-1/2 z-50 flex w-max -translate-x-1/2 !transform flex-col gap-3 rounded-lg bg-white p-6 shadow-md'
+                          className={`absolute left-1/2 z-50 w-max -translate-x-1/2 !transform rounded-lg bg-white p-6 shadow-md ${
+                            newsYears.length > 8 ? 'grid grid-cols-3 gap-x-8 gap-y-3' : 'flex flex-col gap-3'
+                          }`}
                         >
-                          <Link className='py-1 hover:text-primary' to='/news/2023'>
-                            {t('header.news2023')}
-                          </Link>
-                          <Link className='py-1 hover:text-primary' to='/news/2024'>
-                            {t('header.news2024')}
-                          </Link>
-                          <Link className='py-1 hover:text-primary' to='/news/2025'>
-                            {t('header.news2025')}
-                          </Link>
-                          <Link className='py-1 hover:text-primary' to='/news/2026'>
-                            {t('header.news2026')}
-                          </Link>
+                          {newsYears.map((year) => (
+                            <Link className='py-1 hover:text-primary' to={`/news/${year}/`} key={year}>
+                              {year}
+                            </Link>
+                          ))}
                         </PopoverPanel>
                       </AnimatePresence>
                     )}
@@ -195,12 +206,12 @@ export default function Header() {
                         anchor='bottom'
                         className='z-50 flex flex-col gap-3 rounded-lg bg-white p-6 shadow-md'
                       >
-                        {languages.map((lang) => (
+                        {SITE_LANGUAGES.map((lang) => (
                           <Link
                             className='cursor-pointer py-1 hover:text-primary'
                             key={lang}
                             language={lang}
-                            to={originalPath}
+                            to={alternates?.[lang] || originalPath}
                           >
                             {lang.toUpperCase()}
                           </Link>
@@ -257,18 +268,13 @@ export default function Header() {
 
                 <div className='cursor-pointer py-2 hover:text-primary'>{t('header.news')}</div>
 
-                <Link className='py-2 pl-6 hover:text-primary' to='/news/2023'>
-                  {t('header.news2023')}
-                </Link>
-                <Link className='py-2 pl-6 hover:text-primary' to='/news/2024'>
-                  {t('header.news2024')}
-                </Link>
-                <Link className='py-2 pl-6 hover:text-primary' to='/news/2025'>
-                  {t('header.news2025')}
-                </Link>
-                <Link className='py-2 pl-6 hover:text-primary' to='/news/2026'>
-                  {t('header.news2026')}
-                </Link>
+                <div className='grid grid-cols-3 gap-x-6 pl-6'>
+                  {newsYears.map((year) => (
+                    <Link className='py-2 hover:text-primary' to={`/news/${year}/`} key={year} onClick={() => setIsOpen(false)}>
+                      {year}
+                    </Link>
+                  ))}
+                </div>
 
                 <Button className='mt-8 w-full' type='primary' href='/contact'>
                   {t('header.contactUs')}

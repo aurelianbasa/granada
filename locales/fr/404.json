@@ -1,5 +1,7 @@
 {
   "title": "Page Non Trouvée",
   "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
-  "button": "Aller à la page d'accueil"
+  "button": "Aller à la page d'accueil",
+  "metaTitle": "Page introuvable",
+  "metaDescription": "La page que vous cherchez est introuvable."
 }

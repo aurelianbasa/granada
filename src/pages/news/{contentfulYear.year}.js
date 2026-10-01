@@ -5,12 +5,13 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 import Layout from '@components/layout';
 import CardNews from '@components/card-news';
+import Seo, { getLocaleStrings } from '@components/seo';
 
 export default function News({ data }) {
   const { t } = useTranslation();
 
   const year = data.contentfulYear;
-  const posts = data.allContentfulPost.edges;
+  const posts = data.allContentfulPost.nodes;
 
   return (
     <Layout>
@@ -22,24 +23,17 @@ export default function News({ data }) {
         </p>
 
         <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
-          {posts &&
-            posts.map((post, index) => (
-              <motion.div
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                initial={{ y: '80px', opacity: 0 }}
-                whileInView={{ y: '0', opacity: 1 }}
-                key={index}
-              >
-                <CardNews
-                  title={post.node.title}
-                  content={post.node.content}
-                  publishDate={post.node.publishDate}
-                  image={post.node.heroImage.file.url}
-                  href={`/news/${post.node.year.year}/${post.node.slug}`}
-                ></CardNews>
-              </motion.div>
-            ))}
+          {posts.map((post, index) => (
+            <motion.div
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              initial={{ y: '80px', opacity: 0 }}
+              whileInView={{ y: '0', opacity: 1 }}
+              key={post.id || index}
+            >
+              <CardNews post={post}></CardNews>
+            </motion.div>
+          ))}
         </div>
 
         {!posts.length && <div className='py-20 text-center uppercase'>{t('noContent')}</div>}
@@ -48,13 +42,15 @@ export default function News({ data }) {
   );
 }
 
-export function Head() {
+export function Head({ data, pageContext }) {
+  const strings = getLocaleStrings(data, 'news-year');
+
   return (
-    <>
-      <html lang='en' />
-      <title>News | Granada Gold Mine</title>
-      <meta name='description' content='Granada Gold Mine. Press Releases.' />
-    </>
+    <Seo
+      pageContext={pageContext}
+      title={`${strings.metaTitle || 'News'} ${data.contentfulYear.year}`}
+      description={`${strings.metaDescription || ''} ${data.contentfulYear.year}.`}
+    />
   );
 }
 
@@ -76,24 +72,8 @@ export const query = graphql`
       sort: { publishDate: DESC }
       filter: { year: { year: { eq: $year } }, language: { language: { eq: $language } } }
     ) {
-      edges {
-        node {
-          id
-          title
-          slug
-          publishDate
-          year {
-            year
-          }
-          heroImage {
-            file {
-              url
-            }
-          }
-          content {
-            raw
-          }
-        }
+      nodes {
+        ...NewsCard
       }
     }
   }

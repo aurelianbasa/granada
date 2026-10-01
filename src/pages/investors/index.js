@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 
 import Layout from '@components/layout';
+import Seo, { getLocaleStrings } from '@components/seo';
 import Button from '@components/button';
 
 import financialReports from '../../data/financial-reports';
@@ -243,17 +244,10 @@ export default function Investors() {
   );
 }
 
-export function Head() {
-  return (
-    <>
-      <html lang='en' />
-      <title>Investors | Granada Gold Mine</title>
-      <meta
-        name='description'
-        content='Granada Gold Mine Inc. (TSX-V: GGM) investor information: stock price, share structure, financial reports and filings, presentations, NI 43-101 technical reports and AGM documents.'
-      />
-    </>
-  );
+export function Head({ data, pageContext }) {
+  const strings = getLocaleStrings(data, 'investors');
+
+  return <Seo pageContext={pageContext} title={strings.metaTitle} description={strings.metaDescription} />;
 }
 
 export const query = graphql`

@@ -3,3 +3,4 @@ node_modules/
 public
 .env
 .claude/
+static/__news-fixture/

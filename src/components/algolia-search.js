@@ -8,7 +8,7 @@ import { Description, Dialog, DialogPanel } from '@headlessui/react';
 const DEBOUNCE_TIMEOUT = 500;
 
 export default function AlgoliaSearch() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const hitsPerPage = 10;
   const indexName = 'Posts';
@@ -43,6 +43,7 @@ export default function AlgoliaSearch() {
           indexName,
           params: {
             hitsPerPage,
+            filters: `language:${i18n.language}`,
           },
         },
       ]);
@@ -60,8 +61,14 @@ export default function AlgoliaSearch() {
     setHits([]);
   };
 
-  // Search stays hidden until Granada's Algolia keys are configured.
-  if (!process.env.GATSBY_ALGOLIA_APP_ID || !process.env.GATSBY_ALGOLIA_SEARCH_KEY) return null;
+  // Search stays hidden until Granada's Algolia index is populated and explicitly switched on.
+  if (
+    process.env.GATSBY_ALGOLIA_SEARCH_ENABLED !== 'true' ||
+    !process.env.GATSBY_ALGOLIA_APP_ID ||
+    !process.env.GATSBY_ALGOLIA_SEARCH_KEY
+  ) {
+    return null;
+  }
 
   return (
     <div className='flex items-center'>
@@ -117,7 +124,7 @@ export default function AlgoliaSearch() {
                       return (
                         <Link
                           key={index}
-                          to={`/news/${hit.year}/${hit.slug}`}
+                          to={hit.path}
                           className='block cursor-pointer px-6 py-8 hover:bg-tertiary/10'
                         >
                           <p className='mb-2'>{hit.title}</p>

@@ -6,5 +6,7 @@
   "postNext": "NEXT ARTICLE",
   "relatedPosts": "Related Posts",
   "relatedPostsMinRead": "min read",
-  "relatedPostsButton": "Read More"
+  "relatedPostsButton": "Read More",
+  "postDownloads": "Original release files",
+  "metaTitle": "News"
 }

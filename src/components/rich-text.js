@@ -1,7 +1,51 @@
 import React from 'react';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { RiFilePdf2Line, RiFileDownloadLine } from 'react-icons/ri';
 import { BLOCKS, INLINES } from '@contentful/rich-text-types';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
+
+import { getAssetUrl, isImageAsset } from '@utils/index';
+
+const LEGACY_HOST = /^https?:\/\/(www\.)?granadagoldmine\.com(?=\/|$)/i;
+
+// Contentful's Images API can resize; local fixture files are served as-is.
+const imageSrc = (asset, width) => {
+  const url = getAssetUrl(asset);
+  return url && url.includes('ctfassets.net') ? `${url}?w=${width}&fm=webp&q=80` : url;
+};
+
+// Links to the old site become site-relative so they resolve through the legacy redirects.
+const linkProps = (uri = '') => {
+  if (LEGACY_HOST.test(uri)) {
+    return { href: uri.replace(LEGACY_HOST, '') || '/' };
+  }
+
+  if (/^(mailto|tel):/i.test(uri) || uri.startsWith('/') || uri.startsWith('#')) {
+    return { href: uri };
+  }
+
+  return { href: uri, target: '_blank', rel: 'noreferrer' };
+};
+
+function AssetLink({ asset, children }) {
+  const url = getAssetUrl(asset);
+
+  // Unresolved asset (unpublished or missing): keep the text, drop the link.
+  if (!url) return <span>{children}</span>;
+
+  const isPdf = asset.file.contentType === 'application/pdf';
+
+  return (
+    <a href={url} target='_blank' rel='noreferrer' type={asset.file.contentType} title={asset.title || undefined}>
+      {children}
+      {isPdf && <RiFilePdf2Line className='ml-1 inline size-4 align-text-bottom' aria-label='PDF' />}
+    </a>
+  );
+}
+
+const cellSpans = (node) => ({
+  rowSpan: node.data?.rowspan > 1 ? node.data.rowspan : undefined,
+  colSpan: node.data?.colspan > 1 ? node.data.colspan : undefined,
+});
 
 const options = {
   renderNode: {
@@ -13,21 +57,45 @@ const options = {
 
     [BLOCKS.TABLE]: (node, children) => (
       <div className='overflow-x-auto'>
-        <table className='min-w-[600px]'>{children}</table>
+        <table className='min-w-[600px]'>
+          <tbody>{children}</tbody>
+        </table>
       </div>
     ),
+    [BLOCKS.TABLE_ROW]: (node, children) => <tr>{children}</tr>,
+    [BLOCKS.TABLE_CELL]: (node, children) => <td {...cellSpans(node)}>{children}</td>,
+    [BLOCKS.TABLE_HEADER_CELL]: (node, children) => <th {...cellSpans(node)}>{children}</th>,
 
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
-      const { gatsbyImageData } = node.data.target;
+      const asset = node.data.target;
+      if (!getAssetUrl(asset)) return null;
 
-      return <GatsbyImage class='rounded-lg' image={getImage(gatsbyImageData)} alt='Post image' />;
+      if (isImageAsset(asset)) {
+        return (
+          <figure>
+            <img
+              className='mx-auto rounded-lg'
+              src={imageSrc(asset, 1400)}
+              alt={asset.description || asset.title || ''}
+              loading='lazy'
+            />
+          </figure>
+        );
+      }
+
+      return (
+        <p>
+          <AssetLink asset={asset}>
+            <RiFileDownloadLine className='mr-2 inline size-5 align-text-bottom' />
+            {asset.title || asset.file.fileName}
+          </AssetLink>
+        </p>
+      );
     },
 
-    [INLINES.HYPERLINK]: (node, children) => (
-      <a href={node.data.uri} target='_blank' rel='noreferrer'>
-        {children}
-      </a>
-    ),
+    [INLINES.ASSET_HYPERLINK]: (node, children) => <AssetLink asset={node.data.target}>{children}</AssetLink>,
+
+    [INLINES.HYPERLINK]: (node, children) => <a {...linkProps(node.data.uri)}>{children}</a>,
   },
 };
 

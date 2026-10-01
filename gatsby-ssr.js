@@ -1,3 +1,1 @@
-import './src/styles/global.scss';
-
 export { wrapWithPageContext as wrapPageElement } from './src/components/page-context';

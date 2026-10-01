@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 
 import Layout from '@components/layout';
+import Seo, { getLocaleStrings } from '@components/seo';
 
 import BannerImage from '@media/common/banner.jpg';
 import ProjectImage from '@media/property/project-site.jpg';
@@ -91,17 +92,10 @@ export default function About() {
   );
 }
 
-export function Head() {
-  return (
-    <>
-      <html lang='en' />
-      <title>About | Granada Gold Mine</title>
-      <meta
-        name='description'
-        content='Granada Gold Mine Inc. is a Canadian junior mining and exploration company focused on the past-producing Granada Gold Property in the Abitibi Greenstone Belt. Meet our directors and officers.'
-      />
-    </>
-  );
+export function Head({ data, pageContext }) {
+  const strings = getLocaleStrings(data, 'about');
+
+  return <Seo pageContext={pageContext} title={strings.metaTitle} description={strings.metaDescription} />;
 }
 
 export const query = graphql`

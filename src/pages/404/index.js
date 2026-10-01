@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 import Layout from '@components/layout';
+import Seo, { getLocaleStrings } from '@components/seo';
 import Button from '@components/button';
 
 export default function NotFoundPage() {
@@ -29,14 +30,10 @@ export default function NotFoundPage() {
   );
 }
 
-export function Head() {
-  return (
-    <>
-      <html lang='en' />
-      <title>Page not found</title>
-      <meta name='description' content='Page not found.' />
-    </>
-  );
+export function Head({ data, pageContext }) {
+  const strings = getLocaleStrings(data, '404');
+
+  return <Seo pageContext={pageContext} title={strings.metaTitle} description={strings.metaDescription} />;
 }
 
 export const query = graphql`

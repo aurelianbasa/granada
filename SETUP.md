@@ -19,8 +19,8 @@ keys are filled in. Copy `.env.EXAMPLE` to `.env` to start.
 
 | Service | Used for | Env vars | Behaviour while unset |
 | --- | --- | --- | --- |
-| **Contentful** | News posts only (`/news/<year>/<slug>`, homepage "latest news") | `CONTENTFUL_SPACE_ID`, `CONTENTFUL_ACCESS_TOKEN` | `gatsby-node.js` defines empty placeholder news types; no news pages are generated |
-| **Algolia** | News search (header search icon). The build **writes** the `Posts` index | `GATSBY_ALGOLIA_APP_ID`, `GATSBY_ALGOLIA_SEARCH_KEY`, `ALGOLIA_ADMIN_KEY` | Indexing plugin disabled (it also requires Contentful); search icon hidden |
+| **Contentful** | News posts only (`/news/<year>/<slug>/`, `/fr/news/<year>/<slug>/`, homepage "latest news") | `CONTENTFUL_SPACE_ID`, `CONTENTFUL_ACCESS_TOKEN` (**Delivery API** token only) | Temporary placeholder posts, or a local Contentful export via `NEWS_FIXTURE` (see below) |
+| **Algolia** | News search (header search icon). The build **writes** the `Posts` index | `GATSBY_ALGOLIA_APP_ID`, `GATSBY_ALGOLIA_SEARCH_KEY`, `ALGOLIA_ADMIN_KEY`, plus `ALGOLIA_INDEXING_ENABLED=true` and `GATSBY_ALGOLIA_SEARCH_ENABLED=true` | Off. Keys alone don't enable it; both switches must be `true` (and Contentful connected) |
 | **Formspree** | Contact form and newsletter subscribe form | `GATSBY_FORMSPREE_CONTACT_ID`, `GATSBY_FORMSPREE_SUBSCRIBE_ID` (the ID after `formspree.io/f/`) | Forms show their normal error state on submit |
 | **Hosting / deployment** | None configured in the repo (no Netlify/Vercel/GitHub Actions files were inherited) | Set the same env vars in the host's dashboard | — |
 | **Domain** | `granadagoldmine.com` is set in `gatsby-config.js` (siteUrl, robots.txt, sitemap) | — | — |
@@ -30,38 +30,20 @@ search index.
 
 Coniagas had no analytics or tracking scripts, so there was nothing to remove.
 
-## News structure (for the content migration)
+## News
 
-News comes from Contentful only. Until Granada's space is connected, `gatsby-node.js`
-generates **temporary local placeholder posts**: two per language, dated 2026, plus year
-pages for 2023–2026 so the header's year links work. They disappear automatically once
-`CONTENTFUL_SPACE_ID` and `CONTENTFUL_ACCESS_TOKEN` are set.
+News comes from Contentful only; see [NEWS-INTEGRATION.md](NEWS-INTEGRATION.md) for the content
+model, routing, rendering and the connected-test checklist. Modes, in order of precedence:
 
-Granada's Contentful space needs these content types (field IDs must match):
-
-**`year`**
-| Field | Type | Notes |
-| --- | --- | --- |
-| `year` | Integer | e.g. `2026`; drives `/news/<year>/` |
-| `name` | Short text | e.g. `"2026"`; used by the search index |
-
-**`post`**
-| Field | Type | Notes |
-| --- | --- | --- |
-| `title` | Short text | |
-| `slug` | Short text | unique; URL is `/news/<year>/<slug>/` |
-| `publishDate` | Date & time | newest first everywhere |
-| `year` | Reference → `year` | |
-| `language` | Reference → an entry with a `language` text field | value `en` or `fr`; filters posts per site language |
-| `heroImage` | Media (image) | card thumbnail and social share image |
-| `content` | Rich text | embedded images supported |
-
-The year links in the header (`src/components/header.js`) and the homepage "View All" button
-(`/news/2026`) are hard-coded and should be updated as years are added.
+1. **Connected**: `CONTENTFUL_SPACE_ID` and `CONTENTFUL_ACCESS_TOKEN` set. Published entries only.
+2. **Local fixture**: `NEWS_FIXTURE=/path/to/pilot-import.json` (a Contentful import/export file
+   with its `assets/` folder next to it). Assets are copied to the git-ignored
+   `static/__news-fixture/`. Used to verify Codex's draft entries before they're published.
+3. **Placeholders**: neither set. Two temporary posts per language for 2026.
 
 ## Content
 
 Non-news content (company and property copy, logo, photographs, maps, presentation, financial
 reports, technical report, AGM and community documents) has been migrated from the Granada
 website archive. See [MIGRATION.md](MIGRATION.md) for what moved where and the content
-decisions still open. News releases are still placeholders (see above).
+decisions still open. News is integrated separately (see above).

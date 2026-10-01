@@ -5,6 +5,7 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
 
 import Layout from '@components/layout';
+import Seo, { getLocaleStrings } from '@components/seo';
 import CardPhoto from '@components/card-photo';
 
 import StrippingMap from '@media/media/maps/stripping-map.jpg';
@@ -156,17 +157,10 @@ export default function Media({ location }) {
   );
 }
 
-export function Head() {
-  return (
-    <>
-      <html lang='en' />
-      <title>Maps & Images | Granada Gold Mine</title>
-      <meta
-        name='description'
-        content='Maps, drill hole locations, cross sections and site images from the Granada Gold Property near Rouyn-Noranda, Quebec.'
-      />
-    </>
-  );
+export function Head({ data, pageContext }) {
+  const strings = getLocaleStrings(data, 'media');
+
+  return <Seo pageContext={pageContext} title={strings.metaTitle} description={strings.metaDescription} />;
 }
 
 export const query = graphql`

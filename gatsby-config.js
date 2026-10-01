@@ -2,7 +2,13 @@ require('dotenv').config({ path: `.env` });
 
 // Each integration only switches on once Granada's own keys are in .env (see SETUP.md).
 const hasContentful = Boolean(process.env.CONTENTFUL_SPACE_ID && process.env.CONTENTFUL_ACCESS_TOKEN);
-const hasAlgolia = Boolean(hasContentful && process.env.GATSBY_ALGOLIA_APP_ID && process.env.ALGOLIA_ADMIN_KEY);
+// Algolia indexing writes to the index during every build, so it also needs an explicit opt-in.
+const hasAlgolia = Boolean(
+  hasContentful &&
+    process.env.ALGOLIA_INDEXING_ENABLED === 'true' &&
+    process.env.GATSBY_ALGOLIA_APP_ID &&
+    process.env.ALGOLIA_ADMIN_KEY
+);
 
 module.exports = {
   siteMetadata: {
@@ -108,6 +114,9 @@ module.exports = {
             options: {
               spaceId: process.env.CONTENTFUL_SPACE_ID,
               accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+              environment: process.env.CONTENTFUL_ENVIRONMENT || 'master',
+              // 'preview.contentful.com' + a Content Preview API token shows drafts (local review only).
+              host: process.env.CONTENTFUL_HOST || 'cdn.contentful.com',
             },
           },
         ]

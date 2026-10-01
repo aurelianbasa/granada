@@ -5,6 +5,7 @@ import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import { RiFileChartLine, RiMailLine, RiMapPinLine } from 'react-icons/ri';
 
 import Layout from '@components/layout';
+import Seo, { getLocaleStrings } from '@components/seo';
 import Button from '@components/button';
 import CardNews from '@components/card-news';
 
@@ -18,6 +19,7 @@ export default function Home({ data }) {
   const { t } = useTranslation();
 
   const posts = data.allPosts.nodes;
+  const latestYear = data.latestYear.nodes[0]?.year;
 
   return (
     <Layout>
@@ -174,18 +176,12 @@ export default function Home({ data }) {
               whileInView={{ x: '0', opacity: 1 }}
               key={index}
             >
-              <CardNews
-                title={post?.title}
-                content={post?.content}
-                publishDate={post?.publishDate}
-                image={post?.heroImage?.file?.url}
-                href={`/news/${post?.year?.year}/${post?.slug}`}
-              ></CardNews>
+              <CardNews post={post}></CardNews>
             </motion.div>
           ))}
         </div>
 
-        <Button className='mx-auto w-full md:w-fit' type='secondary' href='/news/2026'>
+        <Button className='mx-auto w-full md:w-fit' type='secondary' href={`/news/${latestYear}/`}>
           {t('newsButton')}
         </Button>
       </div>
@@ -193,17 +189,10 @@ export default function Home({ data }) {
   );
 }
 
-export function Head() {
-  return (
-    <>
-      <html lang='en' />
-      <title>Home | Granada Gold Mine</title>
-      <meta
-        name='description'
-        content='Granada Gold Mine Inc. (TSX-V: GGM) is a Canadian junior mining and exploration company advancing the past-producing Granada Gold Property near Rouyn-Noranda, Quebec, on the prolific Cadillac Trend.'
-      />
-    </>
-  );
+export function Head({ data, pageContext }) {
+  const strings = getLocaleStrings(data, 'home');
+
+  return <Seo pageContext={pageContext} title={strings.metaTitle} description={strings.metaDescription} />;
 }
 
 export const query = graphql`
@@ -217,27 +206,18 @@ export const query = graphql`
         }
       }
     }
+    latestYear: allContentfulYear(sort: { year: DESC }, limit: 1) {
+      nodes {
+        year
+      }
+    }
     allPosts: allContentfulPost(
       limit: 3
       sort: { publishDate: DESC }
       filter: { language: { language: { eq: $language } } }
     ) {
       nodes {
-        id
-        title
-        slug
-        publishDate
-        year {
-          year
-        }
-        heroImage {
-          file {
-            url
-          }
-        }
-        content {
-          raw
-        }
+        ...NewsCard
       }
     }
   }

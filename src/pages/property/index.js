@@ -5,6 +5,7 @@ import { RiFilePdf2Line } from 'react-icons/ri';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 
 import Layout from '@components/layout';
+import Seo, { getLocaleStrings } from '@components/seo';
 import CardPhoto from '@components/card-photo';
 
 import BannerImage from '@media/common/banner.jpg';
@@ -173,17 +174,10 @@ export default function Property() {
   );
 }
 
-export function Head() {
-  return (
-    <>
-      <html lang='en' />
-      <title>The Property | Granada Gold Mine</title>
-      <meta
-        name='description'
-        content='The past-producing Granada Gold Property, 5 km south of Rouyn-Noranda, Quebec, on the prolific Cadillac Trend: project, geology, infrastructure, mine history and community.'
-      />
-    </>
-  );
+export function Head({ data, pageContext }) {
+  const strings = getLocaleStrings(data, 'property');
+
+  return <Seo pageContext={pageContext} title={strings.metaTitle} description={strings.metaDescription} />;
 }
 
 export const query = graphql`

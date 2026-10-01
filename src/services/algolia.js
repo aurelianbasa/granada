@@ -1,22 +1,27 @@
 const { documentToPlainTextString } = require('@contentful/rich-text-plain-text-renderer');
 
+// One record per post (EN and FR are separate entries); `language` is used to filter search
+// results to the visitor's language and `path` is the post's language-prefixed URL.
 const ALL_POSTS_QUERY = `
 {
   allContentfulPost {
-    edges {
-      node {
-        id
-        internal {
-          contentDigest
-        }
-        title
-        slug
-        year {
-          name
-        }
-        content {
-          raw
-        }
+    nodes {
+      id
+      internal {
+        contentDigest
+      }
+      title
+      slug
+      publishDate
+      sourceDate
+      year {
+        year
+      }
+      language {
+        language
+      }
+      content {
+        raw
       }
     }
   }
@@ -36,7 +41,7 @@ function parseRichText(raw) {
 
 const settings = {
   attributesToSnippet: ['content:20'],
-  attributeForDistinct: 'year',
+  attributesForFaceting: ['filterOnly(language)'],
 };
 
 const queries = [
@@ -45,16 +50,27 @@ const queries = [
     query: ALL_POSTS_QUERY,
     settings,
     transformer: ({ data }) =>
-      data.allContentfulPost.edges.map(({ node }) => ({
-        objectID: node.id,
-        internal: {
-          contentDigest: node.internal.contentDigest,
-        },
-        title: node.title,
-        slug: node.slug,
-        year: node.year?.name || '',
-        content: parseRichText(node.content?.raw),
-      })),
+      data.allContentfulPost.nodes
+        .filter((node) => node.slug && node.year?.year && node.language?.language)
+        .map((node) => {
+          const language = node.language.language;
+          const originalPath = `/news/${node.year.year}/${node.slug}/`;
+
+          return {
+            objectID: node.id,
+            internal: {
+              contentDigest: node.internal.contentDigest,
+            },
+            title: node.title,
+            slug: node.slug,
+            year: node.year.year,
+            language,
+            date: node.sourceDate || node.publishDate,
+            path: originalPath,
+            url: language === 'en' ? originalPath : `/${language}${originalPath}`,
+            content: parseRichText(node.content?.raw),
+          };
+        }),
   },
 ];
 
