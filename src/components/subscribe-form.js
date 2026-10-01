@@ -17,7 +17,10 @@ export default function SubscribeForm() {
     formData.append('form-name', 'Subscribe');
 
     try {
-      const response = await fetch('https://formspree.io/f/myzjgwzd', {
+      const formId = process.env.GATSBY_FORMSPREE_SUBSCRIBE_ID;
+      if (!formId) throw new Error('GATSBY_FORMSPREE_SUBSCRIBE_ID is not set');
+
+      const response = await fetch(`https://formspree.io/f/${formId}`, {
         method: 'POST',
         headers: {
           Accept: 'application/json',

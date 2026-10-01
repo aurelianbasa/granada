@@ -30,7 +30,10 @@ export default function Contact() {
     formData.append('form-name', 'Contact');
 
     try {
-      const response = await fetch('https://formspree.io/f/xbjvdkyj', {
+      const formId = process.env.GATSBY_FORMSPREE_CONTACT_ID;
+      if (!formId) throw new Error('GATSBY_FORMSPREE_CONTACT_ID is not set');
+
+      const response = await fetch(`https://formspree.io/f/${formId}`, {
         method: 'POST',
         headers: {
           Accept: 'application/json',

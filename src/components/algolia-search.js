@@ -60,6 +60,9 @@ export default function AlgoliaSearch() {
     setHits([]);
   };
 
+  // Search stays hidden until Granada's Algolia keys are configured.
+  if (!process.env.GATSBY_ALGOLIA_APP_ID || !process.env.GATSBY_ALGOLIA_SEARCH_KEY) return null;
+
   return (
     <div className='flex items-center'>
       <div

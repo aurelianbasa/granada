@@ -1,5 +1,9 @@
 require('dotenv').config({ path: `.env` });
 
+// Each integration only switches on once Granada's own keys are in .env (see SETUP.md).
+const hasContentful = Boolean(process.env.CONTENTFUL_SPACE_ID && process.env.CONTENTFUL_ACCESS_TOKEN);
+const hasAlgolia = Boolean(hasContentful && process.env.GATSBY_ALGOLIA_APP_ID && process.env.ALGOLIA_ADMIN_KEY);
+
 module.exports = {
   siteMetadata: {
     title: 'Granada Gold Mine',
@@ -9,15 +13,19 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     'gatsby-plugin-postcss',
-    {
-      resolve: 'gatsby-plugin-algolia',
-      options: {
-        appId: process.env.GATSBY_ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        chunkSize: 10000,
-        queries: require('./src/services/algolia.js'),
-      },
-    },
+    ...(hasAlgolia
+      ? [
+          {
+            resolve: 'gatsby-plugin-algolia',
+            options: {
+              appId: process.env.GATSBY_ALGOLIA_APP_ID,
+              apiKey: process.env.ALGOLIA_ADMIN_KEY,
+              chunkSize: 10000,
+              queries: require('./src/services/algolia.js'),
+            },
+          },
+        ]
+      : []),
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
@@ -91,13 +99,17 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      },
-    },
+    ...(hasContentful
+      ? [
+          {
+            resolve: `gatsby-source-contentful`,
+            options: {
+              spaceId: process.env.CONTENTFUL_SPACE_ID,
+              accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+            },
+          },
+        ]
+      : []),
     {
       resolve: `gatsby-transformer-remark`,
       options: {
