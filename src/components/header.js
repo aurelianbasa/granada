@@ -7,7 +7,84 @@ import { Popover, PopoverButton, PopoverPanel, Dialog, DialogPanel } from '@head
 import Button from '@components/button';
 import AlgoliaSearch from '@components/algolia-search';
 
-import logo from '@media/common/logo.svg';
+import logo from '@media/common/logo.png';
+
+const NAV = [
+  {
+    label: 'header.about',
+    items: [
+      ['header.aboutOverview', '/about#overview'],
+      ['header.directors', '/about#directors'],
+    ],
+  },
+  {
+    label: 'header.property',
+    items: [
+      ['header.propertyOverview', '/property#overview'],
+      ['header.project', '/property#project'],
+      ['header.geology', '/property#geology'],
+      ['header.infrastructure', '/property#infrastructure'],
+      ['header.history', '/property#history'],
+      ['header.community', '/property#community'],
+    ],
+  },
+  {
+    label: 'header.media',
+    items: [
+      ['header.maps', '/media?tab=0'],
+      ['header.images', '/media?tab=1'],
+    ],
+  },
+  {
+    label: 'header.investors',
+    items: [
+      ['header.stockInformation', '/investors#stockInformation'],
+      ['header.shareStructure', '/investors#shareStructure'],
+      ['header.financials', '/investors#financials'],
+      ['header.presentations', '/investors#presentations'],
+      ['header.technicalReports', '/investors#technicalReports'],
+      ['header.AGM', '/investors#AGM'],
+      ['header.analystCoverage', '/investors#analystCoverage'],
+    ],
+  },
+];
+
+function NavDropdown({ label, items }) {
+  const { t } = useTranslation();
+
+  return (
+    <Popover>
+      <PopoverButton className='relative' as='div'>
+        {({ hover }) => (
+          <>
+            <div className='flex cursor-pointer items-center gap-1 py-4 hover:text-primary'>
+              {t(label)}
+              <RiArrowDownSLine />
+            </div>
+            {hover && (
+              <AnimatePresence>
+                <PopoverPanel
+                  static
+                  as={motion.div}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  className='absolute left-1/2 z-50 flex w-max -translate-x-1/2 !transform flex-col gap-3 rounded-lg bg-white p-6 shadow-md'
+                >
+                  {items.map(([itemLabel, href]) => (
+                    <Link className='py-1 hover:text-primary' to={href} key={href}>
+                      {t(itemLabel)}
+                    </Link>
+                  ))}
+                </PopoverPanel>
+              </AnimatePresence>
+            )}
+          </>
+        )}
+      </PopoverButton>
+    </Popover>
+  );
+}
 
 export default function Header() {
   const { t, i18n } = useTranslation();
@@ -43,111 +120,19 @@ export default function Header() {
         <div className='container mx-auto flex justify-between px-5 md:px-10'>
           <div className='flex items-center'>
             <Link className='flex' to='/'>
-              <img className='w-40 md:w-48' src={logo} alt='Granada Gold Mine logo' />
+              <img className='h-16 w-auto' src={logo} alt='Granada Gold Mine logo' />
             </Link>
             <div className='ml-4 text-[10px] text-secondary'>
               TSX-V:
               <br />
-              COS
+              GGM
             </div>
           </div>
 
           <nav className='hidden gap-5 xl:flex'>
-            <Link className='py-4 hover:text-primary' to='/about'>
-              {t('header.about')}
-            </Link>
-            <Link className='py-4 hover:text-primary' to='/projects/graal'>
-              {t('header.projects')}
-            </Link>
-            <Link className='py-4 hover:text-primary' to='/critical-materials'>
-              {t('header.criticalMaterials')}
-            </Link>
-
-            <Popover>
-              <PopoverButton className='relative' as='div'>
-                {({ hover }) => (
-                  <>
-                    <div className='flex cursor-pointer items-center gap-1 py-4 hover:text-primary'>
-                      {t('header.media')}
-                      <RiArrowDownSLine />
-                    </div>
-                    {hover && (
-                      <AnimatePresence>
-                        <PopoverPanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, scale: 0.95 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          exit={{ opacity: 0, scale: 0.95 }}
-                          className='absolute left-1/2 z-50 flex w-max -translate-x-1/2 !transform flex-col gap-3 rounded-lg bg-white p-6 shadow-md'
-                        >
-                          <Link className='py-1 hover:text-primary' to='/media?tab=0'>
-                            {t('header.photoGallery')}
-                          </Link>
-                          <Link className='py-1 hover:text-primary' to='/media?tab=1'>
-                            {t('header.videos')}
-                          </Link>
-                          <Link className='py-1 hover:text-primary' to='/media?tab=2'>
-                            {t('header.featuredArticles')}
-                          </Link>
-                        </PopoverPanel>
-                      </AnimatePresence>
-                    )}
-                  </>
-                )}
-              </PopoverButton>
-            </Popover>
-
-            <Link className='py-4 hover:text-primary' to='/data'>
-              {t('header.data')}
-            </Link>
-
-            <Popover>
-              <PopoverButton className='relative' as='div'>
-                {({ hover }) => (
-                  <>
-                    <div className='flex cursor-pointer items-center gap-1 py-4 hover:text-primary'>
-                      {t('header.investors')}
-                      <RiArrowDownSLine />
-                    </div>
-                    {hover && (
-                      <AnimatePresence>
-                        <PopoverPanel
-                          static
-                          as={motion.div}
-                          initial={{ opacity: 0, scale: 0.95 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          exit={{ opacity: 0, scale: 0.95 }}
-                          className='absolute left-1/2 z-50 flex w-max -translate-x-1/2 !transform flex-col gap-3 rounded-lg bg-white p-6 shadow-md'
-                        >
-                          <Link className='py-1 hover:text-primary' to='/investors#stockInformation'>
-                            {t('header.stockInformation')}
-                          </Link>
-                          <Link className='py-1 hover:text-primary' to='/investors#capitalStructure'>
-                            {t('header.capitalStructure')}
-                          </Link>
-                          <Link className='py-1 hover:text-primary' to='/investors#financials'>
-                            {t('header.financials')}
-                          </Link>
-                          <Link className='py-1 hover:text-primary' to='/investors#files'>
-                            {t('header.presentations')}
-                          </Link>
-                          <Link className='py-1 hover:text-primary' to='/investors#files'>
-                            {t('header.technicalReports')}
-                          </Link>
-                          <Link className='py-1 hover:text-primary' to='/investors#AGM'>
-                            {t('header.AGM')}
-                          </Link>
-                          <Link className='py-1 hover:text-primary' to='/investors#coniagasFMV'>
-                            {t('header.coniagasFMV')}
-                          </Link>
-                        </PopoverPanel>
-                      </AnimatePresence>
-                    )}
-                  </>
-                )}
-              </PopoverButton>
-            </Popover>
+            {NAV.map((group) => (
+              <NavDropdown key={group.label} {...group} />
+            ))}
 
             <Popover>
               <PopoverButton className='relative' as='div'>
@@ -258,55 +243,17 @@ export default function Header() {
                 }}
                 className='relative flex size-full max-w-lg flex-col items-start overflow-y-auto bg-white p-10'
               >
-                <Link className='py-2 hover:text-primary' to='/about'>
-                  {t('header.about')}
-                </Link>
-                <Link className='py-2 hover:text-primary' to='/projects/graal'>
-                  {t('header.projects')}
-                </Link>
-                <Link className='py-2 hover:text-primary' to='/critical-materials'>
-                  {t('header.criticalMaterials')}
-                </Link>
+                {NAV.map(({ label, items }) => (
+                  <React.Fragment key={label}>
+                    <div className='py-2'>{t(label)}</div>
 
-                <div className='cursor-pointer py-2 hover:text-primary'>{t('header.media')}</div>
-
-                <Link className='py-2 pl-6 hover:text-primary' to='/media?tab=0'>
-                  {t('header.photoGallery')}
-                </Link>
-                <Link className='py-2 pl-6 hover:text-primary' to='/media?tab=1'>
-                  {t('header.videos')}
-                </Link>
-                <Link className='py-2 pl-6 hover:text-primary' to='/media?tab=2'>
-                  {t('header.featuredArticles')}
-                </Link>
-
-                <Link className='py-2 hover:text-primary' to='/data'>
-                  {t('header.data')}
-                </Link>
-
-                <div className='cursor-pointer py-2 hover:text-primary'>{t('header.investors')}</div>
-
-                <Link className='py-2 pl-6 hover:text-primary' to='/investors#stockInformation'>
-                  {t('header.stockInformation')}
-                </Link>
-                <Link className='py-2 pl-6 hover:text-primary' to='/investors#capitalStructure'>
-                  {t('header.capitalStructure')}
-                </Link>
-                <Link className='py-2 pl-6 hover:text-primary' to='/investors#financials'>
-                  {t('header.financials')}
-                </Link>
-                <Link className='py-2 pl-6 hover:text-primary' to='/investors#files'>
-                  {t('header.presentations')}
-                </Link>
-                <Link className='py-2 pl-6 hover:text-primary' to='/investors#files'>
-                  {t('header.technicalReports')}
-                </Link>
-                <Link className='py-2 pl-6 hover:text-primary' to='/investors#AGM'>
-                  {t('header.AGM')}
-                </Link>
-                <Link className='py-2 pl-6 hover:text-primary' to='/investors#coniagasFMV'>
-                  {t('header.coniagasFMV')}
-                </Link>
+                    {items.map(([itemLabel, href]) => (
+                      <Link className='py-2 pl-6 hover:text-primary' to={href} key={href} onClick={() => setIsOpen(false)}>
+                        {t(itemLabel)}
+                      </Link>
+                    ))}
+                  </React.Fragment>
+                ))}
 
                 <div className='cursor-pointer py-2 hover:text-primary'>{t('header.news')}</div>
 

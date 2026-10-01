@@ -1,26 +1,23 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import { Dialog, DialogPanel } from '@headlessui/react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
-import { RiPlayFill, RiFileChartLine, RiMailLine, RiCalendarEventLine } from 'react-icons/ri';
+import { RiFileChartLine, RiMailLine, RiMapPinLine } from 'react-icons/ri';
 
 import Layout from '@components/layout';
 import Button from '@components/button';
 import CardNews from '@components/card-news';
-import DataWrapper from '@components/data-wrapper';
-import DataCenterMap from '@components/data-center-map';
 
-import HeroImage from '@media/home/hero.webp';
-import MetalsImage from '@media/home/metals.webp';
-import MetalsProjectImage from '@media/home/metals-project.webp';
-import PresentationPDF from '@media/investors/presentation.pdf';
+import HeroImage from '@media/home/hero.jpg';
+import ProjectImage from '@media/property/project-site.jpg';
+import LocationImage from '@media/media/maps/mine-location.jpg';
+
+const PRESENTATION_PDF = '/documents/presentations/granada-corporate-presentation-2026-09.pdf';
 
 export default function Home({ data }) {
   const { t } = useTranslation();
 
   const posts = data.allPosts.nodes;
-  let [isOpenHeroPopup, setIsOpenHeroPopup] = React.useState(false);
 
   return (
     <Layout>
@@ -28,36 +25,23 @@ export default function Home({ data }) {
         style={{ '--bg-image-url': `url(${HeroImage})` }}
         className='flex bg-[image:var(--bg-image-url)] bg-cover bg-center'
       >
-        <div className='container mx-auto grid items-start gap-5 px-5 pb-10 pt-28 md:gap-10 md:px-10 md:pt-40 lg:grid-cols-2 lg:pt-52'>
-          <motion.div
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            initial={{ x: '-80px', opacity: 0 }}
-            whileInView={{ x: '0', opacity: 1 }}
-            className='order-2 flex flex-col items-start justify-center gap-4 text-left lg:order-1 lg:text-left'
-          >
-            <Trans parent='h1' i18nKey='heroTitle' className='text-6xl text-white'></Trans>
-
-            <p className='text-2xl text-tertiary'>{t('heroDescription')}</p>
-
-            <button
-              className='mt-6 flex items-center gap-2 rounded-lg bg-white px-6 py-4 text-left hover:shadow-button'
-              onClick={() => setIsOpenHeroPopup(true)}
+        <div className='flex w-full bg-black/40'>
+          <div className='container mx-auto grid items-start gap-5 px-5 pb-20 pt-36 md:gap-10 md:px-10 md:pt-48 lg:pb-32 lg:pt-56'>
+            <motion.div
+              transition={{ duration: 0.5, delay: 0.3 }}
+              initial={{ x: '-80px', opacity: 0 }}
+              animate={{ x: '0', opacity: 1 }}
+              className='flex max-w-4xl flex-col items-start justify-center gap-4 text-left'
             >
-              {t('heroButton')}
-              <RiPlayFill className='size-4' />
-            </button>
-          </motion.div>
+              <Trans parent='h1' i18nKey='heroTitle' className='text-5xl text-white md:text-6xl'></Trans>
 
-          <motion.div
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            initial={{ x: '80px', opacity: 0 }}
-            whileInView={{ x: '0', opacity: 1 }}
-            className='order-1 mx-auto flex max-w-[600px] items-center lg:order-2 lg:max-w-full'
-          >
-            <img src={MetalsProjectImage} alt='Metals project' />
-          </motion.div>
+              <p className='text-2xl text-white/80'>{t('heroDescription')}</p>
+
+              <Button className='mt-6' type='tertiary' href='/property'>
+                {t('heroButton')}
+              </Button>
+            </motion.div>
+          </div>
         </div>
       </div>
 
@@ -69,15 +53,15 @@ export default function Home({ data }) {
           whileInView={{ y: '0', opacity: 1 }}
           className='grid gap-16 rounded-2xl bg-white p-5 md:p-10 lg:grid-cols-2'
         >
-          <img className='rounded-lg' src={MetalsImage} alt='Metals' />
+          <img className='w-full rounded-lg object-cover' src={ProjectImage} alt='Granada Gold Project' />
 
           <div className='flex flex-col gap-4'>
-            <p className='text-tertiary'>{t('metalsSubTitle')}</p>
-            <Trans parent='h2' i18nKey='metalsTitle' className='text-4xl text-secondary'></Trans>
-            <Trans parent='p' i18nKey='metalsDescription' className='mt-2'></Trans>
+            <p className='text-tertiary'>{t('welcomeSubTitle')}</p>
+            <Trans parent='h2' i18nKey='welcomeTitle' className='text-4xl text-secondary'></Trans>
+            <Trans parent='p' i18nKey='welcomeDescription' className='mt-2'></Trans>
 
-            <Button className='mt-auto w-full self-end md:w-fit' type='primary-outlined' href='/projects/graal'>
-              {t('metalsButton')}
+            <Button className='mt-auto w-full self-end md:w-fit' type='primary-outlined' href='/about'>
+              {t('welcomeButton')}
             </Button>
           </div>
         </motion.div>
@@ -93,11 +77,13 @@ export default function Home({ data }) {
         <p className='text-tertiary'>{t('locationSubTitle')}</p>
         <Trans parent='h2' i18nKey='locationTitle' className='text-4xl text-secondary'></Trans>
 
-        <div className='my-6'>
-          <DataCenterMap />
-        </div>
+        <img className='my-6 w-full rounded-2xl bg-white' src={LocationImage} alt='Granada Mine Location' />
 
-        <Trans i18nKey='locationDescription'></Trans>
+        <p>{t('locationDescription')}</p>
+
+        <Button className='mt-4 w-full md:w-fit' type='primary-outlined' href='/property'>
+          {t('locationButton')}
+        </Button>
       </motion.div>
 
       <div className='bg-tertiary/10 py-20'>
@@ -115,16 +101,14 @@ export default function Home({ data }) {
                 <p className='text-2xl'>{t('card1Title')}</p>
               </div>
 
-              <div className='flex size-20 items-center justify-center rounded-full bg-tertiary/10'>
+              <div className='flex size-20 shrink-0 items-center justify-center rounded-full bg-tertiary/10'>
                 <RiFileChartLine className='size-10' />
               </div>
             </div>
 
-            <div className='flex flex-wrap gap-4'>
-              <Button className='grow' type='primary' href={PresentationPDF}>
-                {t('card1Button1')}
-              </Button>
-            </div>
+            <Button className='mt-auto w-full' external type='primary' href={PRESENTATION_PDF}>
+              {t('card1Button1')}
+            </Button>
           </motion.div>
 
           <motion.div
@@ -140,19 +124,17 @@ export default function Home({ data }) {
                 <p className='text-2xl'>{t('card2Title')}</p>
               </div>
 
-              <div className='flex size-20 items-center justify-center rounded-full bg-tertiary/10'>
+              <div className='flex size-20 shrink-0 items-center justify-center rounded-full bg-tertiary/10'>
                 <RiMailLine className='size-10' />
               </div>
             </div>
 
-            <Button
-              className='mt-auto w-full'
-              external
-              type='primary-outlined'
-              href='https://us21.list-manage.com/subscribe?u=e9b6857e0010b1af9e9be9433&id=a13478dbf4'
+            <a
+              className='mt-auto block w-full rounded-lg border-2 border-primary px-6 py-4 text-center text-primary hover:shadow-button'
+              href='#subscribe'
             >
               {t('card2Button')}
-            </Button>
+            </a>
           </motion.div>
 
           <motion.div
@@ -168,81 +150,15 @@ export default function Home({ data }) {
                 <p className='text-2xl'>{t('card3Title')}</p>
               </div>
 
-              <div className='flex size-20 items-center justify-center rounded-full bg-tertiary/10'>
-                <RiCalendarEventLine className='size-10' />
+              <div className='flex size-20 shrink-0 items-center justify-center rounded-full bg-tertiary/10'>
+                <RiMapPinLine className='size-10' />
               </div>
             </div>
 
-            <Button
-              className='mt-auto w-full'
-              external
-              type='primary-outlined'
-              href='https://calendly.com/aurelianbasa/30-minute-meeting?hide_event_type_details=1&hide_gdpr_banner=1'
-            >
+            <Button className='mt-auto w-full' type='primary-outlined' href='/contact'>
               {t('card3Button')}
             </Button>
           </motion.div>
-        </div>
-      </div>
-
-      <div className='bg-secondary'>
-        <div className='container mx-auto grid gap-5 px-5 py-20 md:px-10'>
-          <h2 className='text-center text-5xl text-white'>{t('worldTitle')}</h2>
-
-          <div className='relative flex h-24 justify-center overflow-hidden text-6xl text-white'>
-            <motion.p
-              className='absolute bg-copper'
-              animate={{ y: [100, 0, 0, -100] }}
-              transition={{ duration: 4, repeatDelay: 16, repeat: Infinity, repeatType: 'loop' }}
-            >
-              {t('metal1')}
-            </motion.p>
-
-            <motion.p
-              className='absolute bg-cobalt'
-              animate={{ y: [100, 0, 0, -100] }}
-              transition={{ duration: 4, delay: 4, repeatDelay: 16, repeat: Infinity, repeatType: 'loop' }}
-            >
-              {t('metal2')}
-            </motion.p>
-
-            <motion.p
-              className='absolute bg-nickel'
-              animate={{ y: [100, 0, 0, -100] }}
-              transition={{ duration: 4, delay: 8, repeatDelay: 16, repeat: Infinity, repeatType: 'loop' }}
-            >
-              {t('metal3')}
-            </motion.p>
-
-            <motion.p
-              className='absolute bg-platinum'
-              animate={{ y: [100, 0, 0, -100] }}
-              transition={{ duration: 4, delay: 12, repeatDelay: 16, repeat: Infinity, repeatType: 'loop' }}
-            >
-              {t('metal4')}
-            </motion.p>
-
-            <motion.p
-              className='absolute bg-palladium'
-              animate={{ y: [100, 0, 0, -100] }}
-              transition={{ duration: 4, delay: 16, repeatDelay: 16, repeat: Infinity, repeatType: 'loop' }}
-            >
-              {t('metal5')}
-            </motion.p>
-          </div>
-        </div>
-      </div>
-
-      <div className='container mx-auto px-5 py-20 md:px-10'>
-        <div className='grid gap-16 rounded-2xl bg-secondary p-4 md:p-8'>
-          <DataWrapper
-            title='Rising Demand for Metals in the Energy Transition'
-            src='https://datawrapper.dwcdn.net/y9pkI/6/?transparent=true'
-          ></DataWrapper>
-          <DataWrapper
-            title='Trillions of Potential Energy Transition Revenues'
-            src='https://datawrapper.dwcdn.net/EDlXO/2/?transparent=true'
-          ></DataWrapper>
         </div>
       </div>
 
@@ -253,9 +169,9 @@ export default function Home({ data }) {
           {posts?.map((post, index) => (
             <motion.div
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              initial={{ y: '80px', opacity: 0 }}
-              whileInView={{ y: '0', opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
+              initial={{ x: '80px', opacity: 0 }}
+              whileInView={{ x: '0', opacity: 1 }}
               key={index}
             >
               <CardNews
@@ -273,39 +189,6 @@ export default function Home({ data }) {
           {t('newsButton')}
         </Button>
       </div>
-
-      <AnimatePresence>
-        {isOpenHeroPopup && (
-          <Dialog static open={isOpenHeroPopup} onClose={() => setIsOpenHeroPopup(false)} className='relative z-50'>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className='fixed inset-0 bg-black/60'
-            />
-            <div className='fixed inset-0 flex w-screen items-center justify-center p-4'>
-              <DialogPanel
-                as={motion.div}
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.95 }}
-                className='size-11/12 overflow-hidden rounded-lg'
-              >
-                <iframe
-                  width='100%'
-                  height='100%'
-                  src='https://www.youtube.com/embed/uREYrLnWZ8E?si=Ysnge27lC_d8CWtG'
-                  title='YouTube video player'
-                  frameBorder='0'
-                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                  referrerPolicy='strict-origin-when-cross-origin'
-                  allowFullScreen
-                ></iframe>
-              </DialogPanel>
-            </div>
-          </Dialog>
-        )}
-      </AnimatePresence>
     </Layout>
   );
 }
@@ -317,7 +200,7 @@ export function Head() {
       <title>Home | Granada Gold Mine</title>
       <meta
         name='description'
-        content='Granada Gold Mine. Building the Next World Class Critical Metals Project along the North American Battery Corridor.'
+        content='Granada Gold Mine Inc. (TSX-V: GGM) is a Canadian junior mining and exploration company advancing the past-producing Granada Gold Property near Rouyn-Noranda, Quebec, on the prolific Cadillac Trend.'
       />
     </>
   );

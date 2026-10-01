@@ -5,17 +5,16 @@ import {
   RiHotelLine,
   RiMailSendLine,
   RiErrorWarningLine,
-  RiFileTransferLine,
   RiGitRepositoryLine,
   RiCheckboxCircleLine,
+  RiMapPinLine,
 } from 'react-icons/ri';
 import { motion } from 'framer-motion';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 
 import Layout from '@components/layout';
-import Button from '@components/button';
 
-import OverviewImage from '@media/contact/overview.webp';
+import BannerImage from '@media/common/banner.jpg';
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -62,11 +61,11 @@ export default function Contact() {
           transition={{ duration: 0.5, delay: 0.2 }}
           initial={{ x: '-80px', opacity: 0 }}
           whileInView={{ x: '0', opacity: 1 }}
-          className='flex flex-col justify-between gap-10 py-0 lg:min-h-[832px] lg:py-10'
+          className='flex flex-col justify-center gap-10 py-0 lg:py-10'
         >
           <div className='grid gap-4'>
             <p className='text-tertiary'>{t('contactSubtitle')}</p>
-            <h2 className='mb-4 text-4xl text-secondary'>{t('contactTitle')}</h2>
+            <h1 className='mb-4 text-4xl text-secondary'>{t('contactTitle')}</h1>
             <p>{t('contactDescription')}</p>
           </div>
           <div className='grid gap-4 text-secondary'>
@@ -97,14 +96,6 @@ export default function Contact() {
             </div>
           </div>
 
-          <Button
-            external
-            className='w-full self-start md:w-fit'
-            type='primary-outlined'
-            href='https://calendly.com/aurelianbasa/30-minute-meeting?hide_event_type_details=1&hide_gdpr_banner=1'
-          >
-            {t('bookButton')}
-          </Button>
         </motion.div>
 
         <motion.div
@@ -112,7 +103,7 @@ export default function Contact() {
           transition={{ duration: 0.5, delay: 0.2 }}
           initial={{ x: '80px', opacity: 0 }}
           whileInView={{ x: '0', opacity: 1 }}
-          className='flex min-h-[600px] flex-col gap-6 rounded-2xl bg-white p-5 md:p-10 lg:min-h-[832px]'
+          className='flex min-h-[600px] flex-col gap-6 rounded-2xl bg-white p-5 md:p-10'
         >
           <div className='grid gap-4'>
             <p className='text-tertiary'>{t('formSubtitle')}</p>
@@ -186,10 +177,10 @@ export default function Contact() {
       </div>
 
       <div
-        style={{ '--bg-image-url': `url(${OverviewImage})` }}
+        style={{ '--bg-image-url': `url(${BannerImage})` }}
         className={`bg-[image:var(--bg-image-url)] bg-cover bg-center py-20`}
       >
-        <div className='container mx-auto grid gap-6 px-5 md:grid-cols-2 md:px-10 lg:grid-cols-3'>
+        <div className='container mx-auto grid gap-6 px-5 md:grid-cols-2 md:px-10'>
           <motion.div
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -198,30 +189,25 @@ export default function Contact() {
             className='rounded-lg bg-white p-5 md:p-10'
           >
             <div className='mb-4 flex items-center justify-between gap-6 text-secondary'>
-              <p className='text-2xl'>{t('auditors')}</p>
-              <div className='flex size-20 items-center justify-center rounded-full bg-tertiary/10'>
-                <RiGitRepositoryLine className='size-10' />
+              <div>
+                <p className='text-2xl'>{t('miningOffice')}</p>
+                <p className='text-tertiary'>{t('miningOfficeSubtitle')}</p>
+              </div>
+              <div className='flex size-20 shrink-0 items-center justify-center rounded-full bg-tertiary/10'>
+                <RiMapPinLine className='size-10' />
               </div>
             </div>
 
-            <Trans i18nKey='auditorsAddress' className='mb-6'></Trans>
+            <Trans i18nKey='miningOfficeAddress' className='mb-6'></Trans>
 
             <p>
-              <span className='text-tertiary'>{t('auditorsPhoneTitle')}</span>
-              <a className='hover:text-primary' href='tel:+16045593511'>
-                {t('auditorsPhone')}
+              <a className='hover:text-primary' href='tel:+18197974144'>
+                {t('miningOfficePhone1')}
               </a>
             </p>
             <p>
-              <span className='text-tertiary'>{t('auditorsFaxTitle')}</span>
-              <a className='hover:text-primary' href='tel:+16045593501'>
-                {t('auditorsFax')}
-              </a>
-            </p>
-            <p>
-              <span className='text-tertiary'>{t('auditorsEmailTitle')}</span>
-              <a className='hover:text-primary' href='mailto:office@shimaccounting.com'>
-                {t('auditorsEmail')}
+              <a className='hover:text-primary' href='tel:+18197622306'>
+                {t('miningOfficePhone2')}
               </a>
             </p>
           </motion.div>
@@ -235,42 +221,12 @@ export default function Contact() {
           >
             <div className='mb-4 flex items-center justify-between gap-6'>
               <p className='text-2xl'>{t('office')}</p>
-              <div className='flex size-20 items-center justify-center rounded-full bg-tertiary/10 text-tertiary'>
+              <div className='flex size-20 shrink-0 items-center justify-center rounded-full bg-tertiary/10 text-tertiary'>
                 <RiHotelLine className='size-10' />
               </div>
             </div>
 
             <Trans i18nKey='officeAddress' className='mb-6'></Trans>
-          </motion.div>
-
-          <motion.div
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            initial={{ x: '80px', opacity: 0 }}
-            whileInView={{ x: '0', opacity: 1 }}
-            className='rounded-lg bg-white p-5 md:p-10'
-          >
-            <div className='mb-4 flex items-center justify-between gap-6 text-secondary'>
-              <p className='text-2xl'>{t('transfer')}</p>
-              <div className='flex size-20 items-center justify-center rounded-full bg-tertiary/10'>
-                <RiFileTransferLine className='size-10' />
-              </div>
-            </div>
-
-            <Trans i18nKey='transferAddress' className='mb-6'></Trans>
-
-            <p>
-              <span className='text-tertiary'>{t('transferPhoneTitle')}</span>
-              <a className='hover:text-primary' href='tel:604-661-9400'>
-                {t('transferPhone')}
-              </a>
-            </p>
-            <p>
-              <span className='text-tertiary'>{t('transferFaxTitle')}</span>
-              <a className='hover:text-primary' href='tel:604-661-9401'>
-                {t('transferFax')}
-              </a>
-            </p>
           </motion.div>
         </div>
       </div>
@@ -283,7 +239,10 @@ export function Head() {
     <>
       <html lang='en' />
       <title>Contact | Granada Gold Mine</title>
-      <meta name='description' content='Granada Gold Mine. Have some feedback for us?.' />
+      <meta
+        name='description'
+        content='Contact Granada Gold Mine Inc.: mining office in Rouyn-Noranda, Quebec, head office in Maple Ridge, British Columbia, and corporate communications.'
+      />
     </>
   );
 }

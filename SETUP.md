@@ -59,18 +59,9 @@ Granada's Contentful space needs these content types (field IDs must match):
 The year links in the header (`src/components/header.js`) and the homepage "View All" button
 (`/news/2026`) are hard-coded and should be updated as years are added.
 
-## Content still to migrate
+## Content
 
-Page copy lives in `locales/en/*.json` and `locales/fr/*.json`. Images live in
-`src/media/` and data files in `static/`. Coniagas-specific pages (for example
-`/projects/graal/` and `/critical-materials/`) should be renamed or removed as part of
-the content migration.
-
-Page titles, meta-description prefixes, logo alt text, the manifest and the news share URL
-already say Granada Gold Mine. Coniagas references that are company content and still need
-replacing:
-
-- `src/components/footer.js`: social links (Twitter, LinkedIn, Facebook, YouTube) point to Coniagas accounts
-- `src/pages/investors/index.js`: TradingView widget is for `TSXV:COS`; `#coniagasFMV` anchor (also linked from the header)
-- `src/pages/about/index.js` and `src/pages/critical-materials/index.js`: Coniagas-specific copy and meta descriptions
-- Logos, favicon and imagery in `src/media/`
+Non-news content (company and property copy, logo, photographs, maps, presentation, financial
+reports, technical report, AGM and community documents) has been migrated from the Granada
+website archive. See [MIGRATION.md](MIGRATION.md) for what moved where and the content
+decisions still open. News releases are still placeholders (see above).

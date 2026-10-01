@@ -69,6 +69,8 @@ export default function SubscribeForm() {
       </form>
 
       {message && !isSuccess && <div className='text-center text-sm text-primary'>{message}</div>}
+
+      <p className='text-sm text-tertiary'>{t('footer.subscribeConsent')}</p>
     </div>
   );
 }
