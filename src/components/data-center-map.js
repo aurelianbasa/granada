@@ -116,7 +116,7 @@ export default function DataCenterMap() {
       <svg className='w-full' viewBox={scene.viewBox} role='img' aria-label={t('mapLegend')}>
         <g>
           {scene.land.map((d, i) => (
-            <path key={i} d={d} fill='#b1c3cd' fillOpacity='0.35' stroke='#fff' strokeWidth='1' />
+            <path key={i} d={d} fill='#b5ada7' fillOpacity='0.35' stroke='#fff' strokeWidth='1' />
           ))}
         </g>
         <g>
@@ -126,9 +126,9 @@ export default function DataCenterMap() {
               cx={b.x}
               cy={b.y}
               r={b.r}
-              fill='#458e98'
+              fill='#d79c00'
               fillOpacity='0.34'
-              stroke='#458e98'
+              stroke='#d79c00'
               strokeOpacity='0.5'
               strokeWidth='0.7'
             />
@@ -139,15 +139,15 @@ export default function DataCenterMap() {
             x={-legendMaxR}
             y={-2 * legendMaxR - 14}
             fontSize='13'
-            fill='#30444e'
+            fill='#5e514d'
             style={{ textTransform: 'uppercase', letterSpacing: '0.08em' }}
           >
             {t('mapLegend')}
           </text>
           {scene.legend.map((l) => (
             <React.Fragment key={l.value}>
-              <circle cy={-l.r} r={l.r} fill='none' stroke='#458e98' strokeOpacity='0.7' strokeWidth='1' />
-              <text x={legendMaxR + 8} y={-2 * l.r + 4} fontSize='12' fill='#30444e'>
+              <circle cy={-l.r} r={l.r} fill='none' stroke='#d79c00' strokeOpacity='0.7' strokeWidth='1' />
+              <text x={legendMaxR + 8} y={-2 * l.r + 4} fontSize='12' fill='#5e514d'>
                 {fmt(l.value)}
               </text>
             </React.Fragment>

@@ -19,9 +19,9 @@ module.exports = {
       sm: ['12px', { lineHeight: '16px', fontWeight: 400 }],
     },
     colors: {
-      primary: '#458e98', // green dark
-      secondary: '#30444e', // gray dark
-      tertiary: '#b1c3cd', // gray light
+      primary: '#d79c00', // Granada gold
+      secondary: '#5e514d', // Granada brown-grey
+      tertiary: '#b5ada7', // warm gray light
 
       blue: '#0047AB',
       silver: '#d8d8d8',
@@ -34,7 +34,7 @@ module.exports = {
       palladium: '#87868a',
 
       white: '#fff',
-      whiteLight: '#F4F7F8',
+      whiteLight: '#F5F5F4',
       black: '#231f20',
       transparent: 'transparent',
     },
