@@ -323,7 +323,7 @@ export function Head() {
   return (
     <>
       <html lang='en' />
-      <title>The Graal Project | Coniagas Battery Metals</title>
+      <title>The Graal Project | Granada Gold Mine</title>
       <meta
         name='description'
         content='We are advancing the Graal project towards production to meet the rising demand for Critical Minerals from Safe Jurisdictions.'

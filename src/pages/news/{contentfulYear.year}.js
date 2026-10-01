@@ -52,8 +52,8 @@ export function Head() {
   return (
     <>
       <html lang='en' />
-      <title>News | Coniagas Battery Metals</title>
-      <meta name='description' content='Coniagas Battery Metals. Press Releases.' />
+      <title>News | Granada Gold Mine</title>
+      <meta name='description' content='Granada Gold Mine. Press Releases.' />
     </>
   );
 }

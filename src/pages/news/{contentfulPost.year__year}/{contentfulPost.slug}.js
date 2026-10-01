@@ -173,7 +173,7 @@ export function Head({ data, location }) {
       <meta name='description' content={data.contentfulPost.title} />
 
       <meta name='twitter:card' content='summary' />
-      <meta property='og:url' content={`https://coniagas.com${location.pathname}`} />
+      <meta property='og:url' content={`https://granadagoldmine.com${location.pathname}`} />
       <meta property='og:title' content={data.contentfulPost.title} />
       <meta property='og:description' content={data.contentfulPost.title} />
       <meta

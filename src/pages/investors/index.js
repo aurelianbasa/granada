@@ -442,8 +442,8 @@ export function Head() {
   return (
     <>
       <html lang='en' />
-      <title>Investors | Coniagas Battery Metals</title>
-      <meta name='description' content='Coniagas Battery Metals. Find all of our relevant data.' />
+      <title>Investors | Granada Gold Mine</title>
+      <meta name='description' content='Granada Gold Mine. Find all of our relevant data.' />
     </>
   );
 }

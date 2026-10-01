@@ -314,10 +314,10 @@ export function Head() {
   return (
     <>
       <html lang='en' />
-      <title>Home | Coniagas Battery Metals</title>
+      <title>Home | Granada Gold Mine</title>
       <meta
         name='description'
-        content='Coniagas Battery Metals. Building the Next World Class Critical Metals Project along the North American Battery Corridor.'
+        content='Granada Gold Mine. Building the Next World Class Critical Metals Project along the North American Battery Corridor.'
       />
     </>
   );

@@ -282,8 +282,8 @@ export function Head() {
   return (
     <>
       <html lang='en' />
-      <title>Contact | Coniagas Battery Metals</title>
-      <meta name='description' content='Coniagas Battery Metals. Have some feedback for us?.' />
+      <title>Contact | Granada Gold Mine</title>
+      <meta name='description' content='Granada Gold Mine. Have some feedback for us?.' />
     </>
   );
 }

@@ -352,7 +352,7 @@ export function Head() {
   return (
     <>
       <html lang='en' />
-      <title>Critical Materials | Coniagas Battery Metals</title>
+      <title>Critical Materials | Granada Gold Mine</title>
       <meta
         name='description'
         content='Not every critical mineral market is still winnable. Copper and nickel are. Coniagas Battery Metals, TSXV: COS.'

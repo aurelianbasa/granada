@@ -28,9 +28,36 @@ keys are filled in. Copy `.env.EXAMPLE` to `.env` to start.
 Never reuse Coniagas's Algolia admin key. A build with it would overwrite Coniagas's live
 search index.
 
-When Granada's Contentful space is ready, its content model must match what the queries
-expect: `post` (title, slug, publishDate, year → `year`, language → `language`, heroImage,
-content as rich text) and `year` (year: Int, name).
+Coniagas had no analytics or tracking scripts, so there was nothing to remove.
+
+## News structure (for the content migration)
+
+News comes from Contentful only. Until Granada's space is connected, `gatsby-node.js`
+generates **temporary local placeholder posts**: two per language, dated 2026, plus year
+pages for 2023–2026 so the header's year links work. They disappear automatically once
+`CONTENTFUL_SPACE_ID` and `CONTENTFUL_ACCESS_TOKEN` are set.
+
+Granada's Contentful space needs these content types (field IDs must match):
+
+**`year`**
+| Field | Type | Notes |
+| --- | --- | --- |
+| `year` | Integer | e.g. `2026`; drives `/news/<year>/` |
+| `name` | Short text | e.g. `"2026"`; used by the search index |
+
+**`post`**
+| Field | Type | Notes |
+| --- | --- | --- |
+| `title` | Short text | |
+| `slug` | Short text | unique; URL is `/news/<year>/<slug>/` |
+| `publishDate` | Date & time | newest first everywhere |
+| `year` | Reference → `year` | |
+| `language` | Reference → an entry with a `language` text field | value `en` or `fr`; filters posts per site language |
+| `heroImage` | Media (image) | card thumbnail and social share image |
+| `content` | Rich text | embedded images supported |
+
+The year links in the header (`src/components/header.js`) and the homepage "View All" button
+(`/news/2026`) are hard-coded and should be updated as years are added.
 
 ## Content still to migrate
 
@@ -38,3 +65,12 @@ Page copy lives in `locales/en/*.json` and `locales/fr/*.json`. Images live in
 `src/media/` and data files in `static/`. Coniagas-specific pages (for example
 `/projects/graal/` and `/critical-materials/`) should be renamed or removed as part of
 the content migration.
+
+Page titles, meta-description prefixes, logo alt text, the manifest and the news share URL
+already say Granada Gold Mine. Coniagas references that are company content and still need
+replacing:
+
+- `src/components/footer.js`: social links (Twitter, LinkedIn, Facebook, YouTube) point to Coniagas accounts
+- `src/pages/investors/index.js`: TradingView widget is for `TSXV:COS`; `#coniagasFMV` anchor (also linked from the header)
+- `src/pages/about/index.js` and `src/pages/critical-materials/index.js`: Coniagas-specific copy and meta descriptions
+- Logos, favicon and imagery in `src/media/`

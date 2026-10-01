@@ -172,7 +172,7 @@ export function Head() {
   return (
     <>
       <html lang='en' />
-      <title>About | Coniagas Battery Metals</title>
+      <title>About | Granada Gold Mine</title>
       <meta
         name='description'
         content='The name Coniagas spells out the key products according to symbols of periodic table: Cobalt, Nickel, Silver, and Arsenic.'

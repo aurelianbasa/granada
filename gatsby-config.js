@@ -37,6 +37,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
+        name: 'Granada Gold Mine',
+        short_name: 'Granada',
         icon: 'src/media/common/favicon.png',
       },
     },

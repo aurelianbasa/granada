@@ -225,8 +225,8 @@ export function Head() {
   return (
     <>
       <html lang='en' />
-      <title>Data | Coniagas Battery Metals</title>
-      <meta name='description' content='Coniagas Battery Metals. MHY Zone, Gravi Zone and Discovery Zone.' />
+      <title>Data | Granada Gold Mine</title>
+      <meta name='description' content='Granada Gold Mine. MHY Zone, Gravi Zone and Discovery Zone.' />
     </>
   );
 }

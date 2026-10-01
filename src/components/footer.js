@@ -22,7 +22,7 @@ export default function Footer() {
       <div className='container mx-auto grid gap-10 px-5 py-10 lg:grid-cols-2 lg:gap-0 lg:px-10'>
         <div className='flex flex-col items-center gap-10 lg:items-start'>
           <Link className='flex' to='/'>
-            <img className='min-w-40 lg:min-w-48' src={logo} alt='Coniagas logo' />
+            <img className='min-w-40 lg:min-w-48' src={logo} alt='Granada Gold Mine logo' />
           </Link>
 
           <SubscribeForm></SubscribeForm>

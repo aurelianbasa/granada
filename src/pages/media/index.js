@@ -299,7 +299,7 @@ export function Head() {
   return (
     <>
       <html lang='en' />
-      <title>Media | Coniagas Battery Metals</title>
+      <title>Media | Granada Gold Mine</title>
       <meta name='description' content='Media of drill core at Graal and from the Graal property.' />
     </>
   );
