@@ -2,8 +2,8 @@ require('dotenv').config({ path: `.env` });
 
 module.exports = {
   siteMetadata: {
-    title: 'Coniagas',
-    siteUrl: 'https://coniagas.com',
+    title: 'Granada Gold Mine',
+    siteUrl: 'https://granadagoldmine.com',
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://coniagas.com',
-        sitemap: 'https://coniagas.com/sitemap-0.xml',
+        host: 'https://granadagoldmine.com',
+        sitemap: 'https://granadagoldmine.com/sitemap-0.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

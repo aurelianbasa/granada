@@ -1,4 +1,4 @@
-<h1 align="center">Coniagas</h1>
+<h1 align="center">Granada Gold Mine</h1>
 
 ## Development requirements
 

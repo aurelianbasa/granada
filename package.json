@@ -1,11 +1,11 @@
 {
-  "name": "coniagas",
+  "name": "granada",
   "version": "0.0.1",
   "private": true,
-  "description": "Coniagas",
+  "description": "Granada Gold Mine",
   "author": "Ditych",
   "keywords": [
-    "coniagas"
+    "granada"
   ],
   "scripts": {
     "develop": "gatsby develop",
