@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const legacyRedirects = require('./src/data/legacy-redirects.json');
+const legacyNewsUrls = require('./src/data/legacy-news-urls.json');
 
 const LANGUAGES = ['en', 'fr'];
 const DEFAULT_LANGUAGE = 'en';
@@ -20,15 +21,15 @@ const FIXTURE_STATIC_DIR = '__news-fixture';
 // Field storage mirrors gatsby-source-contentful 8: links live in `<field>___NODE`.
 const NEWS_TYPES = `
   type ContentfulYear implements Node {
-    contentful_id: String
-    node_locale: String
+    contentful_id: String!
+    node_locale: String!
     name: String
     year: Int
   }
 
   type ContentfulLanguage implements Node {
-    contentful_id: String
-    node_locale: String
+    contentful_id: String!
+    node_locale: String!
     language: String
   }
 
@@ -40,8 +41,8 @@ const NEWS_TYPES = `
   }
 
   type ContentfulAsset implements Node {
-    contentful_id: String
-    node_locale: String
+    contentful_id: String!
+    node_locale: String!
     title: String
     description: String
     file: ContentfulAssetFile
@@ -53,8 +54,8 @@ const NEWS_TYPES = `
   }
 
   type ContentfulPost implements Node {
-    contentful_id: String
-    node_locale: String
+    contentful_id: String!
+    node_locale: String!
     title: String
     slug: String
     publishDate: Date @dateformat
@@ -65,7 +66,6 @@ const NEWS_TYPES = `
     year: ContentfulYear @link(by: "id", from: "year___NODE")
     language: ContentfulLanguage @link(by: "id", from: "language___NODE")
     heroImage: ContentfulAsset @link(by: "id", from: "heroImage___NODE")
-    attachments: [ContentfulAsset] @link(by: "id", from: "attachments___NODE")
     content: ContentfulPostContent
   }
 `;
@@ -161,7 +161,6 @@ function sourceFixture({ entries = [], assets = [] }, create, nodeId) {
       year___NODE: link(value(fields, 'year')),
       language___NODE: link(value(fields, 'language')),
       heroImage___NODE: link(value(fields, 'heroImage')),
-      attachments___NODE: (value(fields, 'attachments') || []).map(link),
       content: { raw: JSON.stringify(document), references___NODE: [...referenceIds] },
     });
   });
@@ -216,14 +215,20 @@ const withLanguage = (language, originalPath) =>
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
-  // Server redirects for the hosting adapter, plus client-side fallbacks for static hosting.
-  const createRedirect = (redirect) => actions.createRedirect({ isPermanent: true, redirectInBrowser: true, ...redirect });
+  // Server redirects for the hosting adapter. The same map is written to /legacy-redirects.json,
+  // which the 404 page uses as a fallback on hosts without redirect support.
+  const redirectMap = {};
+  const createRedirect = (redirect) => {
+    redirectMap[redirect.fromPath] = redirect.toPath;
+    actions.createRedirect({ isPermanent: true, ...redirect });
+  };
 
   const result = await graphql(`
     {
       allContentfulPost(sort: { publishDate: DESC }) {
         nodes {
           id
+          contentful_id
           title
           slug
           sourceUrl
@@ -261,6 +266,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     byTranslationKey[post.translationKey][post.language.language] = post;
   });
 
+  const pathByEntryId = {};
+  const legacyNewsPaths = [...legacyNewsUrls.routes];
+
   LANGUAGES.forEach((language) => {
     const languagePosts = posts.filter((post) => post.language.language === language);
 
@@ -269,9 +277,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       const pagePath = withLanguage(language, originalPath);
       const counterparts = (post.translationKey && byTranslationKey[post.translationKey]) || {};
 
-      // Corresponding release in each language, or that language's archive for the year.
+      // Only languages this release really exists in (its translationKey counterpart).
       const alternates = Object.fromEntries(
-        LANGUAGES.map((lng) => [lng, counterparts[lng] ? postOriginalPath(counterparts[lng]) : `/news/${post.year.year}/`])
+        LANGUAGES.filter((lng) => counterparts[lng]).map((lng) => [lng, postOriginalPath(counterparts[lng])])
       );
       alternates[language] = originalPath;
 
@@ -291,7 +299,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           previous: neighbour(languagePosts[index + 1]),
           next: neighbour(languagePosts[index - 1]),
           alternates,
-          hasCounterpart: Object.keys(counterparts).length > 1,
           // Pre-set i18n context so gatsby-plugin-react-i18next neither duplicates this page into
           // other languages nor redirects visitors to a non-existent translated path.
           i18n: {
@@ -306,14 +313,29 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         },
       });
 
-      if (post.sourceUrl) {
-        const fromPath = new URL(post.sourceUrl).pathname;
-        if (fromPath !== pagePath) {
-          createRedirect({ fromPath, toPath: pagePath });
-        }
-      }
+      pathByEntryId[post.contentful_id] = pagePath;
+      if (post.sourceUrl) legacyNewsPaths.push({ from: new URL(post.sourceUrl).pathname, entryId: post.contentful_id });
     });
   });
+
+  // Old granadagoldmine.com release addresses -> the entry's new route. Codex's legacy map includes
+  // old French routes that only repeated an English release; those point to the English entry.
+  const redirected = new Set();
+  let unmatchedLegacy = 0;
+  legacyNewsPaths.forEach(({ from, entryId }) => {
+    const toPath = pathByEntryId[entryId];
+    if (!toPath) {
+      unmatchedLegacy += 1;
+      return;
+    }
+    if (from === toPath || redirected.has(from)) return;
+    redirected.add(from);
+    createRedirect({ fromPath: from, toPath });
+  });
+  reporter.info(`News: ${posts.length} posts, ${redirected.size} legacy release redirects`);
+  if (unmatchedLegacy && Object.keys(pathByEntryId).length > 20) {
+    reporter.warn(`News: ${unmatchedLegacy} legacy release URLs have no matching entry in this build`);
+  }
 
   // Old granadagoldmine.com news indexes, including /news/archive/YYYY/.
   const latestYear = result.data.allContentfulYear.nodes[0]?.year;
@@ -329,4 +351,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Old granadagoldmine.com pages and documents (see src/data/legacy-redirects.json).
   legacyRedirects.forEach(({ from, to }) => createRedirect({ fromPath: from, toPath: to }));
+
+  fs.mkdirSync(path.join(__dirname, 'public'), { recursive: true });
+  fs.writeFileSync(path.join(__dirname, 'public', 'legacy-redirects.json'), JSON.stringify(redirectMap));
 };

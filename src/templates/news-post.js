@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 import { documentToPlainTextString } from '@contentful/rich-text-plain-text-renderer';
 import { TwitterShareButton, LinkedinShareButton, FacebookShareButton } from 'react-share';
-import { RiTwitterXFill, RiLinkedinFill, RiFacebookFill, RiTimeLine, RiFilePdf2Line } from 'react-icons/ri';
+import { RiTwitterXFill, RiLinkedinFill, RiFacebookFill, RiTimeLine } from 'react-icons/ri';
 
 import Layout from '@components/layout';
 import RichText from '@components/rich-text';
@@ -29,7 +29,6 @@ export default function NewsPost({ data, location, pageContext }) {
   const formatDate = (item) => formatPostDate(item, i18n.language);
 
   const showHero = isImageAsset(post.heroImage) && !isSmallImage(post.heroImage);
-  const attachments = (post.attachments || []).filter((asset) => getAssetUrl(asset));
   const url = location?.href;
 
   return (
@@ -129,29 +128,6 @@ export default function NewsPost({ data, location, pageContext }) {
         </div>
 
         <div>
-          {attachments.length > 0 && (
-            <div className='mb-10 rounded-lg bg-white px-8 py-10'>
-              <h2 className='mb-6 text-2xl text-secondary'>{t('postDownloads')}</h2>
-
-              <ul className='grid gap-4'>
-                {attachments.map((asset) => (
-                  <li key={asset.contentful_id}>
-                    <a
-                      className='flex items-start gap-3 hover:text-primary'
-                      href={getAssetUrl(asset)}
-                      target='_blank'
-                      rel='noreferrer'
-                      type={asset.file.contentType}
-                    >
-                      <RiFilePdf2Line className='mt-1 size-5 shrink-0 text-primary' />
-                      <span className='break-all'>{asset.title || asset.file.fileName}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
           {relatedPosts.length > 0 && <h2 className='mb-10 text-3xl text-primary'>{t('relatedPosts')}</h2>}
 
           {relatedPosts.map((related, index) => (
@@ -199,10 +175,6 @@ export function Head({ data, pageContext }) {
   }
 
   const image = isImageAsset(post.heroImage) && !isSmallImage(post.heroImage) ? getAssetUrl(post.heroImage) : undefined;
-  const hreflang = pageContext.hasCounterpart
-    ? pageContext.alternates
-    : { [pageContext.language]: pageContext.alternates[pageContext.language] };
-
   return (
     <Seo
       pageContext={pageContext}
@@ -210,7 +182,7 @@ export function Head({ data, pageContext }) {
       description={description}
       image={image && image.startsWith('http') ? image : undefined}
       type='article'
-      alternates={hreflang}
+      alternates={pageContext.alternates}
     >
       {post.sourceDate && <meta property='article:published_time' content={post.sourceDate} />}
     </Seo>
@@ -243,15 +215,6 @@ export const query = graphql`
           url
           contentType
           details
-        }
-      }
-      attachments {
-        contentful_id
-        title
-        file {
-          url
-          fileName
-          contentType
         }
       }
       content {

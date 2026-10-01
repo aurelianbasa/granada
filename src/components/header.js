@@ -12,6 +12,7 @@ import { usePageContext } from '@components/page-context';
 import logo from '@media/common/logo.png';
 
 const SITE_LANGUAGES = ['en', 'fr'];
+// News releases pass `alternates` with only the languages they exist in; other pages offer both.
 
 const NAV = [
   {
@@ -95,16 +96,20 @@ export default function Header() {
   const { originalPath } = useI18next();
   const { alternates } = usePageContext();
 
-  // Archive years come from Contentful's Year entries, newest first.
-  const newsYears = useStaticQuery(graphql`
+  // Archive years that have releases in the current language, newest first.
+  const newsYearsByLanguage = useStaticQuery(graphql`
     query HeaderNewsYears {
-      allContentfulYear(sort: { year: DESC }) {
-        nodes {
-          year
-        }
+      en: allContentfulPost(filter: { language: { language: { eq: "en" } } }) {
+        distinct(field: { year: { year: SELECT } })
+      }
+      fr: allContentfulPost(filter: { language: { language: { eq: "fr" } } }) {
+        distinct(field: { year: { year: SELECT } })
       }
     }
-  `).allContentfulYear.nodes.map(({ year }) => year);
+  `);
+  const newsYears = (newsYearsByLanguage[i18n.language] || newsYearsByLanguage.en).distinct
+    .map(Number)
+    .sort((a, b) => b - a);
 
   const [isOpen, setIsOpen] = React.useState(false);
   const [scrollYPosition, setScrollYPosition] = React.useState(0);
@@ -206,7 +211,7 @@ export default function Header() {
                         anchor='bottom'
                         className='z-50 flex flex-col gap-3 rounded-lg bg-white p-6 shadow-md'
                       >
-                        {SITE_LANGUAGES.map((lang) => (
+                        {SITE_LANGUAGES.filter((lang) => !alternates || alternates[lang]).map((lang) => (
                           <Link
                             className='cursor-pointer py-1 hover:text-primary'
                             key={lang}

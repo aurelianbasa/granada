@@ -1,5 +1,4 @@
 import React from 'react';
-import { RiFilePdf2Line, RiFileDownloadLine } from 'react-icons/ri';
 import { BLOCKS, INLINES } from '@contentful/rich-text-types';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
 
@@ -26,18 +25,14 @@ const linkProps = (uri = '') => {
   return { href: uri, target: '_blank', rel: 'noreferrer' };
 };
 
+// Image-only asset hyperlinks (links to an original figure) open the image. News carries no
+// downloadable files: any other linked asset renders as its plain text.
 function AssetLink({ asset, children }) {
-  const url = getAssetUrl(asset);
-
-  // Unresolved asset (unpublished or missing): keep the text, drop the link.
-  if (!url) return <span>{children}</span>;
-
-  const isPdf = asset.file.contentType === 'application/pdf';
+  if (!isImageAsset(asset) || !getAssetUrl(asset)) return <>{children}</>;
 
   return (
-    <a href={url} target='_blank' rel='noreferrer' type={asset.file.contentType} title={asset.title || undefined}>
+    <a href={getAssetUrl(asset)} target='_blank' rel='noreferrer'>
       {children}
-      {isPdf && <RiFilePdf2Line className='ml-1 inline size-4 align-text-bottom' aria-label='PDF' />}
     </a>
   );
 }
@@ -66,36 +61,28 @@ const options = {
     [BLOCKS.TABLE_CELL]: (node, children) => <td {...cellSpans(node)}>{children}</td>,
     [BLOCKS.TABLE_HEADER_CELL]: (node, children) => <th {...cellSpans(node)}>{children}</th>,
 
+    // Inline figures only; non-image assets are never rendered as downloads.
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
       const asset = node.data.target;
-      if (!getAssetUrl(asset)) return null;
-
-      if (isImageAsset(asset)) {
-        return (
-          <figure>
-            <img
-              className='mx-auto rounded-lg'
-              src={imageSrc(asset, 1400)}
-              alt={asset.description || asset.title || ''}
-              loading='lazy'
-            />
-          </figure>
-        );
-      }
+      if (!isImageAsset(asset) || !getAssetUrl(asset)) return null;
 
       return (
-        <p>
-          <AssetLink asset={asset}>
-            <RiFileDownloadLine className='mr-2 inline size-5 align-text-bottom' />
-            {asset.title || asset.file.fileName}
-          </AssetLink>
-        </p>
+        <figure>
+          <img
+            className='mx-auto rounded-lg'
+            src={imageSrc(asset, 1400)}
+            alt={asset.description || asset.title || ''}
+            loading='lazy'
+          />
+        </figure>
       );
     },
 
     [INLINES.ASSET_HYPERLINK]: (node, children) => <AssetLink asset={node.data.target}>{children}</AssetLink>,
 
-    [INLINES.HYPERLINK]: (node, children) => <a {...linkProps(node.data.uri)}>{children}</a>,
+    // Historical PDF addresses stay as plain text rather than links.
+    [INLINES.HYPERLINK]: (node, children) =>
+      /\.pdf($|[?#])/i.test(node.data.uri || '') ? <>{children}</> : <a {...linkProps(node.data.uri)}>{children}</a>,
   },
 };
 

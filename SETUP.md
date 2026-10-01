@@ -35,7 +35,9 @@ Coniagas had no analytics or tracking scripts, so there was nothing to remove.
 News comes from Contentful only; see [NEWS-INTEGRATION.md](NEWS-INTEGRATION.md) for the content
 model, routing, rendering and the connected-test checklist. Modes, in order of precedence:
 
-1. **Connected**: `CONTENTFUL_SPACE_ID` and `CONTENTFUL_ACCESS_TOKEN` set. Published entries only.
+1. **Connected**: `CONTENTFUL_SPACE_ID` and `CONTENTFUL_ACCESS_TOKEN` set. With the default host and a
+   Delivery token, published entries only. With `CONTENTFUL_HOST=preview.contentful.com` and a Preview
+   token, drafts too (local review only). The local `.env` is currently in this Preview mode.
 2. **Local fixture**: `NEWS_FIXTURE=/path/to/pilot-import.json` (a Contentful import/export file
    with its `assets/` folder next to it). Assets are copied to the git-ignored
    `static/__news-fixture/`. Used to verify Codex's draft entries before they're published.

@@ -117,6 +117,8 @@ module.exports = {
               environment: process.env.CONTENTFUL_ENVIRONMENT || 'master',
               // 'preview.contentful.com' + a Content Preview API token shows drafts (local review only).
               host: process.env.CONTENTFUL_HOST || 'cdn.contentful.com',
+              // Rich-text releases with large tables exceed Contentful's response size at the default 1000.
+              pageLimit: 250,
             },
           },
         ]

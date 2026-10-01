@@ -1,0 +1,3645 @@
+{
+"source": "Codex \"Legacy news URL map.json\", generated 2026-10-01T15:30:34.907Z",
+"routes": [
+{
+"from": "/en/news/2014/gold-bullion-adopts-advance-notice-policy/",
+"entryId": "granada-post-ef55261f92e5224a8934b8b6",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-adopts-new-shareholder-rights-plan/",
+"entryId": "granada-post-1e05b66142d95490338103bb",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-announces-director-resignation/",
+"entryId": "granada-post-47a39528141dddeb49755b4c",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-announces-filing-of-pre-feasibility-study-pfs-phase-1-open-pit-and-filing-of-the-request-for-certificate-of/",
+"entryId": "granada-post-269009302baf80065a0b3390",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-announces-mou-with-iamgold/",
+"entryId": "granada-post-812d44dae52e06285424c3ab",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-announces-positive-material-changes-for-mineral-resources-in-the-rolling-start/",
+"entryId": "granada-post-aec0b047c011ca5cbb889f43",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-announces-receipt-of-authorization-for-locating-rolling-start-mining-waste/",
+"entryId": "granada-post-c1f3ac83d35193790ef2e2d9",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-announces-results-of-2014-annual-general-and-special-meeting/",
+"entryId": "granada-post-094c15d9979ad757d9e7ee37",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-announces-signing-of-a-communications-protocol-with-timiskaming-first-nation/",
+"entryId": "granada-post-07b2d2948de6524c0877b7c1",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-announces-signing-of-custom-milling-agreement-with-iamgold-westwood-mill-and-the-filing-of-its-request-for/",
+"entryId": "granada-post-8b3d562a95c3998894a082dd",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-announces-trenching-results-with-highlights-of-108.6-g-t-au-on-1-m-channel/",
+"entryId": "granada-post-a914e46ecd0ea3d8b1b5fd6d",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-clarifies-disclosure-following-bcsc-review/",
+"entryId": "granada-post-4dbf3a0947b274fa3e89d467",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-closes-first-tranche-of-private-placement/",
+"entryId": "granada-post-7cf338262ae85adc36b2542c",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-closes-non-brokered-private-placement-and-retains-marketing-and-investors-relations-consultants/",
+"entryId": "granada-post-27f20aef58ad189ffcf68eec",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-closes-private-placement/",
+"entryId": "granada-post-db25c53dd0a6fda639771c6c",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-closes-second-and-final-tranche-of-private-placement/",
+"entryId": "granada-post-3eab5ecf960ea61a9ac7357e",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-discovers-new-gold-and-copper-occurrence-on-its-castle-mine-property/",
+"entryId": "granada-post-1deda4ddb8e926d9906ec785",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-grants-stock-options/",
+"entryId": "granada-post-6eb079abb54d343b17a5b245",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-moving-forward-on-the-granada-mine-rolling-start/",
+"entryId": "granada-post-25858040d7733309c882a450",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-progress-update-on-granada-gold-property-permits-certificate-of-authorization-and-rolling-start/",
+"entryId": "granada-post-b0d2a05a321cd93ee6312388",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-receives-positive-pre-feasibility-study-for-the-rolling-start-to-gold-production-at-granada/",
+"entryId": "granada-post-696007f7ea29f9f69a98a9a3",
+"alias": false
+},
+{
+"from": "/en/news/2014/gold-bullion-update-on-community-impact-of-the-rolling-start-at-granada/",
+"entryId": "granada-post-6ab8343d31a526bb6084c50d",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-achieves-up-to-97-gold-recovery-in-metallurgical-test-work/",
+"entryId": "granada-post-34ff915c804284bac03840a0",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-announces-closing-of-castle-silver-mines-inc-acquisition-by-takara-resources-inc/",
+"entryId": "granada-post-5d755596cca301bf8b6c1421",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-announces-filing-of-43-101-technical-report-on-the-castle-silver-property-gowganda-ontario/",
+"entryId": "granada-post-da7e65712152bca914faea21",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-announces-mineralized-material-ready-for-transport/",
+"entryId": "granada-post-f9fd98507e340b71ff447439",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-announces-results-of-2015-annual-general-meeting/",
+"entryId": "granada-post-b17024d3bca608e51859adf8",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-announces-share-consolidation/",
+"entryId": "granada-post-6c6dbfa12eee2f5a02c0a376",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-announces-signing-of-amended-and-restated-share-purchase-agreement-and-conditional-approval-of-share-purchase/",
+"entryId": "granada-post-9bd708b24da45cfd0ddfc269",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-announces-signing-of-definitive-agreement-with-takara-resources-inc/",
+"entryId": "granada-post-3da9542890dd5d2c74e94e8c",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-clarifies-shareholder-loan-terms/",
+"entryId": "granada-post-bfd562da115b9036f5ddad45",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-commences-2015-exploration-at-granada-in-advance-of-planned-high-grade-rolling-production-start/",
+"entryId": "granada-post-2436708f17cb193f8b08b00a",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-development-enters-assignment-agreement-to-sell-beaver-and-violet-properties-to-takara-resources-inc/",
+"entryId": "granada-post-42fb11bc8c2087aa42c459f7",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-earns-nsr-on-castle-silver-mines-inc/",
+"entryId": "granada-post-42be55fc6ce2f5e392d7e62e",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-enters-into-loi-with-takara-resources-inc-to-spin-out-castle-silver-mines-inc/",
+"entryId": "granada-post-b26db3b9b1676eaffbb67d34",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-enters-into-shareholder-loan-agreements/",
+"entryId": "granada-post-7dcba81b12bd12cffdbcfc61",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-identifies-new-gold-bearing-structures-at-castle-property-including-3.77-g-t-over-1.27-m/",
+"entryId": "granada-post-82fc04b846b070a2c0cfb6f4",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-provides-operations-and-finance-update/",
+"entryId": "granada-post-c41c17a1343345b4003effc8",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-receives-wood-cutting-permit-for-site-clearing-in-preparation-for-gold-production-at-granada/",
+"entryId": "granada-post-7d0b04b8d04eacb8a69c0482",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-retains-stirling-merchant-capital-inc/",
+"entryId": "granada-post-386eb73ba8549ba4162746fd",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-settles-lawsuit-with-genivar-inc/",
+"entryId": "granada-post-6c8d77a8577c6aac876d9f0b",
+"alias": false
+},
+{
+"from": "/en/news/2015/gold-bullion-signs-mou-on-granada-project-with-timiskaming-first-nations/",
+"entryId": "granada-post-ba52df719e0d1aabd791eea5",
+"alias": false
+},
+{
+"from": "/en/news/2015/surface-grades-of-6.05-g-t-au-over-8-metres-in-channel-sampling-at-granada/",
+"entryId": "granada-post-a7ff53ebc84d6bdc482b1bb1",
+"alias": false
+},
+{
+"from": "/en/news/2015/westwood-mill-permitted-to-process-granada-ore/",
+"entryId": "granada-post-1d174462a6b9228f3973ed23",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-acquires-interest-in-high-grade-gold-target-next-to-past-producing-silver-mine/",
+"entryId": "granada-post-5a9afcd0ab804a213a9ec3bf",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-announces-200-000-flow-through-private-placement/",
+"entryId": "granada-post-ef333da25e469e09d2cff65b",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-announces-750-000-private-placement/",
+"entryId": "granada-post-a0204b1ee237c8bc3adc26cb",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-announces-915-137-private-placement/",
+"entryId": "granada-post-2c06bdeabf770b005d3325db",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-announces-a-deep-hole-drill-program-targeting-a-significant-resource-expansion-in-the-northern-part-of-the-granada/",
+"entryId": "granada-post-649f4c33e33c34effeff87d6",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-announces-plans-for-a-new-exploration-program-targeting-a-signifcant-expansion-of-the-granada-gold-deposit/",
+"entryId": "granada-post-cefdb2c5418c2838fd8d5cbf",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-announces-results-of-2016-annual-general-meeting/",
+"entryId": "granada-post-0cf11be0ca36bbfa96925d94",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-appoints-corporate-secretary/",
+"entryId": "granada-post-e8eecf5ccd5262787cd44a20",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-closes-2.4-million-flow-through-private-placement/",
+"entryId": "granada-post-9e3e76c2a9ac35fa611951ca",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-closes-200-000-flow-through-unit-private-placement/",
+"entryId": "granada-post-754c58019d7945ef59b1505b",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-closes-230-181-flow-through-and-non-flow-through-unit-private-placement/",
+"entryId": "granada-post-4d563c65816dd1e4e3e71434",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-closes-804-000-flow-through-unit-private-placement/",
+"entryId": "granada-post-2d50b711aeb30b26de8e2ccf",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-closes-920-137.15-private-placement/",
+"entryId": "granada-post-88f54af8ec09d3ca3f67c14e",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-declares-dividend-correction-from-source/",
+"entryId": "granada-post-1c42a745ffa7b1853af0086a",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-declares-dividend/",
+"entryId": "granada-post-d66ae8ab48baf4b2921fd513",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-development-and-takara-resources-announce-plans-for-geophysical-survey-at-the-castle-silver-cobalt-gold-property/",
+"entryId": "granada-post-218ac1581eb0eef815c39c3f",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-development-enters-into-processing-agreement-with-qmx-gold/",
+"entryId": "granada-post-qmx-processing-2016-01-13-en",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-development-granted-environmental-certificate-of-authorization-permit-for-gold-production-at-granada/",
+"entryId": "granada-post-bc88f7f702ff5856ca1aaa5e",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-discovers-new-mineralized-high-grade-zone-at-the-granada-gold-deposit-mini-bulk-sample-averages-4.37-grams-per/",
+"entryId": "granada-post-ed43708bdd1b1cdb5e934d49",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-intersects-3.62-g-t-au-over-15-metres-including-43.58-g-t-au-over-1-metre-and-extends-the-drill-program-at-granada/",
+"entryId": "granada-post-bd19b7983c5f77dc86101b17",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-oversubscribes-and-closes-830-000-private-placement/",
+"entryId": "granada-post-b9aa5c9989f2a854a08dbbfc",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-provides-update-on-granada-gold-mine/",
+"entryId": "granada-post-165196f629e468796c593aa4",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-retains-investor-relations-consultant-and-posts-updated-corporate-presentation/",
+"entryId": "granada-post-e8b6c8a53518ee3e3df519f3",
+"alias": false
+},
+{
+"from": "/en/news/2016/gold-bullion-retracts-updated-mineral-resources-estimates-of-may-26th-2015-in-previous-news-releases/",
+"entryId": "granada-post-c712b03b81469b7ae1e072ea",
+"alias": false
+},
+{
+"from": "/en/news/2017/gold-bullion-announces-name-change-to-granada-gold-mine-inc/",
+"entryId": "granada-post-49f91a2bf5a92a8b61dcda8b",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-amends-convertible-notes-and-enters-into-shares-for-debt-agreements/",
+"entryId": "granada-post-6248830e81d9878d5b581aaa",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-announces-consolidation-and-post-consolidated-financing/",
+"entryId": "granada-post-2ac90f09a6fbc6ef7d9f6b33",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-announces-loan/",
+"entryId": "granada-post-a8aa4b1c9eb31d449fc4c2fc",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-closes-flow-through-financing/",
+"entryId": "granada-post-36372a6816101d0bdeb00baa",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-effects-consolidation/",
+"entryId": "granada-post-7ec4e37c7cdc12c53761b9e8",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-enters-into-services-contract-with-wimmer-financial/",
+"entryId": "granada-post-2adb346f7cb54a632f6effaa",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-gold-mine-2017-agm-results/",
+"entryId": "granada-post-56fc6b131443e199cc72095b",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-gold-mine-announces-dividend-dates/",
+"entryId": "granada-post-ab96e5c432a1f952a8043285",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-gold-mine-announces-earlier-dates-for-dividend-payments/",
+"entryId": "granada-post-2c1992fb2901c4f7eace912c",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-gold-mine-announces-letter-of-intent-from-dra-americas-inc-to-act-as-technical-advisor-in-the-development-of-the/",
+"entryId": "granada-post-903f2d915a6ef9165022b1ca",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-gold-mine-announces-successful-drill-test-results-confirming-gold-mineralization-near-surface-and-new-geological-model/",
+"entryId": "granada-post-aa01d782a14a8d54a823084b",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-gold-mine-enters-into-loi-with-temagami-first-nation-and-teme-augama-anishnabai/",
+"entryId": "granada-post-bb2136217d7a5fac31f7364c",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-gold-mine-gold-property-on-the-cadillac-trend-in-quebec-receives-trenching-and-drilling-permit-for-the-aukeko-gold-mine/",
+"entryId": "granada-post-ffc341ee1ca13dc355b186ae",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-gold-mine-grants-stock-options/",
+"entryId": "granada-post-2eb94b8444c01cb2a29a637c",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-gold-mine-intersects-14.5-g-t-au-over-4-metres-including-55.9-g-t-over-1-metre-in-deep-hole-drilling-at-the-footwall-of/",
+"entryId": "granada-post-05def97514fc8f494027a95b",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-gold-mine-to-drill-test-new-geological-model-associated-with-the-porphyry-intrusion-between-pfs-pit-and-old-pit-1/",
+"entryId": "granada-post-ce6a8623ce001f189e04facf",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-gold-moves-quickly-on-turnkey-solution-to-boost-potential-gold-production-at-granada-mine/",
+"entryId": "granada-post-1dc457f4d443f7f6a526427c",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-gold-outlines-robust-open-pit-and-high-grade-underground-resources-at-granada/",
+"entryId": "granada-post-26e0dfd697ab37f314b61cfd",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-gold-sedar-files-ni-43-101-technical-report-for-updated-granada-resource-estimate/",
+"entryId": "granada-post-5f00191f3442f4ebed9c068e",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-signs-mou-with-csr-for-granada-processing/",
+"entryId": "granada-post-89a4d844b5ff21e070607ed7",
+"alias": false
+},
+{
+"from": "/en/news/2017/granada-signs-provisional-milling-agreement-with-castle-silver-resources/",
+"entryId": "granada-post-f1a0236d5d2734513936bf74",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-amends-warrants/",
+"entryId": "granada-post-832f1e22b6d02d08f8adbac7",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-announces-private-placement/",
+"entryId": "granada-post-ae155d4e9357281113593c00",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-clarification-and-retraction-of-technical-disclosure/",
+"entryId": "granada-post-55f0db3d0b1d4f4f2257bb57",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-closes-1st-tranche-private-placement/",
+"entryId": "granada-post-9dbb4dd2b645370d0aa3cd41",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-closes-flow-through-private-placement/",
+"entryId": "granada-post-4a6a6bbbec492bc418bd8b84",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-closes-private-placement-2018-11-06/",
+"entryId": "granada-post-e3137f1c3e9ed14db931364c",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-closes-private-placement/",
+"entryId": "granada-post-2731ff815993d165648905d8",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-gold-chooses-ausenco-for-feasibility-study-on-open-pit-mine/",
+"entryId": "granada-post-af74688e71f1a3d137511574",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-gold-drills-5.07-g-t-over-11-meters-at-granada/",
+"entryId": "granada-post-e0b6ce5904582bf5553da2fe",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-gold-mine-announces-date-for-dividend-payments/",
+"entryId": "granada-post-b9c71c64ed1038aa9f58143d",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-gold-mine-announces-dividend-dates/",
+"entryId": "granada-post-ff0ddd387bda02c92bb0ff23",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-gold-mine-corporate-update/",
+"entryId": "granada-post-af882b202369e6b20eb68570",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-gold-mine-finds-gold-with-trenching-at-aukeko/",
+"entryId": "granada-post-8bbfaf0c95c776da91d246f4",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-gold-mine-intersects-8.49-g-t-over-0.5m-in-trenching-at-aukeko/",
+"entryId": "granada-post-ebd65da5ec842bba5e4002e7",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-gold-mine-prepares-for-trenching-and-drilling-at-aukeko-and-submits-request-to-drill-austin-rouyn/",
+"entryId": "granada-post-5d16d1efd5f4782b309c7c8e",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-gold-mine-starts-drilling-at-granada-and-announces-financing/",
+"entryId": "granada-post-67e1b117d2b6a6e4f3b19433",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-gold-mine-starts-exploration-program-on-eastern-extension-of-long-bars-zone-at-aukeko/",
+"entryId": "granada-post-348304336c3179af8ba3e2c0",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-gold-receives-updated-pit-constrained-mineral-resources-at-granada/",
+"entryId": "granada-post-3c1b8cfd9188e3a19a4f9b02",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-increases-private-placement/",
+"entryId": "granada-post-babddbc608f97e5113d341c4",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-issues-shares-for-debt/",
+"entryId": "granada-post-00f08baeb2c11157fcc59169",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-issues-shares-for-services/",
+"entryId": "granada-post-96fdcca03db6ec0b7dc50c2c",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-oversubscribes-and-closes-2nd-tranche-private-placement/",
+"entryId": "granada-post-5f40f4ebf3dea4329d120429",
+"alias": false
+},
+{
+"from": "/en/news/2018/granada-reports-agm-results/",
+"entryId": "granada-post-bc82779d43588bf36de8199f",
+"alias": false
+},
+{
+"from": "/en/news/2019/drill-program-at-granada-gold-mine-begins-on-near-surface-mineralized-structures/",
+"entryId": "granada-post-ebec825870b7a12e2196e3a5",
+"alias": false
+},
+{
+"from": "/en/news/2019/granada-announces-private-placement/",
+"entryId": "granada-post-417f6381558ee4a19402df28",
+"alias": false
+},
+{
+"from": "/en/news/2019/granada-closes-flow-through-private-placement/",
+"entryId": "granada-post-4ec2910b790f27b2bcf4e8b3",
+"alias": false
+},
+{
+"from": "/en/news/2019/granada-gold-drills-8.39-g-t-gold-over-6-meters-at-granada-project-below-pit-constrained-resources/",
+"entryId": "granada-post-98a6cec6fb814292d29aa801",
+"alias": false
+},
+{
+"from": "/en/news/2019/granada-gold-grants-stock-options/",
+"entryId": "granada-post-cfbf577caf78a63eb7045450",
+"alias": false
+},
+{
+"from": "/en/news/2019/granada-gold-mine-announces-date-for-dividend-payments/",
+"entryId": "granada-post-0ed83d6ec6b2c675a23fd144",
+"alias": false
+},
+{
+"from": "/en/news/2019/granada-gold-mine-announces-dividend-dates/",
+"entryId": "granada-post-2e7e2e97ec55dd079901dbbf",
+"alias": false
+},
+{
+"from": "/en/news/2019/granada-gold-mine-announces-filing-of-ni-43-101-technical-report-for-the-granada-gold-project-quebec-with-restated-resource/",
+"entryId": "granada-post-42ea35721b45b761a9055bc7",
+"alias": false
+},
+{
+"from": "/en/news/2019/granada-gold-mine-invites-investors-to-meet-management-at-pdac-booth-2738/",
+"entryId": "granada-post-f73369c6446c161c8f0fd898",
+"alias": false
+},
+{
+"from": "/en/news/2019/granada-gold-outlines-expanded-metallurgical-test-program-for-the-recovery-of-low-grade-gold-cobalt-and-nickel/",
+"entryId": "granada-post-ef4c1e46275bbb124cfbe588",
+"alias": false
+},
+{
+"from": "/en/news/2019/granada-gold-plans-2019-activities-makes-management-changes/",
+"entryId": "granada-post-bdd09fc4dbcbabafc2f10527",
+"alias": false
+},
+{
+"from": "/en/news/2019/granada-gold-provides-exploration-update-for-2019/",
+"entryId": "granada-post-8712fe1faa90cf23b75ac53e",
+"alias": false
+},
+{
+"from": "/en/news/2019/granada-hits-from-surface-high-grade-material-of-7.67-g-t-au-over-15-meters-in-drill-hole-gr-19-c-on-the-extended-long-bars-zone/",
+"entryId": "granada-post-6b6a0de8b9ed1fef7b4c6e10",
+"alias": false
+},
+{
+"from": "/en/news/2019/granada-hits-near-surface-high-grade-material-of-48-g-t-au-over-0.5-meter-in-drill-hole-gr-19-e-on-the-extended-long-bars-zone/",
+"entryId": "granada-post-58c90ec5b9378f47f66166c5",
+"alias": false
+},
+{
+"from": "/en/news/2019/granada-increases-and-closes-private-placement-for-925-380/",
+"entryId": "granada-post-1107a7885ad8826d3c7536f8",
+"alias": false
+},
+{
+"from": "/en/news/2019/granada-reports-agm-results/",
+"entryId": "granada-post-744c40d8938581930b8da2aa",
+"alias": false
+},
+{
+"from": "/en/news/2019/pre-concentration-test-results-on-low-grade-mineralization-at-granada-gold-mine-return-6.0-grams-per-tonne-gold/",
+"entryId": "granada-post-9d9b31fd1fd3718cbc37d793",
+"alias": false
+},
+{
+"from": "/en/news/2019/pre-concentration-tests-of-low-grade-gold-mineralization-at-granada-gold-mine-shows-potential-to-deliver-higher-grade/",
+"entryId": "granada-post-e838973028aa849c6ca48a9b",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-55.56-g-t-over-3-meters-from-1220-kg-surface-grab-sample-adds-second-drill/",
+"entryId": "granada-post-1f784ed7a8c10c847b9b9460",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-closes-1st-tranche-financing/",
+"entryId": "granada-post-26dbe1d2f2b68b7cce33f2c0",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-closes-1st-tranche-private-placement-with-a-lead-order-from-palisades-goldcorp-ltd/",
+"entryId": "granada-post-57a447ea8beb54fe67b63ada",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-closes-2nd-and-final-tranche-of-its-financing/",
+"entryId": "granada-post-814fb1da67766cf50aed2953",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-closes-final-tranche-financing/",
+"entryId": "granada-post-b79cebc7bcdf0084be8ec372",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-closes-flow-through-private-placement-2020-12-23/",
+"entryId": "granada-post-2bec1148bea61cfdeece2ff4",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-closes-flow-through-private-placement/",
+"entryId": "granada-post-74e6bb8288ccbfd761be9a14",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-completes-sale-of-back-in-option-to-canada-silver-cobalt/",
+"entryId": "granada-post-11656f97f73200f81acf8289",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-gold-announces-passing-of-cfo-tom-devlin/",
+"entryId": "granada-post-8dec4744cc01faee8b2f49ac",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-gold-mine-continues-to-intersect-high-grade-gold-near-surface-within-500-meters-strike-length-in-the-longbars-zone/",
+"entryId": "granada-post-4d374dd0f2c12d3fd3135863",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-gold-mine-intersects-11.45-g-t-gold-over-33-meters-supports-continuity-of-high-grade-structures/",
+"entryId": "granada-post-048c2d6bd595e968ef56a4f1",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-gold-mine-to-begin-bulk-sample-program-of-high-grade-mineralized-structures-at-surface/",
+"entryId": "granada-post-6343fd4d23093129bdd31e9d",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-gold-outlines-2020-high-grade-exploration-program/",
+"entryId": "granada-post-23274daa7994a81387d6bd0f",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-gold-to-participate-in-john-tumazos-mining-conference-research-webinar-august-14-at-10-am-eastern/",
+"entryId": "granada-post-639850dd634e8cdbab6e8055",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-hits-2.39g-t-gold-over-29-meters-near-surface-including-7.72-g-t-over-4.5-meters-7.29-g-t-over-5.02-meters/",
+"entryId": "granada-post-d4177c2a0746e75931d411da",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-hits-3.66-g-t-gold-over-26.5-meters-near-surface-including-13.49-g-t-over-4-meters-29.8-g-t-over-1.5-meters/",
+"entryId": "granada-post-2ed1d0711e47a834730eea10",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-hits-5.64-g-t-gold-over-6.86-meters-including-20.4-g-t-gold-over-1.5-meters/",
+"entryId": "granada-post-116ab88701fa49d5b7d90c22",
+"alias": false
+},
+{
+"from": "/en/news/2020/granada-reports-agm-results/",
+"entryId": "granada-post-033da531ab9355cdf6df7a21",
+"alias": false
+},
+{
+"from": "/en/news/2020/innovexplo-begins-revised-43-101-resource-study-at-granada/",
+"entryId": "granada-post-424cf774ac5c722f05d6e991",
+"alias": false
+},
+{
+"from": "/en/news/2020/tetra-tech-begins-studies-for-on-site-mill-at-granada/",
+"entryId": "granada-post-526d11d7fe1c35fcf6495302",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-adds-3rd-drill-for-deep-drilling-of-10-000-meters/",
+"entryId": "granada-post-2367faac24768479ce487fa0",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-closes-1-000-000-flow-through-private-placement/",
+"entryId": "granada-post-fa3ad50b7810c8d5f25596e4",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-closes-private-placement/",
+"entryId": "granada-post-959e72703413fda5432ae2dd",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-announces-appointment-of-new-cfo/",
+"entryId": "granada-post-23a63230a4147d452d8b79d4",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-closes-1-350-000-flow-through-and-unit-private-placement/",
+"entryId": "granada-post-c2fe2e7f4c3f4511f4d355f8",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-closes-600-000-flow-through-private-placement/",
+"entryId": "granada-post-2dadff976c2bc9b640a92df0",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-discovers-high-value-rare-earth-and-alkali-metals/",
+"entryId": "granada-post-02c20e82ddf13df2fd90caba",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-hits-3.43g-t-gold-over-20.5-meters-near-surface-and-6.45-g-t-over-4.5-meters-and-7.9-g-t-over-3-meters/",
+"entryId": "granada-post-8caa25eb95d95a731b740a7f",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-hits-7.63-g-t-gold-over-5-meters-including-53.5-g-t-over-0.65-meters-during-infill-drill-program/",
+"entryId": "granada-post-8cf9d04cd1765adf29364786",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-hits-massive-rare-earth-and-alkali-metals-zone-1.6-kilometers-from-discovery-hole-gr-20-20/",
+"entryId": "granada-post-c7f54a9f73b3707b6881dc03",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-intersects-1.11-g-t-gold-over-109.60m-and-53.70-g-t-au-over-0.65m-and-7.19-g-t-gold-over-8.85m-in-200-series-drill/",
+"entryId": "granada-post-bfe45e9cd5e04ef18ef56604",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-intersects-12.61g-t-gold-over-16.5-meters-and-3.49g-t-gold-over-30.5-meters-within-a-greater-1.33g-t-gold-over/",
+"entryId": "granada-post-06f27a87fbd927cae1ed0bcf",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-intersects-5.5-g-t-au-over-6-meters-including-31.3-g-t-au-over-1-meter-during-infill-drilling/",
+"entryId": "granada-post-cefeb2392c6abdc7d584e2b5",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-intersects-significant-gold-mineralization-up-to-2.77-g-t-au-over-8.45m-and-21.50-g-t-au-over-0.70m-under-orphan/",
+"entryId": "granada-post-33827013f588fc69794ff9a2",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-intersects-up-to-7.16-g-t-over-5.60m-and-95.00-g-t-gold-over-0.50m-in-drill-program-update/",
+"entryId": "granada-post-fcd3661978a20d98fab8eeab",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-mine-announces-filing-of-ni-43-101-technical-report-for-the-granada-gold-project-quebec-with-updated-high-grade/",
+"entryId": "granada-post-4afbde72f6e30feda4de5172",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-mine-announces-that-canada-silver-cobalt-begins-testwork-using-re-2ox-on-granadas-rubidium-mineralized-material/",
+"entryId": "granada-post-0ab26cfbe20cc926ffa8634b",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-mine-canada-silver-cobalt-joint-release-on-re-2ox-and-recovery-of-critical-us-strategic-metals/",
+"entryId": "granada-post-cb0866400cb3d1c8a5fc27c7",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-mine-engages-goldspot-discoveries-to-apply-ai-to-further-extend-granada-golds-resources-along-strike/",
+"entryId": "granada-post-cd9d1388a18f180e76941171",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-mine-extends-warrant-terms/",
+"entryId": "granada-post-7a9b9f8b8d254ddf98f83760",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-mine-gets-10-year-extension-on-mining-lease-bm-852-at-the-granada-mine-property-and-takes-500-tonne-bulk-sample/",
+"entryId": "granada-post-4fbc9c9d96723684b9d8c236",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-mine-prepares-to-extract-bulk-sample-on-extension-of-high-grade-zone-on-mining-lease-bm-813-in-2022/",
+"entryId": "granada-post-7aa3370caa74cafecfe4f518",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-mine-proceeds-with-metallurgical-and-environmental-studies-for-on-site-milling-at-granada/",
+"entryId": "granada-post-2711ace5edd602c9dc18920a",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-mines-continues-to-intersects-gold-in-multiple-veins-at-depth/",
+"entryId": "granada-post-51db6f4d2dde836d0ca09610",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-pre-concentration-test-work-shows-potential-to-increase-in-situ-historical-resource-estimate-and-gold-grade/",
+"entryId": "granada-post-e44589ff0dbf8736af33f00b",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-gold-to-participate-in-john-tumazos-mining-conference-webinar-on-february-16-at-8-30-am-eastern/",
+"entryId": "granada-post-b96947ab20a9f270ff1d0629",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-hits-107.8-g-t-gold-over-4-meters-including-multiple-high-grade-veins-at-depth/",
+"entryId": "granada-post-3799d4a87a824d6a18eed6b0",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-presents-updated-high-grade-mineral-resource-estimate/",
+"entryId": "granada-post-resource-estimate-2021-01-29-en",
+"alias": false
+},
+{
+"from": "/en/news/2021/granada-reports-agm-results/",
+"entryId": "granada-post-85553c879851b4f632ac51e3",
+"alias": false
+},
+{
+"from": "/en/news/2022/canada-silver-cobalt-works-inc-has-a-strategic-investment-in-granada-gold-mine-inc/",
+"entryId": "granada-post-64bf9daa3be5f26d2860d06f",
+"alias": false
+},
+{
+"from": "/en/news/2022/granada-amends-warrants-september-2022/",
+"entryId": "granada-post-2ad624f45f9a404e773d95ba",
+"alias": false
+},
+{
+"from": "/en/news/2022/granada-amends-warrants/",
+"entryId": "granada-post-c60af2375af79b168fee83bf",
+"alias": false
+},
+{
+"from": "/en/news/2022/granada-gold-announces-appointment-of-new-cfo/",
+"entryId": "granada-post-7d32bbf85af82fbcfef04bee",
+"alias": false
+},
+{
+"from": "/en/news/2022/granada-gold-announces-passing-of-director-jacques-monette/",
+"entryId": "granada-post-d79bdbec411c267ff1e95b03",
+"alias": false
+},
+{
+"from": "/en/news/2022/granada-gold-announces-recent-drill-program-has-increased-measured-and-indicated-mineral-resources-by-21-to-543-000-oz-au-and/",
+"entryId": "granada-post-ef09004e1f229a39c0366ea1",
+"alias": false
+},
+{
+"from": "/en/news/2022/granada-gold-assays-4.33-g-t-gold-from-500-tonne-surface-bulk-sample/",
+"entryId": "granada-post-01e35856100c8a32b078b045",
+"alias": false
+},
+{
+"from": "/en/news/2022/granada-gold-mine-announces-filing-of-ni-43-101-technical-report-for-the-granada-gold-project-quebec-with-updated-resource/",
+"entryId": "granada-post-675d9e2f5a0e7a8ea915340d",
+"alias": false
+},
+{
+"from": "/en/news/2022/granada-gold-mine-closes-723-200-private-placement/",
+"entryId": "granada-post-d449cf61c6b7dd8f3d48f3f8",
+"alias": false
+},
+{
+"from": "/en/news/2022/granada-gold-mine-extends-warrant-terms/",
+"entryId": "granada-post-534dbd4c40d44736c15961ae",
+"alias": false
+},
+{
+"from": "/en/news/2022/granada-gold-mine-releases-2022-outlook-and-2021-summary/",
+"entryId": "granada-post-3082371d11e8da4761c02c67",
+"alias": false
+},
+{
+"from": "/en/news/2022/granada-proposes-to-issue-shares-for-debt/",
+"entryId": "granada-post-212701a0218eb54dede7100d",
+"alias": false
+},
+{
+"from": "/en/news/2022/granada-reports-agm-results/",
+"entryId": "granada-post-0e11c34e2bdb37833c4b4363",
+"alias": false
+},
+{
+"from": "/en/news/2022/re-2ox-process-extracts-99-percent-of-rubidium-from-granada-gold-mines-battery-metals-zone/",
+"entryId": "granada-post-a1aa08c26c5415afb9ac8598",
+"alias": false
+},
+{
+"from": "/en/news/2023/corrected-version-of-march-2-2023-news-release-granada-retracts-its-rubidium-resource/",
+"entryId": "granada-post-4576e6360c6084c49e371771",
+"alias": false
+},
+{
+"from": "/en/news/2023/granada-closes-shares-for-debt-transaction-and-confirms-repricing-and-extending-warants/",
+"entryId": "granada-post-ad2afe7535a307b00406edaf",
+"alias": false
+},
+{
+"from": "/en/news/2023/granada-gold-grants-stock-options/",
+"entryId": "granada-post-731d421bd57a0bb36f120536",
+"alias": false
+},
+{
+"from": "/en/news/2023/granada-gold-mine-amends-warrants/",
+"entryId": "granada-post-f6c155f7c667ceb9a4cb1cf4",
+"alias": false
+},
+{
+"from": "/en/news/2023/granada-gold-mine-announces-500-tonne-surface-bulk-sample-returns-a-grade-of-3.95-grams-per-tonne-gold/",
+"entryId": "granada-post-16d988a96c69cec585d74778",
+"alias": false
+},
+{
+"from": "/en/news/2023/granada-gold-mine-announces-potential-tonnage-and-grade-estimate-of-its-exploration-target-at-the-granada-deposit/",
+"entryId": "granada-post-6f3f4bbff0ae024bde4d9c7e",
+"alias": false
+},
+{
+"from": "/en/news/2023/granada-gold-mine-bulk-sample-processing/",
+"entryId": "granada-post-75cf0c4a0e4fcd77a74a6a71",
+"alias": false
+},
+{
+"from": "/en/news/2023/granada-gold-mine-intersects-five-high-grade-gold-zones-below-1-200-meters-on-the-step-out-deep-hole/",
+"entryId": "granada-post-631462ae81af05434313931c",
+"alias": false
+},
+{
+"from": "/en/news/2023/granada-gold-mine-to-update-historic-pfs-for-bulk-sample-processing/",
+"entryId": "granada-post-3a1df4ce20de94f8ab525d79",
+"alias": false
+},
+{
+"from": "/en/news/2023/granada-gold-mine-update-on-als-goldspot-targeting/",
+"entryId": "granada-post-f5edae2d45ca669bc255e58d",
+"alias": false
+},
+{
+"from": "/en/news/2023/granada-gold-reprices-and-extends-warrants/",
+"entryId": "granada-post-a876f907d95e310777813201",
+"alias": false
+},
+{
+"from": "/en/news/2023/granada-golds-ongoing-bulk-sampling-program-confirms-significantly-higher-open-pit-grades-than-drill-core-grades/",
+"entryId": "granada-post-67ff64c587e44bb1cbaeb083",
+"alias": false
+},
+{
+"from": "/en/news/2023/granada-proposes-shares-for-debt-transaction/",
+"entryId": "granada-post-ce14327d083aca7c2ee2c337",
+"alias": false
+},
+{
+"from": "/en/news/2023/granada-receives-regulatory-approval-for-listing-of-class-a-redeemable-preferred-shares/",
+"entryId": "granada-post-fb6e5f986e49e48c5412759b",
+"alias": false
+},
+{
+"from": "/en/news/2023/granada-reports-annual-general-and-special-meeting-results/",
+"entryId": "granada-post-5e912f72e83662415c55948f",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-appoints-new-director-to-the-board/",
+"entryId": "granada-post-8ef577d76dc68364bd5099af",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-grants-stock-options/",
+"entryId": "granada-post-b89135693b053d0d06789a69",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mine-advances-plans-for-on-site-mill-bolstering-economics-and-grade-control/",
+"entryId": "granada-post-c7aac7a50824c6ea81282845",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mine-advances-strategic-partnerships-and-expands-operations/",
+"entryId": "granada-post-43555a95d7041e90b1eee7bc",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mine-advances-towards-open-pit-mining-with-renewal-of-mining-development-lease-bm-813/",
+"entryId": "granada-post-eec223e2a5e9a0bc9c598653",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mine-advances-with-10-year-lease-extensions-reveals-ambitious-development-plans/",
+"entryId": "granada-post-faef42644fadeda0f6b05639",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mine-announces-preliminary-open-pit-in-ground-values-for-gold-and-aggregate/",
+"entryId": "granada-post-bc836bc47c690b5a338a8a1b",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mine-announces-quebec-flow-through-private-placement/",
+"entryId": "granada-post-b3b0bb9bf24da362f9ebc007",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mine-begins-the-evaluation-of-local-mills-for-custom-processing-of-gold-ore-on-site-processing-or-on-site-pre/",
+"entryId": "granada-post-f81b40079257555bfd35b58d",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mine-by-product-aggregate-update/",
+"entryId": "granada-post-e011fcdad4933f3ad29649df",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mine-closes-quebec-flow-through-private-placement/",
+"entryId": "granada-post-73077cd62d83c36b7a8ed286",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mine-completes-metallurgical-environmental-test-work-for-potential-custom-milling/",
+"entryId": "granada-post-08dff2b34474220b1df356f4",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mine-defines-priority-drill-targets/",
+"entryId": "granada-post-5bcd43ce128562dc51cd8ce2",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mine-estimates-a-cost-of-1-200-us-dollars-per-ounce-of-gold-for-potential-2027-custom-milling/",
+"entryId": "granada-post-e6c44712eb58885bce506543",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mine-submits-documentation-to-renew-mining-development-lease-bm813-for-potential-open-pit-mining/",
+"entryId": "granada-post-e64629b7dfd30f21501b2d45",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mine-unveils-high-grade-flow-sheet-poised-to-become-low-cost-gold-producer-on-cadillac-break/",
+"entryId": "granada-post-541a7f21b3823816cf5a6636",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mine-welcomes-canadian-governments-5-billion-indigenous-loan-guarantee-program/",
+"entryId": "granada-post-563ee54567264b32a2c13c22",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mines-500-tonne-surface-bulk-sample-produces-a-77.9-grams-per-tonne-gold-concentrate/",
+"entryId": "granada-post-56c109fce07ac95809c4a9e4",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mines-engages-a-resource-development-advisor/",
+"entryId": "granada-post-96d8dc46ea6e1ac8b460df22",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-gold-mines-outlines-process-for-converting-recovered-gold-into-a-market-gold-bar/",
+"entryId": "granada-post-6fd0a3ff4f57274c1b5d86de",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-high-grade-gravity-plant-design-for-onsite-processing/",
+"entryId": "granada-post-23ae1e39402200d8fa71c197",
+"alias": false
+},
+{
+"from": "/en/news/2024/granada-to-continue-in-fill-deep-drill-program-to-test-high-grade-gold-results-of-107.9-g-t-over-4-meters/",
+"entryId": "granada-post-a0f62035d5b3cfaa2343614e",
+"alias": false
+},
+{
+"from": "/en/news/2024/massive-critical-metals-177-meter-wide-mineralized-zone-unveiled-during-granada-gold-mines-last-deep-hole-gold-drill-program/",
+"entryId": "granada-post-226da430eea26541bf78549c",
+"alias": false
+},
+{
+"from": "/en/news/2025/granada-east-project-revisited-in-search-of-historic-high-grade-200-grams-per-tonne-gold-mineralization/",
+"entryId": "granada-post-8ba5c5314f23de76b8b28335",
+"alias": false
+},
+{
+"from": "/en/news/2025/granada-gold-announces-appointment-of-new-cfo/",
+"entryId": "granada-post-8e0033396dd0d3497ff71c5c",
+"alias": false
+},
+{
+"from": "/en/news/2025/granada-gold-appoints-new-director-to-the-board-1/",
+"entryId": "granada-post-25ca35a432eaa7dc1e096180",
+"alias": false
+},
+{
+"from": "/en/news/2025/granada-gold-appoints-new-director-to-the-board/",
+"entryId": "granada-post-d8568f743ca906132d235685",
+"alias": false
+},
+{
+"from": "/en/news/2025/granada-gold-completes-mou-review-period-with-lafleur-minerals/",
+"entryId": "granada-post-7edc6b4f515ab0b9018fdaf0",
+"alias": false
+},
+{
+"from": "/en/news/2025/granada-gold-grants-stock-options/",
+"entryId": "granada-post-484de6d69f03190a981ef7db",
+"alias": false
+},
+{
+"from": "/en/news/2025/granada-gold-mine-reviews-the-potential-of-1-gram-per-tonne-gold-in-an-open-pit-resource-at-minesite/",
+"entryId": "granada-post-ad46d5975497b0942a4ce645",
+"alias": false
+},
+{
+"from": "/en/news/2025/granada-gold-proceeds-with-evaluation-of-custom-milling-at-the-beacon-gold-mill/",
+"entryId": "granada-post-e67e0a14c9e50db34e37d6d6",
+"alias": false
+},
+{
+"from": "/en/news/2025/granada-reports-annual-general-meeting-results/",
+"entryId": "granada-post-0691fd9e96bebab4956ff9b4",
+"alias": false
+},
+{
+"from": "/en/news/2025/record-gold-price-significantly-enhances-granada-gold-mines-potential-for-more-open-pit-ounces/",
+"entryId": "granada-post-df998b5cd563c94f17645342",
+"alias": false
+},
+{
+"from": "/en/news/2025/resource-acquisitions-on-the-cadillac-break-are-positive-for-granada-gold-mine/",
+"entryId": "granada-post-40f945cbd592b3b3459b3d48",
+"alias": false
+},
+{
+"from": "/en/news/2025/update-on-granada-gold-mine-on-site-sampling-plant/",
+"entryId": "granada-post-4402fcdbc4d1bed864d94c5a",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-announces-service-agreements/",
+"entryId": "granada-post-1f98d0ab5fe2309eaa184385",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-closes-shares-for-debt-transaction/",
+"entryId": "granada-post-ca12e05de46021199412205a",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-gold-advances-on-site-gravity-concentration-facility-to-upgrade-mineralized-material-grade-and-reduce-off-site-haulage/",
+"entryId": "granada-post-d0ee4f80d7e9dc293bd2a96f",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-gold-announces-64-increase-in-measured-and-indicated-mineral-resources-to-890-600-oz-au-15-982-000-tonnes-at-1.73-g-t/",
+"entryId": "granada-post-db0495e208b3748159055027",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-gold-mine-advances-on-site-processing-authorization-for-gravity-concentration-at-granada-gold-project/",
+"entryId": "granada-post-9552542be66b0d7670e0c3f5",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-gold-mine-announces-2.5-million-private-placement/",
+"entryId": "granada-post-db3d12007da2fb7d44118d44",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-gold-mine-announces-engagement-of-senergy-communications-capital-inc/",
+"entryId": "granada-post-14b066182d14e25d1e848778",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-gold-mine-announces-filing-of-ni-43-101-technical-report-for-the-granada-gold-project-quebec-with-updated-resource/",
+"entryId": "granada-post-e7e770e53c95329b20c52000",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-gold-mine-appoints-j.w-dumont-as-president/",
+"entryId": "granada-post-jw-2026-09-28-en",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-gold-mine-closes-oversubscribed-private-placement-financing/",
+"entryId": "granada-post-77fbdd925c81c7a3c23e3149",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-gold-mine-demonstrates-2.7x-grade-uplift-on-open-pit-mineralization-through-ore-sorting-at-saskatchewan-research-council/",
+"entryId": "granada-post-d3030e32d836786f0e840b13",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-gold-mine-engages-goldminds-geoservices-for-mineral-resource-estimate-update-reflecting-current-gold-pricing/",
+"entryId": "granada-post-df6d2cf48b063e46d4bddc07",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-gold-mine-enters-into-two-debt-conversion-agreements-in-an-aggregate-amount-of-4-million/",
+"entryId": "granada-post-4d7c79130b4a24778574af7b",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-gold-mine-structural-interpretation-supports-additional-drill-targets/",
+"entryId": "granada-post-5ffad9a9ccef12ae8f6b04e3",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-gold-mine-to-present-in-the-emerging-growth-virtual-conference-at-12-noon-et-july-16-2026/",
+"entryId": "granada-post-fa36398f353e97c00b5dfc6e",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-proposes-to-issue-shares-for-debt/",
+"entryId": "granada-post-fbd087078a5d9152d71f7bed",
+"alias": false
+},
+{
+"from": "/en/news/2026/granada-reports-annual-general-and-special-meeting-results/",
+"entryId": "granada-post-7d68e289d56b44d0e54f4a9b",
+"alias": false
+},
+{
+"from": "/en/news/archive/2009/gbb-announces-private-placement/",
+"entryId": "granada-post-228fee025deff772e885cff1",
+"alias": false
+},
+{
+"from": "/en/news/archive/2009/gbb-closes-private-placement/",
+"entryId": "granada-post-3012349a97f9ed44039b5664",
+"alias": false
+},
+{
+"from": "/en/news/archive/2009/gbb-closes-second-tranche-of-private-placement/",
+"entryId": "granada-post-f3f2743b2672001b3f5d6595",
+"alias": false
+},
+{
+"from": "/en/news/archive/2009/gbb-exploration-update-on-granada-mine-2/",
+"entryId": "granada-post-e60bd00dc9086c447bc5431d",
+"alias": false
+},
+{
+"from": "/en/news/archive/2009/gbb-exploration-update-on-granada-mine/",
+"entryId": "granada-post-76eb2000ec771412e984a48b",
+"alias": false
+},
+{
+"from": "/en/news/archive/2009/gbb-plans-drill-program-to-supplement-and-confirm-previous-unreported-results/",
+"entryId": "granada-post-5e251a3675edffc1cf6fa0f5",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/20-000-metre-phase-2-drill-program-underway-at-granada/",
+"entryId": "granada-post-01128bc33b9cc38052befeb7",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/drilling-confirms-extension-of-granada-gold-mine-mineralization/",
+"entryId": "granada-post-74e0e00fcadfe98bfab9d8bf",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-adds-second-drill-rig-at-granada/",
+"entryId": "granada-post-dd8ea27b7348e7290c501baa",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-appoints-brian-e-robertson-to-board-of-directors/",
+"entryId": "granada-post-1cf8793540230a988ab88686",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-appoints-new-transfer-agent/",
+"entryId": "granada-post-05551ee224af05204470375a",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-arranges-3.2-million-financing/",
+"entryId": "granada-post-e71a782139f2dbe009dea03b",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-closes-8-million-private-placement/",
+"entryId": "granada-post-8bdfc6ec30bd9df5fe6b157e",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-continues-drilling-for-bulk-tonnage-deposit-at-granada/",
+"entryId": "granada-post-772b30c2f9fcba0e313d02b8",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-discovers-significant-mineralization-northeast-and-southeast-of-long-bars-zone-preliminary-block-model/",
+"entryId": "granada-post-10b23bd168510d313973eae9",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-doubles-granada-land-package-prepares-for-major-drill-program/",
+"entryId": "granada-post-70ce4f2c373e3d44c344d07b",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-drills-best-result-yet-in-long-bars-zone-eastern-extension/",
+"entryId": "granada-post-be88d4a1bfb0d8a9453eaa53",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-expands-long-bars-zone-eastern-extension/",
+"entryId": "granada-post-4aa0918520b81b026c54735e",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-extends-phase-2-drill-program-at-granadaa/",
+"entryId": "granada-post-af5da4e37d3f05738cc2e54f",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-granada-metallurgical-tests-show-recoveries-in-excess-of-93/",
+"entryId": "granada-post-855c648d56194970b84a89ef",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-grants-stock-options/",
+"entryId": "granada-post-63a588ffa0ed458797e5a2f2",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-increases-financing-due-to-demand/",
+"entryId": "granada-post-6a4f502861ffe95c39e7bca7",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-increases-private-placement-grants-stock-options/",
+"entryId": "granada-post-37aff1988c6b163ce2469624",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-launches-baseline-environmental-study-for-granada/",
+"entryId": "granada-post-bd40312607a093613d7bdb83",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-more-than-doubles-landholdings-at-emerging-granada-mining-camp/",
+"entryId": "granada-post-1be01aa52de7f37ce6f2af08",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-nears-halfway-mark-of-drill-program-long-bars-zone-2-identified/",
+"entryId": "granada-post-df6a9f75cb06e32f9d6cfea6",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-outlines-large-mineralized-system-at-granada/",
+"entryId": "granada-post-f0760d783aad4d520bd014b3",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-re-elects-board-at-agm/",
+"entryId": "granada-post-2b1c1197d2395bbf3e83fb55",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gbb-reports-best-assay-results-yet-from-granada/",
+"entryId": "granada-post-7664be27ced5cb8a967c8916",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/geological-interpretation-of-granada-evolves-after-more-phase-2-drilling/",
+"entryId": "granada-post-454832a28389016f9fd99686",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/gold-bullion-delivers-best-ever-results-at-granada/",
+"entryId": "granada-post-dc08c61a12014bbaad3f2183",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/material-change-report/",
+"entryId": "granada-post-8964e4c77b5ad6d5aec344dc",
+"alias": false
+},
+{
+"from": "/en/news/archive/2010/strong-balance-sheet-in-place-for-gbb-to-advance-granada/",
+"entryId": "granada-post-c4d68d3ef1342c1cbd9e6cb7",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gbb-advises-shareholders-that-castle-silver-mines-inc-preliminary-prospectus-is-available-on-sedar/",
+"entryId": "granada-post-56a94e513d9ace9c8369ee4d",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gbb-agm-of-shareholders/",
+"entryId": "granada-post-cb834f74e757d658eb5b4c26",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gbb-announces-corporate-move-and-amendment-to-exercise-price-of-warrants/",
+"entryId": "granada-post-8a7d1ac5442bf15381a0ca65",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gbb-announces-maximum-4.4-million-private-placement/",
+"entryId": "granada-post-f4f7cb23d68df7443745b091",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gbb-castle-silver-mines-preliminary-prospectus/",
+"entryId": "granada-post-f34e05abfc3d8f73907a7683",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gbb-identifies-strong-new-vien-structure-at-castle-silver-mine-gowganda/",
+"entryId": "granada-post-937ba3d6f0169ea9c08db79b",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gbb-plans-to-spin-off-its-castle-silver-mine/",
+"entryId": "granada-post-b4b3287d08612b493cdbb283",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gbb-provides-update-on-its-phase-3-drill-program-2/",
+"entryId": "granada-post-fb3f0f0d37ee36f81abc5105",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gbb-provides-update-on-its-phase-3-drill-program/",
+"entryId": "granada-post-b1bb5b04d0f26155b2fe0e68",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gbb-reports-1.25-g-t-au-over-72.25-metres-at-granada/",
+"entryId": "granada-post-367fb4719846f6247bfc9a3c",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gbb-reports-6-476-g-t-ag-over-3.09m-at-castle-silver-mine-gowganda/",
+"entryId": "granada-post-42df86a4161192e10345da08",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gold-bullion-announces-additional-positive-drill-data/",
+"entryId": "granada-post-892c6b6cf7e51c8fdfe07f64",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gold-bullion-announces-final-closing-of-5.0-million-private-placement/",
+"entryId": "granada-post-ffceb2ae92859c6ea3aea869",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gold-bullion-announces-maximum-3.8-million-private-placement/",
+"entryId": "granada-post-a96798a3ccf13dd1091ace2f",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gold-bullion-drills-80-metres-of-1.36-grams-per-tonne-gold/",
+"entryId": "granada-post-bb60542265fa2d3b425858ff",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gold-bullion-raises-4.35-million-in-first-closing-of-private-placement/",
+"entryId": "granada-post-6dbdae42d22ff8dc674758fd",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gold-bullion-releases-significant-historic-hole-with-granada-drilling-update/",
+"entryId": "granada-post-5051e5428dd210d2943f2e5b",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/gold-bullion-retains-sgs-canada-inc-geostat-as-independent-consultant-on-its-granada-property/",
+"entryId": "granada-post-94b423bbaff843c2fd13a360",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/intl-speculator-says-buy-gold-bullion/",
+"entryId": "granada-post-2265a7011a78d7c50f87ade9",
+"alias": false
+},
+{
+"from": "/en/news/archive/2011/year-end-message-from-frank-j-basa-gold-bullion-development-president-and-ceo/",
+"entryId": "granada-post-a4587849d7a635edea83d209",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/drill-hole-gr-12-400-extends-near-surface-mineralized-zone-an-additional-175-meters-to-the-west-of-the-current-long-bars-zone/",
+"entryId": "granada-post-a6dd119ac5c5f5fcc3d7e0f2",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-adopts-shareholder-rights-plan/",
+"entryId": "granada-post-d9549fbb53007d380cedaa00",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-announces-3.0-million-private-placement/",
+"entryId": "granada-post-5345bd91ca44026ba1eaa4a2",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-announces-additional-deep-hole-drill-results-with-high-grade-gold-8.26-g-t-au-over-1.50-metres-at-depth/",
+"entryId": "granada-post-327e6c997df72881d25301bc",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-announces-additional-positive-drill-data-update-2/",
+"entryId": "granada-post-84b91a0ae8a1da6e134b2198",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-announces-additional-positive-drill-data-update/",
+"entryId": "granada-post-75f4ff052e35df6f0d6bc6e3",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-announces-new-drill-program-at-granada/",
+"entryId": "granada-post-ad80c7444fd84bf0f0096d33",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-announces-preliminary-metallurgical-testing-showing-average-gold-recovery-of-94.1-with-an-average-gold-grade-of/",
+"entryId": "granada-post-d932e431ce8ce6e1b23ce5aa",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-announces-private-placement/",
+"entryId": "granada-post-cd38591346b841c4fd7fc13f",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-applies-to-amend-warrants/",
+"entryId": "granada-post-fab8fb88e004e6090b8c54d7",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-applies-to-extend-warrants/",
+"entryId": "granada-post-144ebfdae786cec8a6646490",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-awards-sgs-canada-inc-mandate-for-preliminary-feasibility-study-for-a-mine-start-up-using-custom-milling-outside/",
+"entryId": "granada-post-c3ea2f413992e9032d05600c",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-closes-first-tranche-of-private-placement/",
+"entryId": "granada-post-8ae9f5da6eacee2c0762f9d8",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-development-corp-files-counter-claim-against-genivar-inc/",
+"entryId": "granada-post-bae11f5fd35d5b9190dc4af0",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-development-corp-launches-new-website/",
+"entryId": "granada-post-b79a8c6d1e2416d41fb207fd",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-development-corp-releases-43-101-technical-report-on-its-granada-gold-project/",
+"entryId": "granada-post-c2d4324b54e4364fdba20b6b",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-enters-into-option-agreement-to-acquire-beaver-and-violet-silver-properties-postpones-castle-silver-mines-ipo/",
+"entryId": "granada-post-05b9235657a99ae6ddb264e6",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-grants-stock-options/",
+"entryId": "granada-post-bbad4c7546412c2b9bb3e578",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-holds-2012-annual-general-meeting-of-shareholders/",
+"entryId": "granada-post-4ccb1c77e190e3c593cefe1e",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-provides-granada-mine-update/",
+"entryId": "granada-post-74b5434f31dff1ceae62527a",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-provides-mineral-potential-at-depth-for-granada/",
+"entryId": "granada-post-4ceeca156aabb9466bb3a277",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-provides-mineral-resource-estimate-for-granada/",
+"entryId": "granada-post-c7660848ec8ee8ce091e3747",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-provides-mineral-resource-estimate-update-for-granada/",
+"entryId": "granada-post-209685e025e1a25f10312bbb",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-raises-2.4-million-at-first-closing-of-private-placement/",
+"entryId": "granada-post-e16ab711bf4efce13aa98207",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-raises-500-000-at-second-and-final-closing-of-private-placement/",
+"entryId": "granada-post-4cd89ad326792fa10629a101",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-receives-approval-to-warrant-amendment-2/",
+"entryId": "granada-post-e9c072527b46cdb6c198e6d6",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-receives-approval-to-warrant-amendment/",
+"entryId": "granada-post-56d2dbd1239d835712aa7bab",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-receives-positive-preliminary-economic-assessment-for-granada-proceeding-to-preliminary-feasibility-study/",
+"entryId": "granada-post-42c942bd7dda27458f95be52",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-receives-statement-of-claim-from-genivar-inc/",
+"entryId": "granada-post-e1ae816d85d4b1e7063aae05",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-releases-results-from-43-backlogged-phase-iii-granada-drill-data-including-1.76-g-t-au-over-58.0-m/",
+"entryId": "granada-post-beb40f6043a9624b9c536f7d",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-releases-results-from-54-back-logged-granada-drill-holes/",
+"entryId": "granada-post-d2cc5c8803341c2075f4ce76",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/gold-bullion-retains-investor-relations-firm/",
+"entryId": "granada-post-f20fd9edec25f015448ec1ee",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/preliminary-results-from-the-deep-hole-program-confirms-extension-of-gold-mineralization-800-metres-down-plunge-and-900-metres/",
+"entryId": "granada-post-0e74084d8fcb1e0e49f5342e",
+"alias": false
+},
+{
+"from": "/en/news/archive/2012/shareholder-gold-royalty-program/",
+"entryId": "granada-post-d3ccbc169622ce3f4d339ce4",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/addendum-to-matachewan-first-nations-july-29-2013-press-release/",
+"entryId": "granada-post-37192a0f3e2809996383d812",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-announces-1.0-million-private-placement/",
+"entryId": "granada-post-4b83b6592a572c710232807f",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-announces-granada-royalty-shares/",
+"entryId": "granada-post-6e3a30ad7011d8d637053664",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-announces-resignation-of-subsidiary-director/",
+"entryId": "granada-post-706b056907bf7cad6ac96b4d",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-announces-results-of-2013-annual-general-meeting/",
+"entryId": "granada-post-c667565211ac99100e43cf3e",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-appoints-new-cfo-for-castle-silver-mines-inc-2/",
+"entryId": "granada-post-152645c7ca04baf143d7749e",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-appoints-new-cfo-for-castle-silver-mines-inc/",
+"entryId": "granada-post-471eadf01dac96da2615abd0",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-closes-private-placement/",
+"entryId": "granada-post-2ee1cff47d389d0c48fb7811",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-development-corp-granada-progress-update/",
+"entryId": "granada-post-583d6d80065492607f8268e9",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-development-corp-provides-update/",
+"entryId": "granada-post-d2c27f29d46411f38e49e9e6",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-development-corp-releases-43-101-technical-report-on-its-granada-gold-project/",
+"entryId": "granada-post-3bccab61b061cea11f0eae56",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-development-initiates-trenching-program-at-granada/",
+"entryId": "granada-post-5ea0bce8c6add649f31a3019",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-development-releases-ni-43-101-technical-report-on-granada-gold-project-with-sgs-canada-granted-mandate-for/",
+"entryId": "granada-post-8b131510e39e4293ecbb009e",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-enters-into-agreement-with-matachewan-first-nation-indian-band/",
+"entryId": "granada-post-9d22e0c44420e473ddb5c374",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-grants-stock-options-2/",
+"entryId": "granada-post-24b730a98c93a475165f658f",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-grants-stock-options/",
+"entryId": "granada-post-cd1e34f619a0aea684fea39d",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-provides-pre-feasibility-study-update/",
+"entryId": "granada-post-614a6685777faeebcb760193",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-provides-update-on-its-castle-silver-mine-property/",
+"entryId": "granada-post-df9b15ac390fa7482199bade",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/gold-bullion-provides-update-on-progress-at-granada-mine/",
+"entryId": "granada-post-dfeeb11ba27460a7a5ddaede",
+"alias": false
+},
+{
+"from": "/en/news/archive/2013/summary-of-metallurgical-tests-performed-on-hand-cobbed-samples-from-the-beaver-silver-mine-cobalt-camp/",
+"entryId": "granada-post-36b568cf72642f45785cd85b",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-adopts-advance-notice-policy/",
+"entryId": "granada-post-1482a0eb96627cdb8d53c059",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-adopts-new-shareholder-rights-plan/",
+"entryId": "granada-post-7e0a89b94af523a64833dde2",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-announces-director-resignation/",
+"entryId": "granada-post-5dfb02a91d40201c71a48651",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-announces-filing-of-pre-feasibility-study-pfs-phase-1-open-pit-and-filing-of-the-request-for-certificate-of/",
+"entryId": "granada-post-8285ec7c5192f6293a430c29",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-announces-mou-with-iamgold/",
+"entryId": "granada-post-bf0b217f1bc7b4de1b16ab73",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-announces-positive-material-changes-for-mineral-resources-in-the-rolling-start/",
+"entryId": "granada-post-c89bc6c7f4496c78471f3d56",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-announces-receipt-of-authorization-for-locating-rolling-start-mining-waste/",
+"entryId": "granada-post-f7f67e9c544b5e96da97e49e",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-announces-results-of-2014-annual-general-and-special-meeting/",
+"entryId": "granada-post-b2b24fe205a3d5c0327a1a42",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-announces-signing-of-a-communications-protocol-with-timiskaming-first-nation/",
+"entryId": "granada-post-822ee962685d03fc5d422c58",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-announces-signing-of-custom-milling-agreement-with-iamgold-westwood-mill-and-the-filing-of-its-request-for/",
+"entryId": "granada-post-913fd252d7da1bc652cbc394",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-announces-trenching-results-with-highlights-of-108.6-g-t-au-on-1-m-channel/",
+"entryId": "granada-post-9e0aa9c36060095b297b611e",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-clarifies-disclosure-following-bcsc-review/",
+"entryId": "granada-post-585d87dc2d18158f07a7b3cb",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-closes-first-tranche-of-private-placement/",
+"entryId": "granada-post-35f6f3e704f4937e62e43df4",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-closes-non-brokered-private-placement-and-retains-marketing-and-investors-relations-consultants/",
+"entryId": "granada-post-ab844a76ce0e1492ee54b1a4",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-closes-private-placement/",
+"entryId": "granada-post-c953d7a93427aad55d06af8c",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-closes-second-and-final-tranche-of-private-placement/",
+"entryId": "granada-post-410d2d30b4abcf8b8a3f45b9",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-discovers-new-gold-and-copper-occurrence-on-its-castle-mine-property/",
+"entryId": "granada-post-4820bc0804bd18381488aa17",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-grants-stock-options/",
+"entryId": "granada-post-d170a02f06be89ec5298ad88",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-moving-forward-on-the-granada-mine-rolling-start/",
+"entryId": "granada-post-72a7a8dbe5f91201ccc68226",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-progress-update-on-granada-gold-property-permits-certificate-of-authorization-and-rolling-start/",
+"entryId": "granada-post-830bde45fec686894838f60c",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-receives-positive-pre-feasibility-study-for-the-rolling-start-to-gold-production-at-granada/",
+"entryId": "granada-post-bd84b7ceb9d3f1db52debd1f",
+"alias": false
+},
+{
+"from": "/fr/news/2014/gold-bullion-update-on-community-impact-of-the-rolling-start-at-granada/",
+"entryId": "granada-post-e29e710df03ff74fe01b752e",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-achieves-up-to-97-gold-recovery-in-metallurgical-test-work/",
+"entryId": "granada-post-fd33d41dc63ec9a7833016d3",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-announces-closing-of-castle-silver-mines-inc-acquisition-by-takara-resources-inc/",
+"entryId": "granada-post-07a3f43a692eab974a3684f3",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-announces-filing-of-43-101-technical-report-on-the-castle-silver-property-gowganda-ontario/",
+"entryId": "granada-post-b6c5d752bf88f76c51985b1a",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-announces-mineralized-material-ready-for-transport/",
+"entryId": "granada-post-d58aa58c27ed4e29adda6977",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-announces-results-of-2015-annual-general-meeting/",
+"entryId": "granada-post-cbed67df4c453a5fbbdcdebd",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-announces-share-consolidation/",
+"entryId": "granada-post-6fb1057125791f9e3d9aea8d",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-announces-signing-of-amended-and-restated-share-purchase-agreement-and-conditional-approval-of-share-purchase/",
+"entryId": "granada-post-c7030d08a0b381761f314d85",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-announces-signing-of-definitive-agreement-with-takara-resources-inc/",
+"entryId": "granada-post-a857d54f82624132abde615b",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-clarifies-shareholder-loan-terms/",
+"entryId": "granada-post-3df83d0987ae543fb556049d",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-commences-2015-exploration-at-granada-in-advance-of-planned-high-grade-rolling-production-start/",
+"entryId": "granada-post-28e20287db73fc982c04dfec",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-development-enters-assignment-agreement-to-sell-beaver-and-violet-properties-to-takara-resources-inc/",
+"entryId": "granada-post-b555184d64a2f7d7f7cf91ea",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-earns-nsr-on-castle-silver-mines-inc/",
+"entryId": "granada-post-d3604d43449987ba37d910ff",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-enters-into-loi-with-takara-resources-inc-to-spin-out-castle-silver-mines-inc/",
+"entryId": "granada-post-41aa33a45ae0b7ca2d2cdf3c",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-enters-into-shareholder-loan-agreements/",
+"entryId": "granada-post-beed522bb691f9e02c964651",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-identifies-new-gold-bearing-structures-at-castle-property-including-3.77-g-t-over-1.27-m/",
+"entryId": "granada-post-9b48a92660e68bba93b36a7b",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-provides-operations-and-finance-update/",
+"entryId": "granada-post-01089086742438e52697dc66",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-receives-wood-cutting-permit-for-site-clearing-in-preparation-for-gold-production-at-granada/",
+"entryId": "granada-post-aaa92eb076285385ebda75dd",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-retains-stirling-merchant-capital-inc/",
+"entryId": "granada-post-e16fa34de93008f468f2ae75",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-settles-lawsuit-with-genivar-inc/",
+"entryId": "granada-post-1ed815b05b1e0d9e408694e8",
+"alias": false
+},
+{
+"from": "/fr/news/2015/gold-bullion-signs-mou-on-granada-project-with-timiskaming-first-nations/",
+"entryId": "granada-post-3aebed9b3d2497996bf05a77",
+"alias": false
+},
+{
+"from": "/fr/news/2015/surface-grades-of-6.05-g-t-au-over-8-metres-in-channel-sampling-at-granada/",
+"entryId": "granada-post-8cba35f05a57a0240c247f0c",
+"alias": false
+},
+{
+"from": "/fr/news/2015/westwood-mill-permitted-to-process-granada-ore/",
+"entryId": "granada-post-212514144ef6aa3bd4d8b6d3",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-acquires-interest-in-high-grade-gold-target-next-to-past-producing-silver-mine/",
+"entryId": "granada-post-32685d9a9481582b530a3bf0",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-announces-200-000-flow-through-private-placement/",
+"entryId": "granada-post-f50b0c0d549648db22143dc1",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-announces-750-000-private-placement/",
+"entryId": "granada-post-00672fb1c2395f07bfc2a567",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-announces-915-137-private-placement/",
+"entryId": "granada-post-50228588aa7bc80764c8ee24",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-announces-a-deep-hole-drill-program-targeting-a-significant-resource-expansion-in-the-northern-part-of-the-granada/",
+"entryId": "granada-post-88e17162b4219649e3642735",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-announces-plans-for-a-new-exploration-program-targeting-a-signifcant-expansion-of-the-granada-gold-deposit/",
+"entryId": "granada-post-84e330a82f4c36047a93bc80",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-announces-results-of-2016-annual-general-meeting/",
+"entryId": "granada-post-4ff14f6de4fb99dfc8cc20c3",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-appoints-corporate-secretary/",
+"entryId": "granada-post-c61338c41e39aebc522212cb",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-appoints-ronald-goguen-sr-to-the-board-of-directors/",
+"entryId": "granada-post-2ab52677b60bbaeb90e09bc7",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-closes-2.4-million-flow-through-private-placement/",
+"entryId": "granada-post-3376d6948453d8c8aaf35955",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-closes-200-000-flow-through-unit-private-placement/",
+"entryId": "granada-post-75cd47e2c72a01188ee55040",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-closes-230-181-flow-through-and-non-flow-through-unit-private-placement/",
+"entryId": "granada-post-bde2ab5cca1d91d3dce81d69",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-closes-804-000-flow-through-unit-private-placement/",
+"entryId": "granada-post-a326de24674fb3894fcfab6a",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-closes-920-137.15-private-placement/",
+"entryId": "granada-post-2ab37aeba3fb7b9f1e75d61b",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-declares-dividend-correction-from-source/",
+"entryId": "granada-post-02ce5cd68fef4c837fe0b2e5",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-declares-dividend/",
+"entryId": "granada-post-ae5e0650c884dd6e371cb7a1",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-development-and-takara-resources-announce-plans-for-geophysical-survey-at-the-castle-silver-cobalt-gold-property/",
+"entryId": "granada-post-c87bfcdebc265bb3ee7ad258",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-development-enters-into-processing-agreement-with-qmx-gold/",
+"entryId": "granada-post-9a37a1b02b5a2956e0bee62c",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-development-granted-environmental-certificate-of-authorization-permit-for-gold-production-at-granada/",
+"entryId": "granada-post-98d9548591810a59e782cdb9",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-discovers-new-mineralized-high-grade-zone-at-the-granada-gold-deposit-mini-bulk-sample-averages-4.37-grams-per/",
+"entryId": "granada-post-84262279c8e63d6fca267491",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-intersects-3.62-g-t-au-over-15-metres-including-43.58-g-t-au-over-1-metre-and-extends-the-drill-program-at-granada/",
+"entryId": "granada-post-2c78251ee9f0a092eff74906",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-oversubscribes-and-closes-830-000-private-placement/",
+"entryId": "granada-post-ce50015956124a99febd4843",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-provides-update-on-granada-gold-mine/",
+"entryId": "granada-post-858ba0bd4e12da8474b69ae4",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-retains-investor-relations-consultant-and-posts-updated-corporate-presentation/",
+"entryId": "granada-post-c15597088b053bc3f6cc008d",
+"alias": false
+},
+{
+"from": "/fr/news/2016/gold-bullion-retracts-updated-mineral-resources-estimates-of-may-26th-2015-in-previous-news-releases/",
+"entryId": "granada-post-2f8afcced3760866522c4b30",
+"alias": false
+},
+{
+"from": "/fr/news/2017/gold-bullion-announces-name-change-to-granada-gold-mine-inc/",
+"entryId": "granada-post-3bc53f83fe1fa116d0d9eea7",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-amends-convertible-notes-and-enters-into-shares-for-debt-agreements/",
+"entryId": "granada-post-060a94450f87df7bb971dd8b",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-announces-consolidation-and-post-consolidated-financing/",
+"entryId": "granada-post-a83090be27cec8362ad32126",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-announces-loan/",
+"entryId": "granada-post-9dbc012d90c8b0bf7f609c3c",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-closes-flow-through-financing/",
+"entryId": "granada-post-8b78a5e801ba7252401702af",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-effects-consolidation/",
+"entryId": "granada-post-58df2c9ab481545b942aeabe",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-enters-into-services-contract-with-wimmer-financial/",
+"entryId": "granada-post-22a410f6ccd11894f1866878",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-gold-definit-des-ressources-robustes-a-ciel-ouvert-et-souterraines-a-haute-teneur-a-granada/",
+"entryId": "granada-post-f85819a40c1d2a266f0c9107",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-gold-mine-2017-agm-results/",
+"entryId": "granada-post-53e7d55ebf2159e1e60b2b6f",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-gold-mine-announces-dividend-dates/",
+"entryId": "granada-post-f4b2a5c388ed4b6f6a6c2285",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-gold-mine-announces-earlier-dates-for-dividend-payments/",
+"entryId": "granada-post-dd9fb20282361b2c6f14b7c5",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-gold-mine-announces-letter-of-intent-from-dra-americas-inc-to-act-as-technical-advisor-in-the-development-of-the/",
+"entryId": "granada-post-f97c9da4eee7d5f621fe5666",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-gold-mine-announces-successful-drill-test-results-confirming-gold-mineralization-near-surface-and-new-geological-model/",
+"entryId": "granada-post-1f9995774610f41b8d1e35e9",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-gold-mine-enters-into-loi-with-temagami-first-nation-and-teme-augama-anishnabai/",
+"entryId": "granada-post-9625dd5253011ba09ab3a013",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-gold-mine-gold-property-on-the-cadillac-trend-in-quebec-receives-trenching-and-drilling-permit-for-the-aukeko-gold-mine/",
+"entryId": "granada-post-d4a32b0d787e746b11fc0957",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-gold-mine-grants-stock-options/",
+"entryId": "granada-post-f74bb1921dce8b0acf1c85e2",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-gold-mine-intersects-14.5-g-t-au-over-4-metres-including-55.9-g-t-over-1-metre-in-deep-hole-drilling-at-the-footwall-of/",
+"entryId": "granada-post-0ec03c8915cb6fb769f85c38",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-gold-mine-to-drill-test-new-geological-model-associated-with-the-porphyry-intrusion-between-pfs-pit-and-old-pit-1/",
+"entryId": "granada-post-6b15bc4b9fb7a82de36e9ee3",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-gold-moves-quickly-on-turnkey-solution-to-boost-potential-gold-production-at-granada-mine/",
+"entryId": "granada-post-0a0cdb402a4c5833868964b4",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-gold-sedar-files-ni-43-101-technical-report-for-updated-granada-resource-estimate/",
+"entryId": "granada-post-66c85dbb6e463c501f8860de",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-signs-mou-with-csr-for-granada-processing/",
+"entryId": "granada-post-4cea8555acaf598a77d8362f",
+"alias": false
+},
+{
+"from": "/fr/news/2017/granada-signs-provisional-milling-agreement-with-castle-silver-resources/",
+"entryId": "granada-post-32c192c0ca29c8da440c4113",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-amends-warrants/",
+"entryId": "granada-post-f259acff07276b3d5522f680",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-announces-private-placement/",
+"entryId": "granada-post-a1c75ac07d20666b44a0f7f5",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-clarification-and-retraction-of-technical-disclosure/",
+"entryId": "granada-post-c6ce8648279788ffa91e586d",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-closes-1st-tranche-private-placement/",
+"entryId": "granada-post-b79ac63980304399eb68544b",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-closes-flow-through-private-placement/",
+"entryId": "granada-post-e72ee66ed360ac8df92ad437",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-closes-private-placement-2018-11-06/",
+"entryId": "granada-post-44b7ef7ba189510c7897a0c4",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-closes-private-placement/",
+"entryId": "granada-post-cab88b9e0e27c9f817f40145",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-gold-chooses-ausenco-for-feasibility-study-on-open-pit-mine/",
+"entryId": "granada-post-0f39c61ca35acc1791b58ace",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-gold-drills-5.07-g-t-over-11-meters-at-granada/",
+"entryId": "granada-post-df7771674db07c7bdb46c08a",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-gold-mine-announces-date-for-dividend-payments/",
+"entryId": "granada-post-ae132a87afba02336e27a48e",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-gold-mine-announces-dividend-dates/",
+"entryId": "granada-post-99b70e9f03535ddeabfb3704",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-gold-mine-corporate-update/",
+"entryId": "granada-post-640ab877d54fbd2dc07c0a63",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-gold-mine-finds-gold-with-trenching-at-aukeko/",
+"entryId": "granada-post-d24b988aa5664cf2de94da0d",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-gold-mine-intersects-8.49-g-t-over-0.5m-in-trenching-at-aukeko/",
+"entryId": "granada-post-8f8de8d0eedd9ab8d96a3f5e",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-gold-mine-prepares-for-trenching-and-drilling-at-aukeko-and-submits-request-to-drill-austin-rouyn/",
+"entryId": "granada-post-b1c8f7ef762fbca6d4b5d494",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-gold-mine-starts-drilling-at-granada-and-announces-financing/",
+"entryId": "granada-post-2898965fd312304e0204a984",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-gold-mine-starts-exploration-program-on-eastern-extension-of-long-bars-zone-at-aukeko/",
+"entryId": "granada-post-6c35a134b260d2567a67259d",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-gold-receives-updated-pit-constrained-mineral-resources-at-granada/",
+"entryId": "granada-post-16d72f2e25011c5651894b37",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-increases-private-placement/",
+"entryId": "granada-post-fdf4428a3798868f294fcbcd",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-issues-shares-for-debt/",
+"entryId": "granada-post-a14f0d826f28b37236d03915",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-issues-shares-for-services/",
+"entryId": "granada-post-d0920705817418fe1dcf8727",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-oversubscribes-and-closes-2nd-tranche-private-placement/",
+"entryId": "granada-post-202bd164645957e50fd3fda4",
+"alias": false
+},
+{
+"from": "/fr/news/2018/granada-reports-agm-results/",
+"entryId": "granada-post-09521f5217dcd06d99b9e465",
+"alias": false
+},
+{
+"from": "/fr/news/2019/drill-program-at-granada-gold-mine-begins-on-near-surface-mineralized-structures/",
+"entryId": "granada-post-c01b889e89a82703975b3536",
+"alias": false
+},
+{
+"from": "/fr/news/2019/granada-announces-private-placement/",
+"entryId": "granada-post-7098463916a0f56896a76b2a",
+"alias": false
+},
+{
+"from": "/fr/news/2019/granada-gold-drills-8.39-g-t-gold-over-6-meters-at-granada-project-below-pit-constrained-resources/",
+"entryId": "granada-post-a5e429de00ce587ee0b21c4a",
+"alias": false
+},
+{
+"from": "/fr/news/2019/granada-gold-mine-announces-date-for-dividend-payments/",
+"entryId": "granada-post-1ead0dd52535a26de4f6b0b8",
+"alias": false
+},
+{
+"from": "/fr/news/2019/granada-gold-mine-announces-dividend-dates/",
+"entryId": "granada-post-ea1a78576dadc17f0b044af8",
+"alias": false
+},
+{
+"from": "/fr/news/2019/granada-gold-outlines-expanded-metallurgical-test-program-for-the-recovery-of-low-grade-gold-cobalt-and-nickel/",
+"entryId": "granada-post-f1f0cd17b5f2e4d35f33a1a4",
+"alias": false
+},
+{
+"from": "/fr/news/2019/granada-gold-plans-2019-activities-makes-management-changes/",
+"entryId": "granada-post-224857509aeb1f1c3e8634d2",
+"alias": false
+},
+{
+"from": "/fr/news/2019/granada-gold-provides-exploration-update-for-2019/",
+"entryId": "granada-post-b48fa9cbfa6a7b1b83b38f4e",
+"alias": false
+},
+{
+"from": "/fr/news/2019/granada-hits-from-surface-high-grade-material-of-7.67-g-t-au-over-15-meters-in-drill-hole-gr-19-c-on-the-extended-long-bars-zone/",
+"entryId": "granada-post-388be36cea1637e722069f87",
+"alias": false
+},
+{
+"from": "/fr/news/2019/pre-concentration-test-results-on-low-grade-mineralization-at-granada-gold-mine-return-6.0-grams-per-tonne-gold/",
+"entryId": "granada-post-00fc742f7be7026c908bc887",
+"alias": false
+},
+{
+"from": "/fr/news/2019/pre-concentration-tests-of-low-grade-gold-mineralization-at-granada-gold-mine-shows-potential-to-deliver-higher-grade/",
+"entryId": "granada-post-995a206d2e35179c69c2b6d8",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-55.56-g-t-over-3-meters-from-1220-kg-surface-grab-sample-adds-second-drill/",
+"entryId": "granada-post-bff73c563c3b6fb0b7d3eb53",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-closes-1st-tranche-financing/",
+"entryId": "granada-post-7767cc4ea8b3a8fe9d64a1cd",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-closes-1st-tranche-private-placement-with-a-lead-order-from-palisades-goldcorp-ltd/",
+"entryId": "granada-post-527306675af5dca314798618",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-closes-2nd-and-final-tranche-of-its-financing/",
+"entryId": "granada-post-d7524405bf7a3da1d138cca4",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-closes-final-tranche-financing/",
+"entryId": "granada-post-4a24384a3ee00cd1d654495d",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-closes-flow-through-private-placement-2020-12-23/",
+"entryId": "granada-post-a863b9624e8cff03add4ea74",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-closes-flow-through-private-placement/",
+"entryId": "granada-post-4b9f1ba57d43da42e0620db0",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-completes-sale-of-back-in-option-to-canada-silver-cobalt/",
+"entryId": "granada-post-07bee10e0982c18cca9a81f3",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-gold-announces-passing-of-cfo-tom-devlin/",
+"entryId": "granada-post-0e01c8c16890768e2391a23f",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-gold-mine-continues-to-intersect-high-grade-gold-near-surface-within-500-meters-strike-length-in-the-longbars-zone/",
+"entryId": "granada-post-3de17cee1045381d185a9170",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-gold-mine-intersects-11.45-g-t-gold-over-33-meters-supports-continuity-of-high-grade-structures/",
+"entryId": "granada-post-676f9f14249c8554d1d4e411",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-gold-mine-to-begin-bulk-sample-program-of-high-grade-mineralized-structures-at-surface/",
+"entryId": "granada-post-679715d3cb878015f033e19c",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-gold-outlines-2020-high-grade-exploration-program/",
+"entryId": "granada-post-76b8954a7294892828152661",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-gold-to-participate-in-john-tumazos-mining-conference-research-webinar-august-14-at-10-am-eastern/",
+"entryId": "granada-post-639850dd634e8cdbab6e8055",
+"alias": true
+},
+{
+"from": "/fr/news/2020/granada-hits-2.39g-t-gold-over-29-meters-near-surface-including-7.72-g-t-over-4.5-meters-7.29-g-t-over-5.02-meters/",
+"entryId": "granada-post-dd4275bb2ddaa9d6fd13d709",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-hits-3.66-g-t-gold-over-26.5-meters-near-surface-including-13.49-g-t-over-4-meters-29.8-g-t-over-1.5-meters/",
+"entryId": "granada-post-ae28a68852ceac4c7522d44c",
+"alias": false
+},
+{
+"from": "/fr/news/2020/granada-hits-5.64-g-t-gold-over-6.86-meters-including-20.4-g-t-gold-over-1.5-meters/",
+"entryId": "granada-post-f8cb852619cf477d26a35f59",
+"alias": false
+},
+{
+"from": "/fr/news/2020/innovexplo-begins-revised-43-101-resource-study-at-granada/",
+"entryId": "granada-post-813382e7a85228da95c5a284",
+"alias": false
+},
+{
+"from": "/fr/news/2020/tetra-tech-begins-studies-for-on-site-mill-at-granada/",
+"entryId": "granada-post-9abafd97fa4ceb15ace8f8c0",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-adds-3rd-drill-for-deep-drilling-of-10-000-meters/",
+"entryId": "granada-post-d07e1697c636528fe15b5576",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-closes-1-000-000-flow-through-private-placement/",
+"entryId": "granada-post-6bc235b83810fee1b7d2d0b6",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-closes-private-placement/",
+"entryId": "granada-post-311592a7b1d36f306fe5da74",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-announces-appointment-of-new-cfo/",
+"entryId": "granada-post-53d966a77441c949cbcd596c",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-closes-1-350-000-flow-through-and-unit-private-placement/",
+"entryId": "granada-post-125422bae712bbe381d4ed5f",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-closes-600-000-flow-through-private-placement/",
+"entryId": "granada-post-37484ce49906a11122ddafd3",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-discovers-high-value-rare-earth-and-alkali-metals/",
+"entryId": "granada-post-e04a371a33d65d1855399e72",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-hits-3.43g-t-gold-over-20.5-meters-near-surface-and-6.45-g-t-over-4.5-meters-and-7.9-g-t-over-3-meters/",
+"entryId": "granada-post-65e4f3f8c550720b556d6327",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-hits-7.63-g-t-gold-over-5-meters-including-53.5-g-t-over-0.65-meters-during-infill-drill-program/",
+"entryId": "granada-post-6ada07fa9d26d266eddaec7b",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-hits-massive-rare-earth-and-alkali-metals-zone-1.6-kilometers-from-discovery-hole-gr-20-20/",
+"entryId": "granada-post-0d49c24d52be41284cef3aa6",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-intersects-1.11-g-t-gold-over-109.60m-and-53.70-g-t-au-over-0.65m-and-7.19-g-t-gold-over-8.85m-in-200-series-drill/",
+"entryId": "granada-post-a281658f886e99a5812264a7",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-intersects-12.61g-t-gold-over-16.5-meters-and-3.49g-t-gold-over-30.5-meters-within-a-greater-1.33g-t-gold-over/",
+"entryId": "granada-post-d43d5cc934add28b2ee1a20f",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-intersects-5.5-g-t-au-over-6-meters-including-31.3-g-t-au-over-1-meter-during-infill-drilling/",
+"entryId": "granada-post-6063b99372ad5c3038b33ea2",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-intersects-significant-gold-mineralization-up-to-2.77-g-t-au-over-8.45m-and-21.50-g-t-au-over-0.70m-under-orphan/",
+"entryId": "granada-post-15dc0340e0fa71d849ac43ac",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-intersects-up-to-7.16-g-t-over-5.60m-and-95.00-g-t-gold-over-0.50m-in-drill-program-update/",
+"entryId": "granada-post-8f9f2f16b9b30b55161df237",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-mine-announces-filing-of-ni-43-101-technical-report-for-the-granada-gold-project-quebec-with-updated-high-grade/",
+"entryId": "granada-post-699ebacbf75d14c70035ab82",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-mine-announces-that-canada-silver-cobalt-begins-testwork-using-re-2ox-on-granadas-rubidium-mineralized-material/",
+"entryId": "granada-post-c2715f8616acacfbeb5d08e1",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-mine-canada-silver-cobalt-joint-release-on-re-2ox-and-recovery-of-critical-us-strategic-metals/",
+"entryId": "granada-post-606722c451ea376307705db6",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-mine-engages-goldspot-discoveries-to-apply-ai-to-further-extend-granada-golds-resources-along-strike/",
+"entryId": "granada-post-cc97b5a028a312c19b1070a0",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-mine-extends-warrant-terms/",
+"entryId": "granada-post-e26bc337e4035ff261f4e810",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-mine-gets-10-year-extension-on-mining-lease-bm-852-at-the-granada-mine-property-and-takes-500-tonne-bulk-sample/",
+"entryId": "granada-post-faafa5ef730672290bd81c46",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-mine-prepares-to-extract-bulk-sample-on-extension-of-high-grade-zone-on-mining-lease-bm-813-in-2022/",
+"entryId": "granada-post-3ffb3d848506ab237fde6b56",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-mine-va-de-l-avant-avec-des-etudes-metallurgiques-et-environnementales-en-vue-de-l-usinage-sur-le-site-a-granada/",
+"entryId": "granada-post-406bfe146312a3eb279a23d7",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-mines-continues-to-intersects-gold-in-multiple-veins-at-depth/",
+"entryId": "granada-post-fd2e61e137c7e684d3cbe8ba",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-pre-concentration-test-work-shows-potential-to-increase-in-situ-historical-resource-estimate-and-gold-grade/",
+"entryId": "granada-post-e4e784fa8bfa3a328fb97603",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-gold-to-participate-in-john-tumazos-mining-conference-webinar-on-february-16-at-8-30-am-eastern/",
+"entryId": "granada-post-b96947ab20a9f270ff1d0629",
+"alias": true
+},
+{
+"from": "/fr/news/2021/granada-hits-107.8-g-t-gold-over-4-meters-including-multiple-high-grade-veins-at-depth/",
+"entryId": "granada-post-777eca1f2e63244d1433cef9",
+"alias": false
+},
+{
+"from": "/fr/news/2021/granada-presents-updated-high-grade-mineral-resource-estimate/",
+"entryId": "granada-post-788effbe2c2db08e36912310",
+"alias": false
+},
+{
+"from": "/fr/news/2022/canada-silver-cobalt-works-inc-has-a-strategic-investment-in-granada-gold-mine-inc/",
+"entryId": "granada-post-143fbf6859c24da6105c219d",
+"alias": false
+},
+{
+"from": "/fr/news/2022/granada-amends-warrants-september-2022/",
+"entryId": "granada-post-ce9990a18d66499becb93e6b",
+"alias": false
+},
+{
+"from": "/fr/news/2022/granada-amends-warrants/",
+"entryId": "granada-post-42378955b2680204a1c8e45f",
+"alias": false
+},
+{
+"from": "/fr/news/2022/granada-gold-announces-appointment-of-new-cfo/",
+"entryId": "granada-post-6991f41397783a1c17a8bae0",
+"alias": false
+},
+{
+"from": "/fr/news/2022/granada-gold-announces-passing-of-director-jacques-monette/",
+"entryId": "granada-post-d6a99a4804f22d90c45ea07b",
+"alias": false
+},
+{
+"from": "/fr/news/2022/granada-gold-announces-recent-drill-program-has-increased-measured-and-indicated-mineral-resources-by-21-to-543-000-oz-au-and/",
+"entryId": "granada-post-26cd5652a2c8c413fefd49c2",
+"alias": false
+},
+{
+"from": "/fr/news/2022/granada-gold-assays-4.33-g-t-gold-from-500-tonne-surface-bulk-sample/",
+"entryId": "granada-post-186911eca2746273d3d11d52",
+"alias": false
+},
+{
+"from": "/fr/news/2022/granada-gold-mine-announces-filing-of-ni-43-101-technical-report-for-the-granada-gold-project-quebec-with-updated-resource/",
+"entryId": "granada-post-9bdd72fc5322b75ac7287c4f",
+"alias": false
+},
+{
+"from": "/fr/news/2022/granada-gold-mine-closes-723-200-private-placement/",
+"entryId": "granada-post-f531ce12ea86286e42112dff",
+"alias": false
+},
+{
+"from": "/fr/news/2022/granada-gold-mine-extends-warrant-terms/",
+"entryId": "granada-post-dbe48a06dfd65fdbe2fff91b",
+"alias": false
+},
+{
+"from": "/fr/news/2022/granada-gold-mine-releases-2022-outlook-and-2021-summary/",
+"entryId": "granada-post-fc34a525547222ffe80e91ea",
+"alias": false
+},
+{
+"from": "/fr/news/2022/granada-proposes-to-issue-shares-for-debt/",
+"entryId": "granada-post-d696fe86ccb6da2b355d661e",
+"alias": false
+},
+{
+"from": "/fr/news/2022/granada-reports-agm-results/",
+"entryId": "granada-post-e3772361cd9bdd5a4443355c",
+"alias": false
+},
+{
+"from": "/fr/news/2022/re-2ox-process-extracts-99-percent-of-rubidium-from-granada-gold-mines-battery-metals-zone/",
+"entryId": "granada-post-ab235f7ed06a51b26b565ae1",
+"alias": false
+},
+{
+"from": "/fr/news/2023/corrected-version-of-march-2-2023-news-release-granada-retracts-its-rubidium-resource/",
+"entryId": "granada-post-1e4f021631a83e71e763b950",
+"alias": false
+},
+{
+"from": "/fr/news/2023/granada-closes-shares-for-debt-transaction-and-confirms-repricing-and-extending-warants/",
+"entryId": "granada-post-6a05c6cefea6acec722f1986",
+"alias": false
+},
+{
+"from": "/fr/news/2023/granada-gold-grants-stock-options/",
+"entryId": "granada-post-de3113ee6095debe6337ab04",
+"alias": false
+},
+{
+"from": "/fr/news/2023/granada-gold-mine-amends-warrants/",
+"entryId": "granada-post-17e367eff019f867639c9bd2",
+"alias": false
+},
+{
+"from": "/fr/news/2023/granada-gold-mine-announces-500-tonne-surface-bulk-sample-returns-a-grade-of-3.95-grams-per-tonne-gold/",
+"entryId": "granada-post-d8503e82d574e7ece3ff1da6",
+"alias": false
+},
+{
+"from": "/fr/news/2023/granada-gold-mine-announces-potential-tonnage-and-grade-estimate-of-its-exploration-target-at-the-granada-deposit/",
+"entryId": "granada-post-aa0c23817eb7d17b12bd83b8",
+"alias": false
+},
+{
+"from": "/fr/news/2023/granada-gold-mine-bulk-sample-processing/",
+"entryId": "granada-post-507c38a4da30a22e555f1e27",
+"alias": false
+},
+{
+"from": "/fr/news/2023/granada-gold-mine-intersects-five-high-grade-gold-zones-below-1-200-meters-on-the-step-out-deep-hole/",
+"entryId": "granada-post-957bfb12948900fc5d85e800",
+"alias": false
+},
+{
+"from": "/fr/news/2023/granada-gold-mine-to-update-historic-pfs-for-bulk-sample-processing/",
+"entryId": "granada-post-3ff0696e4118d1e39667f7d5",
+"alias": false
+},
+{
+"from": "/fr/news/2023/granada-gold-mine-update-on-als-goldspot-targeting/",
+"entryId": "granada-post-1b765fc7fc82448165dfa1b5",
+"alias": false
+},
+{
+"from": "/fr/news/2023/granada-gold-reprices-and-extends-warrants/",
+"entryId": "granada-post-f93dd51fb18525daad89a4be",
+"alias": false
+},
+{
+"from": "/fr/news/2023/granada-golds-ongoing-bulk-sampling-program-confirms-significantly-higher-open-pit-grades-than-drill-core-grades/",
+"entryId": "granada-post-e6a564e1ae5c3514f99b3896",
+"alias": false
+},
+{
+"from": "/fr/news/2023/granada-proposes-shares-for-debt-transaction/",
+"entryId": "granada-post-bcdb2ddc33067a36da63fd0b",
+"alias": false
+},
+{
+"from": "/fr/news/2023/granada-receives-regulatory-approval-for-listing-of-class-a-redeemable-preferred-shares/",
+"entryId": "granada-post-d9ea2ddbfe5bb6b370fb8183",
+"alias": false
+},
+{
+"from": "/fr/news/2023/granada-reports-annual-general-and-special-meeting-results/",
+"entryId": "granada-post-3fcfca416bf90f88210ee5b8",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-appoints-new-director-to-the-board/",
+"entryId": "granada-post-5a1f2dc8815377cf89cbdc8a",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-grants-stock-options/",
+"entryId": "granada-post-dd53d2986134a1c6a0ba16c8",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mine-advances-plans-for-on-site-mill-bolstering-economics-and-grade-control/",
+"entryId": "granada-post-acd5e539fd1784388e8cf224",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mine-advances-strategic-partnerships-and-expands-operations/",
+"entryId": "granada-post-d07bb7b32e16d75eea3088c1",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mine-advances-towards-open-pit-mining-with-renewal-of-mining-development-lease-bm-813/",
+"entryId": "granada-post-77e3341bbf32baa328bfd46c",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mine-advances-with-10-year-lease-extensions-reveals-ambitious-development-plans/",
+"entryId": "granada-post-10e177ccdf6af9443f452c0f",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mine-announces-preliminary-open-pit-in-ground-values-for-gold-and-aggregate/",
+"entryId": "granada-post-6ee35788054db05bb2c0ee3d",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mine-announces-quebec-flow-through-private-placement/",
+"entryId": "granada-post-6291e7667d142a11e4b0f997",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mine-begins-the-evaluation-of-local-mills-for-custom-processing-of-gold-ore-on-site-processing-or-on-site-pre/",
+"entryId": "granada-post-cb3a627fa64d1e6811051680",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mine-by-product-aggregate-update/",
+"entryId": "granada-post-fadd4d433c3ee3a31b556735",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mine-closes-quebec-flow-through-private-placement/",
+"entryId": "granada-post-a388b7b89d4e1306d42f84c3",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mine-completes-metallurgical-environmental-test-work-for-potential-custom-milling/",
+"entryId": "granada-post-6f70f6f09ab97cb903053f3f",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mine-defines-priority-drill-targets/",
+"entryId": "granada-post-2e4bbb92acfe557b9802f1bd",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mine-estimates-a-cost-of-1-200-us-dollars-per-ounce-of-gold-for-potential-2027-custom-milling/",
+"entryId": "granada-post-8050496fe24c96b882558649",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mine-submits-documentation-to-renew-mining-development-lease-bm813-for-potential-open-pit-mining/",
+"entryId": "granada-post-9918f48d205f7083c4fa42b4",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mine-unveils-high-grade-flow-sheet-poised-to-become-low-cost-gold-producer-on-cadillac-break/",
+"entryId": "granada-post-330b902998f1a9bb7dedbc74",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mine-welcomes-canadian-governments-5-billion-indigenous-loan-guarantee-program/",
+"entryId": "granada-post-1bf82540815f6378742d73e8",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mines-500-tonne-surface-bulk-sample-produces-a-77.9-grams-per-tonne-gold-concentrate/",
+"entryId": "granada-post-5ac8eba0c60f362455f9749f",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mines-engages-a-resource-development-advisor/",
+"entryId": "granada-post-ecd6337ca8f9ecc6294fc17a",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-gold-mines-outlines-process-for-converting-recovered-gold-into-a-market-gold-bar/",
+"entryId": "granada-post-ab5caa7481a7ed96c2a53083",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-high-grade-gravity-plant-design-for-onsite-processing/",
+"entryId": "granada-post-bbcb08b4f6e553610d33e0fd",
+"alias": false
+},
+{
+"from": "/fr/news/2024/granada-to-continue-in-fill-deep-drill-program-to-test-high-grade-gold-results-of-107.9-g-t-over-4-meters/",
+"entryId": "granada-post-c56165e12f5c123a646222a9",
+"alias": false
+},
+{
+"from": "/fr/news/2024/massive-critical-metals-177-meter-wide-mineralized-zone-unveiled-during-granada-gold-mines-last-deep-hole-gold-drill-program/",
+"entryId": "granada-post-26062f4f45b532e94a08890b",
+"alias": false
+},
+{
+"from": "/fr/news/2025/granada-east-project-revisited-in-search-of-historic-high-grade-200-grams-per-tonne-gold-mineralization/",
+"entryId": "granada-post-9e3f5b6a256842cd175654ed",
+"alias": false
+},
+{
+"from": "/fr/news/2025/granada-gold-announces-appointment-of-new-cfo/",
+"entryId": "granada-post-67a79c05967f87bf486488c3",
+"alias": false
+},
+{
+"from": "/fr/news/2025/granada-gold-appoints-new-director-to-the-board-1/",
+"entryId": "granada-post-4eb0ffe2dea9955db28eb77e",
+"alias": false
+},
+{
+"from": "/fr/news/2025/granada-gold-appoints-new-director-to-the-board/",
+"entryId": "granada-post-df4bf73cd180146199b1b356",
+"alias": false
+},
+{
+"from": "/fr/news/2025/granada-gold-completes-mou-review-period-with-lafleur-minerals/",
+"entryId": "granada-post-79cab93daf8feec9c0915a1d",
+"alias": false
+},
+{
+"from": "/fr/news/2025/granada-gold-grants-stock-options/",
+"entryId": "granada-post-6979eef4fe9032a8ae4fbecd",
+"alias": false
+},
+{
+"from": "/fr/news/2025/granada-gold-mine-reviews-the-potential-of-1-gram-per-tonne-gold-in-an-open-pit-resource-at-minesite/",
+"entryId": "granada-post-f47f6d81d5949682114e7d79",
+"alias": false
+},
+{
+"from": "/fr/news/2025/granada-gold-proceeds-with-evaluation-of-custom-milling-at-the-beacon-gold-mill/",
+"entryId": "granada-post-94b467381486a86b9808bbd6",
+"alias": false
+},
+{
+"from": "/fr/news/2025/granada-reports-annual-general-meeting-results/",
+"entryId": "granada-post-0691fd9e96bebab4956ff9b4",
+"alias": true
+},
+{
+"from": "/fr/news/2025/record-gold-price-significantly-enhances-granada-gold-mines-potential-for-more-open-pit-ounces/",
+"entryId": "granada-post-a3aafb17a58aaaf174f2ba6e",
+"alias": false
+},
+{
+"from": "/fr/news/2025/resource-acquisitions-on-the-cadillac-break-are-positive-for-granada-gold-mine/",
+"entryId": "granada-post-f6a3bad14d68e78d7c8afb40",
+"alias": false
+},
+{
+"from": "/fr/news/2025/update-on-granada-gold-mine-on-site-sampling-plant/",
+"entryId": "granada-post-78058b9d90e1a606a9ffa9ec",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-announces-service-agreements/",
+"entryId": "granada-post-a557d20b842b1f4c971ad263",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-closes-shares-for-debt-transaction/",
+"entryId": "granada-post-d2d6b2de68cb442290c2a953",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-gold-advances-on-site-gravity-concentration-facility-to-upgrade-mineralized-material-grade-and-reduce-off-site-haulage/",
+"entryId": "granada-post-117db7fd4f3e2fb7fb729427",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-gold-announces-64-increase-in-measured-and-indicated-mineral-resources-to-890-600-oz-au-15-982-000-tonnes-at-1.73-g-t/",
+"entryId": "granada-post-07f22687d3e899defc602eca",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-gold-mine-advances-on-site-processing-authorization-for-gravity-concentration-at-granada-gold-project/",
+"entryId": "granada-post-e11dd54559ef1edbe30ab6e8",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-gold-mine-announces-2.5-million-private-placement/",
+"entryId": "granada-post-fb379d7f510de61de6953ad8",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-gold-mine-announces-engagement-of-senergy-communications-capital-inc/",
+"entryId": "granada-post-797da3b32c8c8347e58ba002",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-gold-mine-announces-filing-of-ni-43-101-technical-report-for-the-granada-gold-project-quebec-with-updated-resource/",
+"entryId": "granada-post-751a02d12a81cfd6ee99815f",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-gold-mine-appoints-j.w-dumont-as-president/",
+"entryId": "granada-post-jw-2026-09-28-fr",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-gold-mine-closes-oversubscribed-private-placement-financing/",
+"entryId": "granada-post-896a65bd045bcb3bcdb21728",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-gold-mine-demonstrates-2.7x-grade-uplift-on-open-pit-mineralization-through-ore-sorting-at-saskatchewan-research-council/",
+"entryId": "granada-post-6d0e680eea1419487a99d7c4",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-gold-mine-engages-goldminds-geoservices-for-mineral-resource-estimate-update-reflecting-current-gold-pricing/",
+"entryId": "granada-post-c1b1237e2cafa9b35d23fe22",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-gold-mine-enters-into-two-debt-conversion-agreements-in-an-aggregate-amount-of-4-million/",
+"entryId": "granada-post-fc2939247ea7d49f23207954",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-gold-mine-structural-interpretation-supports-additional-drill-targets/",
+"entryId": "granada-post-bc3d6201f712b095f6d03c7f",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-gold-mine-to-present-in-the-emerging-growth-virtual-conference-at-12-noon-et-july-16-2026/",
+"entryId": "granada-post-4f60598bc5ebde855f21730b",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-proposes-to-issue-shares-for-debt/",
+"entryId": "granada-post-fa127bf1aff32e31c935c5a3",
+"alias": false
+},
+{
+"from": "/fr/news/2026/granada-reports-annual-general-and-special-meeting-results/",
+"entryId": "granada-post-632e8162a31f69619c21deac",
+"alias": false
+},
+{
+"from": "/fr/news/archive/2009/gbb-announces-private-placement/",
+"entryId": "granada-post-228fee025deff772e885cff1",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2009/gbb-closes-private-placement/",
+"entryId": "granada-post-3012349a97f9ed44039b5664",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2009/gbb-closes-second-tranche-of-private-placement/",
+"entryId": "granada-post-f3f2743b2672001b3f5d6595",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2009/gbb-exploration-update-on-granada-mine-2/",
+"entryId": "granada-post-e60bd00dc9086c447bc5431d",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2009/gbb-exploration-update-on-granada-mine/",
+"entryId": "granada-post-76eb2000ec771412e984a48b",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2009/gbb-plans-drill-program-to-supplement-and-confirm-previous-unreported-results/",
+"entryId": "granada-post-5e251a3675edffc1cf6fa0f5",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/20-000-metre-phase-2-drill-program-underway-at-granada/",
+"entryId": "granada-post-01128bc33b9cc38052befeb7",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/drilling-confirms-extension-of-granada-gold-mine-mineralization/",
+"entryId": "granada-post-74e0e00fcadfe98bfab9d8bf",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-adds-second-drill-rig-at-granada/",
+"entryId": "granada-post-dd8ea27b7348e7290c501baa",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-appoints-brian-e-robertson-to-board-of-directors/",
+"entryId": "granada-post-1cf8793540230a988ab88686",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-appoints-new-transfer-agent/",
+"entryId": "granada-post-05551ee224af05204470375a",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-arranges-3.2-million-financing/",
+"entryId": "granada-post-e71a782139f2dbe009dea03b",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-closes-8-million-private-placement/",
+"entryId": "granada-post-8bdfc6ec30bd9df5fe6b157e",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-continues-drilling-for-bulk-tonnage-deposit-at-granada/",
+"entryId": "granada-post-772b30c2f9fcba0e313d02b8",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-discovers-significant-mineralization-northeast-and-southeast-of-long-bars-zone-preliminary-block-model/",
+"entryId": "granada-post-10b23bd168510d313973eae9",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-doubles-granada-land-package-prepares-for-major-drill-program/",
+"entryId": "granada-post-70ce4f2c373e3d44c344d07b",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-drills-best-result-yet-in-long-bars-zone-eastern-extension/",
+"entryId": "granada-post-be88d4a1bfb0d8a9453eaa53",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-expands-long-bars-zone-eastern-extension/",
+"entryId": "granada-post-4aa0918520b81b026c54735e",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-extends-phase-2-drill-program-at-granadaa/",
+"entryId": "granada-post-af5da4e37d3f05738cc2e54f",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-granada-metallurgical-tests-show-recoveries-in-excess-of-93/",
+"entryId": "granada-post-855c648d56194970b84a89ef",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-grants-stock-options/",
+"entryId": "granada-post-63a588ffa0ed458797e5a2f2",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-increases-financing-due-to-demand/",
+"entryId": "granada-post-6a4f502861ffe95c39e7bca7",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-increases-private-placement-grants-stock-options/",
+"entryId": "granada-post-37aff1988c6b163ce2469624",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-launches-baseline-environmental-study-for-granada/",
+"entryId": "granada-post-bd40312607a093613d7bdb83",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-more-than-doubles-landholdings-at-emerging-granada-mining-camp/",
+"entryId": "granada-post-1be01aa52de7f37ce6f2af08",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-nears-halfway-mark-of-drill-program-long-bars-zone-2-identified/",
+"entryId": "granada-post-df6a9f75cb06e32f9d6cfea6",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-outlines-large-mineralized-system-at-granada/",
+"entryId": "granada-post-f0760d783aad4d520bd014b3",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-re-elects-board-at-agm/",
+"entryId": "granada-post-2b1c1197d2395bbf3e83fb55",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gbb-reports-best-assay-results-yet-from-granada/",
+"entryId": "granada-post-7664be27ced5cb8a967c8916",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/geological-interpretation-of-granada-evolves-after-more-phase-2-drilling/",
+"entryId": "granada-post-454832a28389016f9fd99686",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/gold-bullion-delivers-best-ever-results-at-granada/",
+"entryId": "granada-post-dc08c61a12014bbaad3f2183",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/material-change-report/",
+"entryId": "granada-post-8964e4c77b5ad6d5aec344dc",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2010/strong-balance-sheet-in-place-for-gbb-to-advance-granada/",
+"entryId": "granada-post-c4d68d3ef1342c1cbd9e6cb7",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gbb-advises-shareholders-that-castle-silver-mines-inc-preliminary-prospectus-is-available-on-sedar/",
+"entryId": "granada-post-56a94e513d9ace9c8369ee4d",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gbb-agm-of-shareholders/",
+"entryId": "granada-post-cb834f74e757d658eb5b4c26",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gbb-announces-corporate-move-and-amendment-to-exercise-price-of-warrants/",
+"entryId": "granada-post-8a7d1ac5442bf15381a0ca65",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gbb-announces-maximum-4.4-million-private-placement/",
+"entryId": "granada-post-f4f7cb23d68df7443745b091",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gbb-castle-silver-mines-preliminary-prospectus/",
+"entryId": "granada-post-f34e05abfc3d8f73907a7683",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gbb-identifies-strong-new-vien-structure-at-castle-silver-mine-gowganda/",
+"entryId": "granada-post-937ba3d6f0169ea9c08db79b",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gbb-plans-to-spin-off-its-castle-silver-mine/",
+"entryId": "granada-post-b4b3287d08612b493cdbb283",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gbb-provides-update-on-its-phase-3-drill-program-2/",
+"entryId": "granada-post-fb3f0f0d37ee36f81abc5105",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gbb-provides-update-on-its-phase-3-drill-program/",
+"entryId": "granada-post-b1bb5b04d0f26155b2fe0e68",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gbb-reports-1.25-g-t-au-over-72.25-metres-at-granada/",
+"entryId": "granada-post-367fb4719846f6247bfc9a3c",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gbb-reports-6-476-g-t-ag-over-3.09m-at-castle-silver-mine-gowganda/",
+"entryId": "granada-post-42df86a4161192e10345da08",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gold-bullion-announces-additional-positive-drill-data/",
+"entryId": "granada-post-892c6b6cf7e51c8fdfe07f64",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gold-bullion-announces-final-closing-of-5.0-million-private-placement/",
+"entryId": "granada-post-ffceb2ae92859c6ea3aea869",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gold-bullion-announces-maximum-3.8-million-private-placement/",
+"entryId": "granada-post-a96798a3ccf13dd1091ace2f",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gold-bullion-drills-80-metres-of-1.36-grams-per-tonne-gold/",
+"entryId": "granada-post-bb60542265fa2d3b425858ff",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gold-bullion-raises-4.35-million-in-first-closing-of-private-placement/",
+"entryId": "granada-post-6dbdae42d22ff8dc674758fd",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gold-bullion-releases-significant-historic-hole-with-granada-drilling-update/",
+"entryId": "granada-post-5051e5428dd210d2943f2e5b",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/gold-bullion-retains-sgs-canada-inc-geostat-as-independent-consultant-on-its-granada-property/",
+"entryId": "granada-post-94b423bbaff843c2fd13a360",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/intl-speculator-says-buy-gold-bullion/",
+"entryId": "granada-post-2265a7011a78d7c50f87ade9",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2011/year-end-message-from-frank-j-basa-gold-bullion-development-president-and-ceo/",
+"entryId": "granada-post-a4587849d7a635edea83d209",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/drill-hole-gr-12-400-extends-near-surface-mineralized-zone-an-additional-175-meters-to-the-west-of-the-current-long-bars-zone/",
+"entryId": "granada-post-a6dd119ac5c5f5fcc3d7e0f2",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-adopts-shareholder-rights-plan/",
+"entryId": "granada-post-d9549fbb53007d380cedaa00",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-announces-3.0-million-private-placement/",
+"entryId": "granada-post-5345bd91ca44026ba1eaa4a2",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-announces-additional-deep-hole-drill-results-with-high-grade-gold-8.26-g-t-au-over-1.50-metres-at-depth/",
+"entryId": "granada-post-327e6c997df72881d25301bc",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-announces-additional-positive-drill-data-update-2/",
+"entryId": "granada-post-84b91a0ae8a1da6e134b2198",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-announces-additional-positive-drill-data-update/",
+"entryId": "granada-post-75f4ff052e35df6f0d6bc6e3",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-announces-new-drill-program-at-granada/",
+"entryId": "granada-post-ad80c7444fd84bf0f0096d33",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-announces-preliminary-metallurgical-testing-showing-average-gold-recovery-of-94.1-with-an-average-gold-grade-of/",
+"entryId": "granada-post-d932e431ce8ce6e1b23ce5aa",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-announces-private-placement/",
+"entryId": "granada-post-cd38591346b841c4fd7fc13f",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-applies-to-amend-warrants/",
+"entryId": "granada-post-fab8fb88e004e6090b8c54d7",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-applies-to-extend-warrants/",
+"entryId": "granada-post-144ebfdae786cec8a6646490",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-awards-sgs-canada-inc-mandate-for-preliminary-feasibility-study-for-a-mine-start-up-using-custom-milling-outside/",
+"entryId": "granada-post-c3ea2f413992e9032d05600c",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-closes-first-tranche-of-private-placement/",
+"entryId": "granada-post-8ae9f5da6eacee2c0762f9d8",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-development-corp-files-counter-claim-against-genivar-inc/",
+"entryId": "granada-post-bae11f5fd35d5b9190dc4af0",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-development-corp-launches-new-website/",
+"entryId": "granada-post-b79a8c6d1e2416d41fb207fd",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-development-corp-releases-43-101-technical-report-on-its-granada-gold-project/",
+"entryId": "granada-post-c2d4324b54e4364fdba20b6b",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-enters-into-option-agreement-to-acquire-beaver-and-violet-silver-properties-postpones-castle-silver-mines-ipo/",
+"entryId": "granada-post-05b9235657a99ae6ddb264e6",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-grants-stock-options/",
+"entryId": "granada-post-bbad4c7546412c2b9bb3e578",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-holds-2012-annual-general-meeting-of-shareholders/",
+"entryId": "granada-post-4ccb1c77e190e3c593cefe1e",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-provides-granada-mine-update/",
+"entryId": "granada-post-74b5434f31dff1ceae62527a",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-provides-mineral-potential-at-depth-for-granada/",
+"entryId": "granada-post-4ceeca156aabb9466bb3a277",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-provides-mineral-resource-estimate-for-granada/",
+"entryId": "granada-post-c7660848ec8ee8ce091e3747",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-provides-mineral-resource-estimate-update-for-granada/",
+"entryId": "granada-post-209685e025e1a25f10312bbb",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-raises-2.4-million-at-first-closing-of-private-placement/",
+"entryId": "granada-post-e16ab711bf4efce13aa98207",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-raises-500-000-at-second-and-final-closing-of-private-placement/",
+"entryId": "granada-post-4cd89ad326792fa10629a101",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-receives-approval-to-warrant-amendment-2/",
+"entryId": "granada-post-e9c072527b46cdb6c198e6d6",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-receives-approval-to-warrant-amendment/",
+"entryId": "granada-post-56d2dbd1239d835712aa7bab",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-receives-positive-preliminary-economic-assessment-for-granada-proceeding-to-preliminary-feasibility-study/",
+"entryId": "granada-post-42c942bd7dda27458f95be52",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-receives-statement-of-claim-from-genivar-inc/",
+"entryId": "granada-post-e1ae816d85d4b1e7063aae05",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-releases-results-from-43-backlogged-phase-iii-granada-drill-data-including-1.76-g-t-au-over-58.0-m/",
+"entryId": "granada-post-beb40f6043a9624b9c536f7d",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-releases-results-from-54-back-logged-granada-drill-holes/",
+"entryId": "granada-post-d2cc5c8803341c2075f4ce76",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/gold-bullion-retains-investor-relations-firm/",
+"entryId": "granada-post-f20fd9edec25f015448ec1ee",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/preliminary-results-from-the-deep-hole-program-confirms-extension-of-gold-mineralization-800-metres-down-plunge-and-900-metres/",
+"entryId": "granada-post-0e74084d8fcb1e0e49f5342e",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2012/shareholder-gold-royalty-program/",
+"entryId": "granada-post-d3ccbc169622ce3f4d339ce4",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/addendum-to-matachewan-first-nations-july-29-2013-press-release/",
+"entryId": "granada-post-37192a0f3e2809996383d812",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-announces-1.0-million-private-placement/",
+"entryId": "granada-post-4b83b6592a572c710232807f",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-announces-granada-royalty-shares/",
+"entryId": "granada-post-6e3a30ad7011d8d637053664",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-announces-resignation-of-subsidiary-director/",
+"entryId": "granada-post-706b056907bf7cad6ac96b4d",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-announces-results-of-2013-annual-general-meeting/",
+"entryId": "granada-post-c667565211ac99100e43cf3e",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-appoints-new-cfo-for-castle-silver-mines-inc-2/",
+"entryId": "granada-post-152645c7ca04baf143d7749e",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-appoints-new-cfo-for-castle-silver-mines-inc/",
+"entryId": "granada-post-471eadf01dac96da2615abd0",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-closes-private-placement/",
+"entryId": "granada-post-2ee1cff47d389d0c48fb7811",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-development-corp-granada-progress-update/",
+"entryId": "granada-post-583d6d80065492607f8268e9",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-development-corp-provides-update/",
+"entryId": "granada-post-d2c27f29d46411f38e49e9e6",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-development-corp-releases-43-101-technical-report-on-its-granada-gold-project/",
+"entryId": "granada-post-3bccab61b061cea11f0eae56",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-development-initiates-trenching-program-at-granada/",
+"entryId": "granada-post-5ea0bce8c6add649f31a3019",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-development-releases-ni-43-101-technical-report-on-granada-gold-project-with-sgs-canada-granted-mandate-for/",
+"entryId": "granada-post-8b131510e39e4293ecbb009e",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-enters-into-agreement-with-matachewan-first-nation-indian-band/",
+"entryId": "granada-post-9d22e0c44420e473ddb5c374",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-grants-stock-options-2/",
+"entryId": "granada-post-24b730a98c93a475165f658f",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-grants-stock-options/",
+"entryId": "granada-post-cd1e34f619a0aea684fea39d",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-provides-pre-feasibility-study-update/",
+"entryId": "granada-post-614a6685777faeebcb760193",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-provides-update-on-its-castle-silver-mine-property/",
+"entryId": "granada-post-df9b15ac390fa7482199bade",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/gold-bullion-provides-update-on-progress-at-granada-mine/",
+"entryId": "granada-post-dfeeb11ba27460a7a5ddaede",
+"alias": true
+},
+{
+"from": "/fr/news/archive/2013/summary-of-metallurgical-tests-performed-on-hand-cobbed-samples-from-the-beaver-silver-mine-cobalt-camp/",
+"entryId": "granada-post-36b568cf72642f45785cd85b",
+"alias": true
+}
+]
+}

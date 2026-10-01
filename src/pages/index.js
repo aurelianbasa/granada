@@ -19,7 +19,7 @@ export default function Home({ data }) {
   const { t } = useTranslation();
 
   const posts = data.allPosts.nodes;
-  const latestYear = data.latestYear.nodes[0]?.year;
+  const latestYear = posts[0]?.year?.year || data.latestYear.nodes[0]?.year;
 
   return (
     <Layout>

@@ -7,8 +7,26 @@ import Layout from '@components/layout';
 import Seo, { getLocaleStrings } from '@components/seo';
 import Button from '@components/button';
 
+// Old granadagoldmine.com addresses: on hosts without server-side redirects, look the path up in
+// the map written by gatsby-node.js and replace the location (a full load, not a client re-render).
+function useLegacyRedirect() {
+  React.useEffect(() => {
+    const { pathname, search, hash } = window.location;
+    const candidates = [pathname, pathname.endsWith('/') ? pathname.slice(0, -1) : `${pathname}/`];
+
+    fetch('/legacy-redirects.json')
+      .then((response) => (response.ok ? response.json() : {}))
+      .then((redirects) => {
+        const target = candidates.map((candidate) => redirects[candidate]).find(Boolean);
+        if (target) window.location.replace(target.includes('#') || !hash ? `${target}${search}` : `${target}${search}${hash}`);
+      })
+      .catch(() => {});
+  }, []);
+}
+
 export default function NotFoundPage() {
   const { t } = useTranslation();
+  useLegacyRedirect();
 
   return (
     <Layout>
