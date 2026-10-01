@@ -2,6 +2,7 @@ require('dotenv').config({ path: `.env` });
 
 const fs = require('fs');
 const path = require('path');
+const { reviewMode } = require('./config/site');
 
 const legacyRedirects = require('./src/data/legacy-redirects.json');
 const legacyNewsUrls = require('./src/data/legacy-news-urls.json');
@@ -392,4 +393,27 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   fs.mkdirSync(path.join(__dirname, 'public'), { recursive: true });
   fs.writeFileSync(path.join(__dirname, 'public', 'legacy-redirects.json'), JSON.stringify(redirectMap));
+  writeCloudflareFiles(redirectMap);
 };
+
+function writeCloudflareFiles(redirectMap) {
+  // Pages applies these at the edge; keep legacy-redirects.json for the existing 404 fallback.
+  const redirects = Object.entries(redirectMap).sort(([a], [b]) => a.localeCompare(b));
+  if (redirects.length > 2000) throw new Error('Cloudflare Pages supports at most 2,000 static redirects.');
+
+  const lines = redirects.map(([from, to]) => {
+    const line = `${from} ${to} 301`;
+    if (!/^\/(?!\/)/.test(from) || !/^\/(?!\/)/.test(to) || /[\s*:#?]/.test(from) || /\s/.test(to) || from === to) {
+      throw new Error(`Invalid static Cloudflare redirect: ${from}`);
+    }
+    if (line.length > 1000) throw new Error(`Cloudflare redirect exceeds 1,000 characters: ${from}`);
+    return line;
+  });
+
+  fs.writeFileSync(path.join(__dirname, 'public', '_redirects'), `${lines.join('\n')}\n`);
+  // Always overwrite this file, including when switching a prior draft build to production.
+  fs.writeFileSync(
+    path.join(__dirname, 'public', '_headers'),
+    reviewMode ? '/*\n  X-Robots-Tag: noindex, nofollow, noarchive\n' : '# No review-only headers in production.\n'
+  );
+}

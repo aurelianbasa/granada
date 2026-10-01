@@ -1,8 +1,8 @@
 import * as React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import BannerImage from '@media/common/banner.jpg';
 
-export const SITE_URL = 'https://granadagoldmine.com';
 const OG_LOCALES = { en: 'en_CA', fr: 'fr_CA' };
 
 const withLanguage = (language, originalPath) => (language === 'en' ? originalPath : `/${language}${originalPath}`);
@@ -25,6 +25,17 @@ export const getLocaleStrings = (data, ns) => {
  * every site language; pass only the languages a page really exists in (e.g. news posts).
  */
 export default function Seo({ pageContext, title, description, image, type = 'website', alternates, children }) {
+  const { site } = useStaticQuery(graphql`
+    query SeoSiteSettings {
+      site {
+        siteMetadata {
+          siteUrl
+          reviewMode
+        }
+      }
+    }
+  `);
+  const SITE_URL = site.siteMetadata.siteUrl;
   const language = pageContext?.language || 'en';
   const originalPath = pageContext?.i18n?.originalPath || '/';
   const pagePath = withLanguage(language, originalPath);
@@ -36,6 +47,7 @@ export default function Seo({ pageContext, title, description, image, type = 'we
     <>
       <html lang={language} />
       <title>{fullTitle}</title>
+      {site.siteMetadata.reviewMode && <meta name='robots' content='noindex, nofollow, noarchive' />}
       {description && <meta name='description' content={description} />}
 
       <link rel='canonical' href={`${SITE_URL}${pagePath}`} />

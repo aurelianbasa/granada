@@ -1,4 +1,5 @@
 require('dotenv').config({ path: `.env` });
+const { siteUrl, reviewMode } = require('./config/site');
 
 // Each integration only switches on once Granada's own keys are in .env (see SETUP.md).
 const hasContentful = Boolean(process.env.CONTENTFUL_SPACE_ID && process.env.CONTENTFUL_ACCESS_TOKEN);
@@ -13,7 +14,8 @@ const hasAlgolia = Boolean(
 module.exports = {
   siteMetadata: {
     title: 'Granada Gold Mine',
-    siteUrl: 'https://granadagoldmine.com',
+    siteUrl,
+    reviewMode,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -35,9 +37,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://granadagoldmine.com',
-        sitemap: 'https://granadagoldmine.com/sitemap-0.xml',
-        policy: [{ userAgent: '*', allow: '/' }],
+        host: siteUrl,
+        sitemap: `${siteUrl}/sitemap-0.xml`,
+        policy: [reviewMode ? { userAgent: '*', disallow: '/' } : { userAgent: '*', allow: '/' }],
       },
     },
     {
@@ -98,7 +100,7 @@ module.exports = {
         localeJsonSourceName: 'locale',
         languages: ['en', 'fr'],
         defaultLanguage: 'en',
-        siteUrl: 'http://localhost:8000',
+        siteUrl,
         i18nextOptions: {
           react: {
             transKeepBasicHtmlNodesFor: ['br', 'b', 'span', 'mark', 'i'],
@@ -115,7 +117,7 @@ module.exports = {
               spaceId: process.env.CONTENTFUL_SPACE_ID,
               accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
               environment: process.env.CONTENTFUL_ENVIRONMENT || 'master',
-              // 'preview.contentful.com' + a Content Preview API token shows drafts (local review only).
+              // 'preview.contentful.com' + a Content Preview API token shows drafts for review.
               host: process.env.CONTENTFUL_HOST || 'cdn.contentful.com',
               // Rich-text releases with large tables exceed Contentful's response size at the default 1000.
               pageLimit: 250,
